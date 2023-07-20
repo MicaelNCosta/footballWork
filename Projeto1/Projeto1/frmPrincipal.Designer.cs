@@ -1,7 +1,7 @@
 ﻿
-namespace Projeto1
+namespace projeto1
 {
-    partial class frmPrincipal
+    partial class FrmPrincipal
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -29,191 +29,167 @@ namespace Projeto1
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblSistema = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.lblForca = new System.Windows.Forms.Label();
-            this.lblAmeacas = new System.Windows.Forms.Label();
-            this.lblOportunidades = new System.Windows.Forms.Label();
             this.lblFraqueza = new System.Windows.Forms.Label();
-            this.lblApi1 = new System.Windows.Forms.Label();
-            this.lblVerificar = new System.Windows.Forms.Label();
-            this.btn1 = new System.Windows.Forms.Button();
-            this.lblDados = new System.Windows.Forms.Label();
-            this.lblAnos = new System.Windows.Forms.Label();
+            this.lblOportunidades = new System.Windows.Forms.Label();
+            this.lblAmeacas = new System.Windows.Forms.Label();
+            this.lblApis = new System.Windows.Forms.Label();
+            this.lblApproveddenied = new System.Windows.Forms.Label();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.txt1 = new System.Windows.Forms.TextBox();
             this.txt2 = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
+            this.txt3 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnRes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblSistema
+            // lbl1
             // 
-            this.lblSistema.AutoSize = true;
-            this.lblSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSistema.Location = new System.Drawing.Point(21, 22);
-            this.lblSistema.Name = "lblSistema";
-            this.lblSistema.Size = new System.Drawing.Size(394, 29);
-            this.lblSistema.TabIndex = 0;
-            this.lblSistema.Text = "Definição do objetivo do sistema";
-            this.lblSistema.Click += new System.EventHandler(this.lblSistema_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(393, 64);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(22, 415);
-            this.panel1.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 224);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(394, 29);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Definição do objetivo do sistema";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(187, 239);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(440, 21);
-            this.panel2.TabIndex = 2;
+            this.lbl1.AutoSize = true;
+            this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.Location = new System.Drawing.Point(21, 28);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(285, 24);
+            this.lbl1.TabIndex = 0;
+            this.lbl1.Text = "Definição do objetivo do sistema ";
             // 
             // lblForca
             // 
             this.lblForca.AutoSize = true;
-            this.lblForca.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblForca.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblForca.Location = new System.Drawing.Point(126, 92);
+            this.lblForca.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblForca.ForeColor = System.Drawing.Color.Black;
+            this.lblForca.Location = new System.Drawing.Point(68, 180);
             this.lblForca.Name = "lblForca";
-            this.lblForca.Size = new System.Drawing.Size(43, 15);
+            this.lblForca.Size = new System.Drawing.Size(0, 24);
             this.lblForca.TabIndex = 3;
-            this.lblForca.Text = "Força";
-            // 
-            // lblAmeacas
-            // 
-            this.lblAmeacas.AutoSize = true;
-            this.lblAmeacas.BackColor = System.Drawing.Color.Transparent;
-            this.lblAmeacas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmeacas.Location = new System.Drawing.Point(497, 277);
-            this.lblAmeacas.Name = "lblAmeacas";
-            this.lblAmeacas.Size = new System.Drawing.Size(65, 15);
-            this.lblAmeacas.TabIndex = 4;
-            this.lblAmeacas.Text = "Ameaças";
-            // 
-            // lblOportunidades
-            // 
-            this.lblOportunidades.AutoSize = true;
-            this.lblOportunidades.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblOportunidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOportunidades.Location = new System.Drawing.Point(97, 277);
-            this.lblOportunidades.Name = "lblOportunidades";
-            this.lblOportunidades.Size = new System.Drawing.Size(101, 15);
-            this.lblOportunidades.TabIndex = 5;
-            this.lblOportunidades.Text = "Oportunidades";
             // 
             // lblFraqueza
             // 
             this.lblFraqueza.AutoSize = true;
-            this.lblFraqueza.BackColor = System.Drawing.Color.Transparent;
-            this.lblFraqueza.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFraqueza.Location = new System.Drawing.Point(479, 77);
+            this.lblFraqueza.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFraqueza.Location = new System.Drawing.Point(536, 180);
             this.lblFraqueza.Name = "lblFraqueza";
-            this.lblFraqueza.Size = new System.Drawing.Size(74, 15);
-            this.lblFraqueza.TabIndex = 6;
-            this.lblFraqueza.Text = "Fraquezas";
+            this.lblFraqueza.Size = new System.Drawing.Size(0, 24);
+            this.lblFraqueza.TabIndex = 4;
             // 
-            // lblApi1
+            // lblOportunidades
             // 
-            this.lblApi1.AutoSize = true;
-            this.lblApi1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblApi1.Location = new System.Drawing.Point(895, 22);
-            this.lblApi1.Name = "lblApi1";
-            this.lblApi1.Size = new System.Drawing.Size(141, 25);
-            this.lblApi1.TabIndex = 7;
-            this.lblApi1.Text = "Lista de APIS";
+            this.lblOportunidades.AutoSize = true;
+            this.lblOportunidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOportunidades.Location = new System.Drawing.Point(68, 500);
+            this.lblOportunidades.Name = "lblOportunidades";
+            this.lblOportunidades.Size = new System.Drawing.Size(0, 24);
+            this.lblOportunidades.TabIndex = 5;
             // 
-            // lblVerificar
+            // lblAmeacas
             // 
-            this.lblVerificar.AutoSize = true;
-            this.lblVerificar.Location = new System.Drawing.Point(897, 537);
-            this.lblVerificar.Name = "lblVerificar";
-            this.lblVerificar.Size = new System.Drawing.Size(35, 13);
-            this.lblVerificar.TabIndex = 8;
-            this.lblVerificar.Text = "label1";
+            this.lblAmeacas.AutoSize = true;
+            this.lblAmeacas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmeacas.Location = new System.Drawing.Point(536, 500);
+            this.lblAmeacas.Name = "lblAmeacas";
+            this.lblAmeacas.Size = new System.Drawing.Size(0, 24);
+            this.lblAmeacas.TabIndex = 6;
             // 
-            // btn1
+            // lblApis
             // 
-            this.btn1.Location = new System.Drawing.Point(850, 401);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(129, 23);
-            this.btn1.TabIndex = 10;
-            this.btn1.Text = "Resultado";
-            this.btn1.UseVisualStyleBackColor = true;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.lblApis.AutoSize = true;
+            this.lblApis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApis.Location = new System.Drawing.Point(923, 97);
+            this.lblApis.Name = "lblApis";
+            this.lblApis.Size = new System.Drawing.Size(0, 24);
+            this.lblApis.TabIndex = 7;
             // 
-            // lblDados
+            // lblApproveddenied
             // 
-            this.lblDados.AutoSize = true;
-            this.lblDados.Location = new System.Drawing.Point(815, 247);
-            this.lblDados.Name = "lblDados";
-            this.lblDados.Size = new System.Drawing.Size(194, 13);
-            this.lblDados.TabIndex = 14;
-            this.lblDados.Text = "A compra de dados é para investimento";
+            this.lblApproveddenied.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApproveddenied.Location = new System.Drawing.Point(923, 347);
+            this.lblApproveddenied.Name = "lblApproveddenied";
+            this.lblApproveddenied.Size = new System.Drawing.Size(245, 24);
+            this.lblApproveddenied.TabIndex = 8;
+            this.lblApproveddenied.Text = "Para produtividade ?";
             // 
-            // lblAnos
+            // lblAge
             // 
-            this.lblAnos.AutoSize = true;
-            this.lblAnos.Location = new System.Drawing.Point(832, 320);
-            this.lblAnos.Name = "lblAnos";
-            this.lblAnos.Size = new System.Drawing.Size(153, 13);
-            this.lblAnos.TabIndex = 15;
-            this.lblAnos.Text = "você possui de 18 a 70 anos ?";
+            this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAge.Location = new System.Drawing.Point(923, 304);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(376, 26);
+            this.lblAge.TabIndex = 10;
+            this.lblAge.Text = "A compra de dados é para investimento ?";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(923, 389);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(245, 24);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Tem entre 18 e 70 anos ?";
             // 
             // txt1
             // 
-            this.txt1.Location = new System.Drawing.Point(869, 271);
+            this.txt1.Location = new System.Drawing.Point(1317, 309);
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(100, 20);
-            this.txt1.TabIndex = 17;
+            this.txt1.TabIndex = 16;
             // 
             // txt2
             // 
-            this.txt2.Location = new System.Drawing.Point(869, 355);
+            this.txt2.Location = new System.Drawing.Point(1317, 352);
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(100, 20);
-            this.txt2.TabIndex = 19;
+            this.txt2.TabIndex = 17;
             // 
-            // frmPrincipal
+            // txt3
+            // 
+            this.txt3.Location = new System.Drawing.Point(1317, 394);
+            this.txt3.Name = "txt3";
+            this.txt3.Size = new System.Drawing.Size(100, 20);
+            this.txt3.TabIndex = 18;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1317, 257);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 26);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "SIM | NÃO";
+            // 
+            // btnRes
+            // 
+            this.btnRes.Location = new System.Drawing.Point(1027, 484);
+            this.btnRes.Name = "btnRes";
+            this.btnRes.Size = new System.Drawing.Size(195, 40);
+            this.btnRes.TabIndex = 20;
+            this.btnRes.Text = "RESULTADO";
+            this.btnRes.UseVisualStyleBackColor = true;
+            this.btnRes.Click += new System.EventHandler(this.btnRes_Click);
+            // 
+            // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1160, 703);
+            this.ClientSize = new System.Drawing.Size(1461, 822);
+            this.Controls.Add(this.btnRes);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txt3);
             this.Controls.Add(this.txt2);
             this.Controls.Add(this.txt1);
-            this.Controls.Add(this.lblAnos);
-            this.Controls.Add(this.lblDados);
-            this.Controls.Add(this.btn1);
-            this.Controls.Add(this.lblVerificar);
-            this.Controls.Add(this.lblApi1);
-            this.Controls.Add(this.lblFraqueza);
-            this.Controls.Add(this.lblOportunidades);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblAge);
+            this.Controls.Add(this.lblApproveddenied);
+            this.Controls.Add(this.lblApis);
             this.Controls.Add(this.lblAmeacas);
+            this.Controls.Add(this.lblOportunidades);
+            this.Controls.Add(this.lblFraqueza);
             this.Controls.Add(this.lblForca);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblSistema);
-            this.Name = "frmPrincipal";
+            this.Controls.Add(this.lbl1);
+            this.Name = "FrmPrincipal";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.lblApi);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,21 +197,20 @@ namespace Projeto1
 
         #endregion
 
-        private System.Windows.Forms.Label lblSistema;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label lblForca;
-        private System.Windows.Forms.Label lblAmeacas;
-        private System.Windows.Forms.Label lblOportunidades;
         private System.Windows.Forms.Label lblFraqueza;
-        private System.Windows.Forms.Label lblApi1;
-        private System.Windows.Forms.Label lblVerificar;
-        private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.Label lblDados;
-        private System.Windows.Forms.Label lblAnos;
+        private System.Windows.Forms.Label lblOportunidades;
+        private System.Windows.Forms.Label lblAmeacas;
+        private System.Windows.Forms.Label lblApis;
+        private System.Windows.Forms.Label lblApproveddenied;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt1;
         private System.Windows.Forms.TextBox txt2;
+        private System.Windows.Forms.TextBox txt3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnRes;
     }
 }
 
