@@ -8,107 +8,75 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Projeto1
+namespace projeto1
 {
-    public partial class frmPrincipal : Form
+    public partial class FrmPrincipal : Form
     {
-        public frmPrincipal()
+        public FrmPrincipal()
         {
             InitializeComponent();
         }
 
-        private void lblSistema_Click(object sender, EventArgs e)
+        private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            lblSistema.Text = "Definição do objetivo do  sistema: venda de dados \n" +
+            lbl1.Text = " Definição do objetivo do sistema : Construir um banco de dados para futura vendas \n" +
+            "Buscar conhecimento para evoluir";
+                                           
+            
+            string[,] sowt = new string[2, 2];
 
-                "requisito funcional :   As principais funções, que sem elas  o sistema  não funcionariam \n" +
+            sowt[0, 0] = "FORÇAS \n" +
+            "\n" +
+            " Juntar informações \n" +
+            " Buscar dados em diferentes fontes \n" +
+            " Investiment de tempo";
 
-                "ex: login e senha \n" +
+            sowt[0, 1] = "FRAQUEZAS \n " + 
+            "\n" +
+            " Inexperiencia em trabalhar com dados \n" +
+            " Perca de oportunidades \n " +
+            " Falta de conhecimento";
 
-                "requisitos não funcionais : tudo que não esta ligado ao desinvolvimento do sistema\n" +
+            sowt[1, 0] = " OPORTUNIDADES \n" +
+            "\n" +
+            "Alta demanda de comercialização de dados \n " +
+            "grande comercio \n" +
+            " Expansão do mercado na area de tecnologia ";
 
+            sowt[1, 1] = "AMEAÇAS \n" +
+            "\n" +
+            "Infringir as leis do país ex. LGPD \n " +
+            "Vazamento de dados \n" +
+            "Competidores consolidados no mercado";
 
-                "EX: designer , interface";
-                            
-        }
-
-        private void lblforca(object sender, EventArgs e)
-        {
-
-
-            string[,] swot = new string[2, 2];
-            swot[0, 0] = "Forças \n" +
-               " \n" +
-         "-capacidade de coletar informções \n" +
-               "\n " +
-            "-Buscar dados de diferentes Fontes";
-
-
-            swot[0, 1] = "Fraquezas   \n" +
-                "\n" +
-            " - inexperiencia em trabalhar com vendas de dados   \n" +
-                " \n" +
-
-                "-Perca de oportunidades por falta de experiencia";
-
-
-
-
-            swot[1, 0] ="Oportunidades \n" +
-                "\n" +
-             "-Alta demanda de comercialização de dados \n" +
-                " \n" +
-                "-Mercado de tecnologia em expansão";
+            lblForca.Text = sowt[0, 0];
+            lblFraqueza.Text = sowt[0, 1];
+            lblOportunidades.Text = sowt[1, 0];
+            lblAmeacas.Text = sowt[1, 1];
 
 
-
-            swot[1, 1] = "Ameaças \n " +
-
-                "\n  " +
-              "-infringir as leis do pais  \n" +
-                "ex : lgpd\n  " +
-                "-Vazamento de dados";
-
-            lblForca.Text = swot[0, 0];
-            lblFraqueza.Text = swot[0, 1];
-         lblOportunidades.Text = swot[1, 0];
-            lblAmeacas.Text = swot[1, 1];
-
-
-
-
-
-        }
-
-        private void lblApi(object sender, EventArgs e)
-        {
-
-            string[] arrey = new string[6];
+            string[] vetor = new string[6];
             string textodeapi = "";
 
 
-
-
-            arrey[0] = "Api Linkdin";
-            arrey[1] = "https://brasilapi.com.br/docs#tag/IBGE";
-            arrey[2] = "";
-            arrey[3] = "Api 4";
-            arrey[4] = "Api 5";
-            arrey[5] = "Api 6";
-
-            for (int j = 0; j < arrey.Length; j++)
+            vetor[0] = "https://brasilapi.com.br/docs#tag/IBGE ";
+            vetor[1] = "https://aws.amazon.com/pt/transcribe/";
+            vetor[2] = "https://www.gov.br/conecta/catalogo/apis/cadastro-base-do-cidadao-cbc-cpf/swagger-v2.json/swagger_view";
+            vetor[3] = "Api 4";
+            vetor[4] = "Api 5";
+            vetor[5] = "Api 6";
+      
+            for (int i =0; i < vetor.Length; i++)
             {
-                textodeapi += arrey[j] + "\n";
+                textodeapi += vetor[i] + "\n";
             }
 
+            lblApis.Text = textodeapi;
+           
 
 
-            lblApi1.Text = textodeapi;
-
-
-
-
-
+                
+           
 
 
 
@@ -117,37 +85,40 @@ namespace Projeto1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-           
-            
-               
 
+        }
 
-            
-
-
-                }
-
-        private void btn1_Click(object sender, EventArgs e)
+        private void lblRes_Click(object sender, EventArgs e)
         {
+          
+        }
+
+        private void txtAge_TextChanged(object sender, EventArgs e)
+        {
+                       
+        }
+
+        private void btnRes_Click(object sender, EventArgs e)
+        {
+            string pergunta1 = txt1.Text;
+            string pergunta2 = txt2.Text;
+            string pergunta3 = txt3.Text;
 
 
-            if (txt1.Text == "Não" && txt2.Text == txt1.Text) 
+
+
+            if (pergunta1 == "sim" && pergunta2 == "sim" && pergunta3 == "sim")
             {
-                lblVerificar.Text = "reprovado";
+               btnRes.Text = "APROVADO";
+
+                btnRes.ForeColor = Color.Green;
             }
-            
-               else  if(txt1.Text == "Sim" && txt2.Text == "Sim")
+            else 
             {
-               
-                 lblVerificar.Text = "Aprovado";  
+                btnRes.Text = "REPROVADO";
+
+                btnRes.ForeColor = Color.Red;
             }
-            else
-            {
-                lblVerificar.Text = "reprovado";
-            }
-            
-                
-                 
         }
     }
 }
