@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace projeto1
 {
-    public partial class FrmPrincipal : Form
+    public partial class frmCadastro : Form
     {
-        public FrmPrincipal()
+        public frmCadastro()
         {
             InitializeComponent();
-        }
-
-        private void FrmPrincipal_Load(object sender, EventArgs e)
-        {
-         
         }
     }
 }
