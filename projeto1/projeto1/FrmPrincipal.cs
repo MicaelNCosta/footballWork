@@ -21,5 +21,12 @@ namespace projeto1
         {
          
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form frmCadastro = new frmCadastro();
+            frmCadastro.WindowState = FormWindowState.Maximized;
+            frmCadastro.Show();
+        }
     }
 }
