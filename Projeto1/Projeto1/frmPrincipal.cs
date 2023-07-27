@@ -21,5 +21,11 @@ namespace projeto1
         {
          
         }
+
+        private void btnPlanos_Click(object sender, EventArgs e)
+        {
+            Form frmPlanos = new frmPlanos();
+            frmPlanos.Show();
+        }
     }
 }
