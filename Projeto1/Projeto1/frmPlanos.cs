@@ -29,30 +29,45 @@ namespace projeto1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            string txt = "";
-            if (cbGratuito.Checked)
+            string planos = "";
+            string plano1 = "";
+            if (rbGratuito.Checked)
             {
-                txt += cbGratuito.Text + " |parabens você selecionou o nosso plano gratuito";
+                planos = "Plano Gratuito";
+                MessageBox.Show("Parabens você selecionou o nosso plano gratuito");
             }
-            
-                if (cbPremiun.Checked) 
-            
-            {
-                txt += cbPremiun.Text + " |parabens você selecionou o nosso plano premiun";
-                MessageBox.Show(txt);   
-            }
-                
 
-            
-                
-            
+            else if (rbPremiun.Checked)
+            {
+                plano1 = " Plano Gratuito";
+                MessageBox.Show("Parabens você selecionou o nosso plano premiun");
+            }
         }
 
         private void cbGratuito_CheckedChanged(object sender, EventArgs e)
         {
             
 
+        }
+
+        private void frmPlanos_Load(object sender, EventArgs e)
+        {
+            btnProsseguir.Enabled = false;
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void gbPlanos_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void rbPremiun_CheckedChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

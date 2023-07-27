@@ -29,13 +29,25 @@ namespace projeto1
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnPlanos = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnPlanos
+            // 
+            this.btnPlanos.Location = new System.Drawing.Point(1026, 64);
+            this.btnPlanos.Name = "btnPlanos";
+            this.btnPlanos.Size = new System.Drawing.Size(118, 40);
+            this.btnPlanos.TabIndex = 0;
+            this.btnPlanos.Text = "Planos";
+            this.btnPlanos.UseVisualStyleBackColor = true;
+            this.btnPlanos.Click += new System.EventHandler(this.btnPlanos_Click);
             // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1461, 822);
+            this.Controls.Add(this.btnPlanos);
             this.Name = "FrmPrincipal";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
@@ -44,6 +56,8 @@ namespace projeto1
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnPlanos;
     }
 }
 
