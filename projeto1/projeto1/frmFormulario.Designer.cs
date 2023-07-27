@@ -29,6 +29,7 @@ namespace projeto1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastro));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,30 +41,36 @@ namespace projeto1
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtVoce = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.rb1 = new System.Windows.Forms.RadioButton();
+            this.rb2 = new System.Windows.Forms.RadioButton();
+            this.gpBox1 = new System.Windows.Forms.GroupBox();
+            this.gpBox3 = new System.Windows.Forms.GroupBox();
+            this.rb6 = new System.Windows.Forms.RadioButton();
+            this.rb5 = new System.Windows.Forms.RadioButton();
+            this.gpBox2 = new System.Windows.Forms.GroupBox();
+            this.rb4 = new System.Windows.Forms.RadioButton();
+            this.rb3 = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.rb7 = new System.Windows.Forms.RadioButton();
+            this.rb8 = new System.Windows.Forms.RadioButton();
+            this.rb9 = new System.Windows.Forms.RadioButton();
+            this.gpBox4 = new System.Windows.Forms.GroupBox();
             this.gbEmail = new System.Windows.Forms.GroupBox();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.rb11 = new System.Windows.Forms.RadioButton();
+            this.rb10 = new System.Windows.Forms.RadioButton();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.lblTimeeee = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbFinalN = new System.Windows.Forms.RadioButton();
+            this.rbFinalS = new System.Windows.Forms.RadioButton();
+            this.gpBox1.SuspendLayout();
+            this.gpBox3.SuspendLayout();
+            this.gpBox2.SuspendLayout();
+            this.gpBox4.SuspendLayout();
             this.gbEmail.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -154,6 +161,7 @@ namespace projeto1
             this.cbLigas.Size = new System.Drawing.Size(121, 21);
             this.cbLigas.TabIndex = 12;
             this.cbLigas.Text = "Ligas";
+            this.cbLigas.SelectedIndexChanged += new System.EventHandler(this.cbLigas_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -169,7 +177,7 @@ namespace projeto1
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(28, 416);
+            this.label5.Location = new System.Drawing.Point(991, 440);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(310, 22);
             this.label5.TabIndex = 14;
@@ -182,109 +190,108 @@ namespace projeto1
             this.txtVoce.Name = "txtVoce";
             this.txtVoce.Size = new System.Drawing.Size(379, 128);
             this.txtVoce.TabIndex = 26;
-            this.txtVoce.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // radioButton2
+            // rb1
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton2.Location = new System.Drawing.Point(6, 19);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(44, 17);
-            this.radioButton2.TabIndex = 28;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "SIM";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rb1.AutoSize = true;
+            this.rb1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rb1.Location = new System.Drawing.Point(6, 19);
+            this.rb1.Name = "rb1";
+            this.rb1.Size = new System.Drawing.Size(44, 17);
+            this.rb1.TabIndex = 28;
+            this.rb1.TabStop = true;
+            this.rb1.Text = "SIM";
+            this.rb1.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rb2
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton3.Location = new System.Drawing.Point(125, 19);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(48, 17);
-            this.radioButton3.TabIndex = 29;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "NÃO";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rb2.AutoSize = true;
+            this.rb2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rb2.Location = new System.Drawing.Point(125, 19);
+            this.rb2.Name = "rb2";
+            this.rb2.Size = new System.Drawing.Size(48, 17);
+            this.rb2.TabIndex = 29;
+            this.rb2.TabStop = true;
+            this.rb2.Text = "NÃO";
+            this.rb2.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // gpBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(32, 323);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(228, 49);
-            this.groupBox1.TabIndex = 32;
-            this.groupBox1.TabStop = false;
+            this.gpBox1.Controls.Add(this.rb2);
+            this.gpBox1.Controls.Add(this.rb1);
+            this.gpBox1.Location = new System.Drawing.Point(32, 323);
+            this.gpBox1.Name = "gpBox1";
+            this.gpBox1.Size = new System.Drawing.Size(228, 49);
+            this.gpBox1.TabIndex = 32;
+            this.gpBox1.TabStop = false;
             // 
-            // groupBox3
+            // gpBox3
             // 
-            this.groupBox3.Controls.Add(this.radioButton1);
-            this.groupBox3.Controls.Add(this.radioButton4);
-            this.groupBox3.Location = new System.Drawing.Point(401, 169);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(228, 49);
-            this.groupBox3.TabIndex = 34;
-            this.groupBox3.TabStop = false;
+            this.gpBox3.Controls.Add(this.rb6);
+            this.gpBox3.Controls.Add(this.rb5);
+            this.gpBox3.Location = new System.Drawing.Point(401, 169);
+            this.gpBox3.Name = "gpBox3";
+            this.gpBox3.Size = new System.Drawing.Size(228, 49);
+            this.gpBox3.TabIndex = 34;
+            this.gpBox3.TabStop = false;
             // 
-            // radioButton1
+            // rb6
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton1.Location = new System.Drawing.Point(125, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(48, 17);
-            this.radioButton1.TabIndex = 29;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "NÃO";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb6.AutoSize = true;
+            this.rb6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rb6.Location = new System.Drawing.Point(125, 19);
+            this.rb6.Name = "rb6";
+            this.rb6.Size = new System.Drawing.Size(80, 17);
+            this.rb6.TabIndex = 29;
+            this.rb6.TabStop = true;
+            this.rb6.Text = "CONSUMO";
+            this.rb6.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rb5
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton4.Location = new System.Drawing.Point(6, 19);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(44, 17);
-            this.radioButton4.TabIndex = 28;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "SIM";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rb5.AutoSize = true;
+            this.rb5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rb5.Location = new System.Drawing.Point(6, 19);
+            this.rb5.Name = "rb5";
+            this.rb5.Size = new System.Drawing.Size(62, 17);
+            this.rb5.TabIndex = 28;
+            this.rb5.TabStop = true;
+            this.rb5.Text = "VENDA";
+            this.rb5.UseVisualStyleBackColor = true;
             // 
-            // groupBox4
+            // gpBox2
             // 
-            this.groupBox4.Controls.Add(this.radioButton7);
-            this.groupBox4.Controls.Add(this.radioButton8);
-            this.groupBox4.Location = new System.Drawing.Point(32, 465);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(228, 49);
-            this.groupBox4.TabIndex = 35;
-            this.groupBox4.TabStop = false;
+            this.gpBox2.Controls.Add(this.rb4);
+            this.gpBox2.Controls.Add(this.rb3);
+            this.gpBox2.Location = new System.Drawing.Point(32, 465);
+            this.gpBox2.Name = "gpBox2";
+            this.gpBox2.Size = new System.Drawing.Size(228, 49);
+            this.gpBox2.TabIndex = 35;
+            this.gpBox2.TabStop = false;
             // 
-            // radioButton7
+            // rb4
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton7.Location = new System.Drawing.Point(125, 19);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(48, 17);
-            this.radioButton7.TabIndex = 29;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "NÃO";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rb4.AutoSize = true;
+            this.rb4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rb4.Location = new System.Drawing.Point(125, 19);
+            this.rb4.Name = "rb4";
+            this.rb4.Size = new System.Drawing.Size(48, 17);
+            this.rb4.TabIndex = 29;
+            this.rb4.TabStop = true;
+            this.rb4.Text = "NÃO";
+            this.rb4.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // rb3
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton8.Location = new System.Drawing.Point(6, 19);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(44, 17);
-            this.radioButton8.TabIndex = 28;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "SIM";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.rb3.AutoSize = true;
+            this.rb3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rb3.Location = new System.Drawing.Point(6, 19);
+            this.rb3.Name = "rb3";
+            this.rb3.Size = new System.Drawing.Size(44, 17);
+            this.rb3.TabIndex = 28;
+            this.rb3.TabStop = true;
+            this.rb3.Text = "SIM";
+            this.rb3.UseVisualStyleBackColor = true;
             // 
             // label8
             // 
@@ -296,85 +303,85 @@ namespace projeto1
             this.label8.TabIndex = 36;
             this.label8.Text = "Deseja receber notificações por e-mail ?";
             // 
-            // radioButton5
+            // rb7
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(6, 19);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(78, 17);
-            this.radioButton5.TabIndex = 37;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "INICIANTE";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rb7.AutoSize = true;
+            this.rb7.Location = new System.Drawing.Point(6, 19);
+            this.rb7.Name = "rb7";
+            this.rb7.Size = new System.Drawing.Size(78, 17);
+            this.rb7.TabIndex = 37;
+            this.rb7.TabStop = true;
+            this.rb7.Text = "INICIANTE";
+            this.rb7.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rb8
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(126, 19);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(111, 17);
-            this.radioButton6.TabIndex = 38;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "INTERMEDIARIO";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rb8.AutoSize = true;
+            this.rb8.Location = new System.Drawing.Point(126, 19);
+            this.rb8.Name = "rb8";
+            this.rb8.Size = new System.Drawing.Size(111, 17);
+            this.rb8.TabIndex = 38;
+            this.rb8.TabStop = true;
+            this.rb8.Text = "INTERMEDIARIO";
+            this.rb8.UseVisualStyleBackColor = true;
             // 
-            // radioButton9
+            // rb9
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(281, 19);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(84, 17);
-            this.radioButton9.TabIndex = 39;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "AVANÇADO";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.rb9.AutoSize = true;
+            this.rb9.Location = new System.Drawing.Point(281, 19);
+            this.rb9.Name = "rb9";
+            this.rb9.Size = new System.Drawing.Size(84, 17);
+            this.rb9.TabIndex = 39;
+            this.rb9.TabStop = true;
+            this.rb9.Text = "AVANÇADO";
+            this.rb9.UseVisualStyleBackColor = true;
             // 
-            // groupBox2
+            // gpBox4
             // 
-            this.groupBox2.Controls.Add(this.radioButton5);
-            this.groupBox2.Controls.Add(this.radioButton9);
-            this.groupBox2.Controls.Add(this.radioButton6);
-            this.groupBox2.Location = new System.Drawing.Point(395, 323);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(376, 54);
-            this.groupBox2.TabIndex = 40;
-            this.groupBox2.TabStop = false;
+            this.gpBox4.Controls.Add(this.rb7);
+            this.gpBox4.Controls.Add(this.rb9);
+            this.gpBox4.Controls.Add(this.rb8);
+            this.gpBox4.Location = new System.Drawing.Point(395, 323);
+            this.gpBox4.Name = "gpBox4";
+            this.gpBox4.Size = new System.Drawing.Size(376, 54);
+            this.gpBox4.TabIndex = 40;
+            this.gpBox4.TabStop = false;
             // 
             // gbEmail
             // 
-            this.gbEmail.Controls.Add(this.radioButton10);
-            this.gbEmail.Controls.Add(this.radioButton11);
+            this.gbEmail.Controls.Add(this.rb11);
+            this.gbEmail.Controls.Add(this.rb10);
             this.gbEmail.Location = new System.Drawing.Point(395, 465);
             this.gbEmail.Name = "gbEmail";
             this.gbEmail.Size = new System.Drawing.Size(228, 49);
             this.gbEmail.TabIndex = 41;
             this.gbEmail.TabStop = false;
             // 
-            // radioButton10
+            // rb11
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton10.Location = new System.Drawing.Point(125, 19);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(48, 17);
-            this.radioButton10.TabIndex = 29;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "NÃO";
-            this.radioButton10.UseVisualStyleBackColor = true;
-            this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
+            this.rb11.AutoSize = true;
+            this.rb11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rb11.Location = new System.Drawing.Point(125, 19);
+            this.rb11.Name = "rb11";
+            this.rb11.Size = new System.Drawing.Size(48, 17);
+            this.rb11.TabIndex = 29;
+            this.rb11.TabStop = true;
+            this.rb11.Text = "NÃO";
+            this.rb11.UseVisualStyleBackColor = true;
+            this.rb11.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
             // 
-            // radioButton11
+            // rb10
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton11.Location = new System.Drawing.Point(6, 19);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(44, 17);
-            this.radioButton11.TabIndex = 28;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "SIM";
-            this.radioButton11.UseVisualStyleBackColor = true;
-            this.radioButton11.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
+            this.rb10.AutoSize = true;
+            this.rb10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rb10.Location = new System.Drawing.Point(6, 19);
+            this.rb10.Name = "rb10";
+            this.rb10.Size = new System.Drawing.Size(44, 17);
+            this.rb10.TabIndex = 28;
+            this.rb10.TabStop = true;
+            this.rb10.Text = "SIM";
+            this.rb10.UseVisualStyleBackColor = true;
+            this.rb10.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
             // 
             // txtEmail
             // 
@@ -382,7 +389,6 @@ namespace projeto1
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(327, 20);
             this.txtEmail.TabIndex = 42;
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // label9
             // 
@@ -394,19 +400,76 @@ namespace projeto1
             this.label9.TabIndex = 43;
             this.label9.Text = "E MAIL :";
             // 
+            // lblTimeeee
+            // 
+            this.lblTimeeee.AutoSize = true;
+            this.lblTimeeee.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimeeee.Location = new System.Drawing.Point(28, 211);
+            this.lblTimeeee.Name = "lblTimeeee";
+            this.lblTimeeee.Size = new System.Drawing.Size(0, 22);
+            this.lblTimeeee.TabIndex = 44;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(28, 404);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(252, 44);
+            this.label10.TabIndex = 45;
+            this.label10.Text = "Você acompanha futebol com frequencia ?";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rbFinalN);
+            this.groupBox1.Controls.Add(this.rbFinalS);
+            this.groupBox1.Location = new System.Drawing.Point(995, 474);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(228, 49);
+            this.groupBox1.TabIndex = 46;
+            this.groupBox1.TabStop = false;
+            // 
+            // rbFinalN
+            // 
+            this.rbFinalN.AutoSize = true;
+            this.rbFinalN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbFinalN.Location = new System.Drawing.Point(153, 19);
+            this.rbFinalN.Name = "rbFinalN";
+            this.rbFinalN.Size = new System.Drawing.Size(48, 17);
+            this.rbFinalN.TabIndex = 29;
+            this.rbFinalN.TabStop = true;
+            this.rbFinalN.Text = "NÃO";
+            this.rbFinalN.UseVisualStyleBackColor = true;
+            this.rbFinalN.CheckedChanged += new System.EventHandler(this.rbFinalN_CheckedChanged_1);
+            // 
+            // rbFinalS
+            // 
+            this.rbFinalS.AutoSize = true;
+            this.rbFinalS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbFinalS.Location = new System.Drawing.Point(31, 19);
+            this.rbFinalS.Name = "rbFinalS";
+            this.rbFinalS.Size = new System.Drawing.Size(44, 17);
+            this.rbFinalS.TabIndex = 28;
+            this.rbFinalS.TabStop = true;
+            this.rbFinalS.Text = "SIM";
+            this.rbFinalS.UseVisualStyleBackColor = true;
+            this.rbFinalS.CheckedChanged += new System.EventHandler(this.rbFinalS_CheckedChanged);
+            // 
             // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1473, 655);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lblTimeeee);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.gbEmail);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.gpBox4);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gpBox2);
+            this.Controls.Add(this.gpBox3);
+            this.Controls.Add(this.gpBox1);
             this.Controls.Add(this.txtVoce);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -419,19 +482,22 @@ namespace projeto1
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadastro";
             this.Text = "Formulário para usuarios";
             this.Load += new System.EventHandler(this.frmCadastro_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gpBox1.ResumeLayout(false);
+            this.gpBox1.PerformLayout();
+            this.gpBox3.ResumeLayout(false);
+            this.gpBox3.PerformLayout();
+            this.gpBox2.ResumeLayout(false);
+            this.gpBox2.PerformLayout();
+            this.gpBox4.ResumeLayout(false);
+            this.gpBox4.PerformLayout();
             this.gbEmail.ResumeLayout(false);
             this.gbEmail.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -450,24 +516,29 @@ namespace projeto1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtVoce;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton rb1;
+        private System.Windows.Forms.RadioButton rb2;
+        private System.Windows.Forms.GroupBox gpBox1;
+        private System.Windows.Forms.GroupBox gpBox3;
+        private System.Windows.Forms.RadioButton rb6;
+        private System.Windows.Forms.RadioButton rb5;
+        private System.Windows.Forms.GroupBox gpBox2;
+        private System.Windows.Forms.RadioButton rb4;
+        private System.Windows.Forms.RadioButton rb3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton rb7;
+        private System.Windows.Forms.RadioButton rb8;
+        private System.Windows.Forms.RadioButton rb9;
+        private System.Windows.Forms.GroupBox gpBox4;
         private System.Windows.Forms.GroupBox gbEmail;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton rb11;
+        private System.Windows.Forms.RadioButton rb10;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblTimeeee;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rbFinalN;
+        private System.Windows.Forms.RadioButton rbFinalS;
     }
 }
