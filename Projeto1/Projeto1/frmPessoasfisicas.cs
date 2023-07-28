@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
+
 
 namespace projeto1
 {
@@ -19,116 +21,54 @@ namespace projeto1
 
         private void btnCadastre_Click(object sender, EventArgs e)
         {
-            MessageBox.Show( " usuario cadastrado");
+            if(txtEmail.Text == "")
+              
             
             {
-                btnCadastre.Enabled = false;
-            }     
-            else
-            {
-                btnCadastre.Enabled = true;
+                MessageBox.Show("Obrigatorio prencher tudo");
+                return;
             }
-              
-           
+            if (txtNome.Text == "Obrigatorio prencher tudo")
             {
-                MessageBox.Show("this i am enabled");
+                MessageBox.Show("Obrigatorio prencher tudo");
+                return;
             }
+            if (txtSenha.Text == "")
+            {
+                MessageBox.Show("Obrigatorio prencher tudo");
+                return;
+            }
+          
+            if (txtCpf.Text == "")
+            {
+                MessageBox.Show("Obrigatorio prencher tudo");
+                return;
+            }
+            if (txtCep.Text == "")
+            {
+                MessageBox.Show("Obrigatorio prencher tudo");
+                return;
+            }
+            if (txtEndereco.Text == "Obrigatorio prencher tudo")
+            {
+                MessageBox.Show("Obrigatorio prencher tudo");
+                return;
+            }
+            MessageBox.Show("usuario Cadastrado");
         }
 
         private void txtEmail_TextChanged(object sender, EventArgs e)
         {
-            if (txtEmail.Text == "")
+            string email = txtEmail.Text;
+            Regex regex = new Regex(@"^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$");
+            if (!regex.IsMatch(email))
             {
-                btnCadastre.Enabled = false;
+                MessageBox.Show("Email inválido");
+                txtEmail.BackColor = Color.Red;
             }
-            else
-            {
-                btnCadastre.Enabled = true;
-            }
-              private void txtEmail_click(object sender, EventArgs e)
 
-            {
-                MessageBox.Show("this i am enabled");
-            }     
+
         }
+}
+}
 
-        private void txtNome_TextChanged(object sender, EventArgs e)
-        {
-            if (txtNome.Text == "")
-            {
-                btnCadastre.Enabled = false;
-            }
-            else
-            {
-                btnCadastre.Enabled = true;
-            }
-            private void txtNome_click(object sender, EventArgs e)
-        }
-
-        private void txtSenha_TextChanged(object sender, EventArgs e)
-        {
-
-         if (txtSenha.Text == "")
-            {
-                btnCadastre.Enabled = false;
-            }     
-            else
-            {
-                btnCadastre.Enabled = true;
-            }
-            private void btnCadastre_click(object sender, EventArgs e)
-    }
-
-        private void txtData_TextChanged(object sender, EventArgs e)
-        {
-            if (txtData.Text == "")
-            {
-                btnCadastre.Enabled = false;
-            }
-            else
-            {
-                btnCadastre.Enabled = true;
-            }
-            {
-                private void btnData_click(object sender, EventArgs e)
-        }   }
-
-        private void txtCpf_TextChanged(object sender, EventArgs e)
-        {
-            if (txtCpf.Text == "")
-            {
-                btnCadastre.Enabled = false;
-            }
-            else
-            {
-                btnCadastre.Enabled = true;
-            }
-            private void txtCpf_click(object sender, EventArgs e)
-        }
-
-        private void txtCep_TextChanged(object sender, EventArgs e)
-        {
-            if (txtCep.Text == "")
-            {
-                btnCadastre.Enabled = false;
-            }
-            else
-            {
-                btnCadastre.Enabled = true;
-            }
-            private void txtCep_click(object sender, EventArgs e)
-        }
-
-        private void txtEndereco_TextChanged(object sender, EventArgs e)
-        {
-            if (txtEndereco.Text == "")
-            {
-                btnCadastre.Enabled = false;
-            }
-            else
-            {
-                btnCadastre.Enabled = true;
-            }
-            private void txtEndereco_click(object sender, EventArgs e)
-        }
-    }
