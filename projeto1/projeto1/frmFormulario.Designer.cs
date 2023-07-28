@@ -56,15 +56,17 @@ namespace projeto1
             this.rb9 = new System.Windows.Forms.RadioButton();
             this.gpBox4 = new System.Windows.Forms.GroupBox();
             this.gbEmail = new System.Windows.Forms.GroupBox();
-            this.rb11 = new System.Windows.Forms.RadioButton();
-            this.rb10 = new System.Windows.Forms.RadioButton();
+            this.rbTelefone = new System.Windows.Forms.RadioButton();
+            this.rbEmail = new System.Windows.Forms.RadioButton();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.lblTimeeee = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbFinalN = new System.Windows.Forms.RadioButton();
             this.rbFinalS = new System.Windows.Forms.RadioButton();
+            this.mskNumero = new System.Windows.Forms.MaskedTextBox();
+            this.lblTel = new System.Windows.Forms.Label();
             this.gpBox1.SuspendLayout();
             this.gpBox3.SuspendLayout();
             this.gpBox2.SuspendLayout();
@@ -295,13 +297,12 @@ namespace projeto1
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(391, 416);
+            this.label8.Location = new System.Drawing.Point(384, 416);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(397, 22);
+            this.label8.Size = new System.Drawing.Size(425, 46);
             this.label8.TabIndex = 36;
-            this.label8.Text = "Deseja receber notificações por e-mail ?";
+            this.label8.Text = "Deseja receber notificações por e-mail ou por telefone ?";
             // 
             // rb7
             // 
@@ -349,39 +350,37 @@ namespace projeto1
             // 
             // gbEmail
             // 
-            this.gbEmail.Controls.Add(this.rb11);
-            this.gbEmail.Controls.Add(this.rb10);
+            this.gbEmail.Controls.Add(this.rbTelefone);
+            this.gbEmail.Controls.Add(this.rbEmail);
             this.gbEmail.Location = new System.Drawing.Point(395, 465);
             this.gbEmail.Name = "gbEmail";
             this.gbEmail.Size = new System.Drawing.Size(228, 49);
             this.gbEmail.TabIndex = 41;
             this.gbEmail.TabStop = false;
             // 
-            // rb11
+            // rbTelefone
             // 
-            this.rb11.AutoSize = true;
-            this.rb11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rb11.Location = new System.Drawing.Point(125, 19);
-            this.rb11.Name = "rb11";
-            this.rb11.Size = new System.Drawing.Size(48, 17);
-            this.rb11.TabIndex = 29;
-            this.rb11.TabStop = true;
-            this.rb11.Text = "NÃO";
-            this.rb11.UseVisualStyleBackColor = true;
-            this.rb11.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
+            this.rbTelefone.AutoSize = true;
+            this.rbTelefone.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbTelefone.Location = new System.Drawing.Point(125, 19);
+            this.rbTelefone.Name = "rbTelefone";
+            this.rbTelefone.Size = new System.Drawing.Size(81, 17);
+            this.rbTelefone.TabIndex = 29;
+            this.rbTelefone.Text = "TELEFONE";
+            this.rbTelefone.UseVisualStyleBackColor = true;
+            this.rbTelefone.CheckedChanged += new System.EventHandler(this.rbTelefone_CheckedChanged);
             // 
-            // rb10
+            // rbEmail
             // 
-            this.rb10.AutoSize = true;
-            this.rb10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rb10.Location = new System.Drawing.Point(6, 19);
-            this.rb10.Name = "rb10";
-            this.rb10.Size = new System.Drawing.Size(44, 17);
-            this.rb10.TabIndex = 28;
-            this.rb10.TabStop = true;
-            this.rb10.Text = "SIM";
-            this.rb10.UseVisualStyleBackColor = true;
-            this.rb10.CheckedChanged += new System.EventHandler(this.radioButton11_CheckedChanged);
+            this.rbEmail.AutoSize = true;
+            this.rbEmail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.rbEmail.Location = new System.Drawing.Point(6, 19);
+            this.rbEmail.Name = "rbEmail";
+            this.rbEmail.Size = new System.Drawing.Size(57, 17);
+            this.rbEmail.TabIndex = 28;
+            this.rbEmail.Text = "EMAIL";
+            this.rbEmail.UseVisualStyleBackColor = true;
+            this.rbEmail.CheckedChanged += new System.EventHandler(this.rbEmail_CheckedChanged);
             // 
             // txtEmail
             // 
@@ -389,16 +388,19 @@ namespace projeto1
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(327, 20);
             this.txtEmail.TabIndex = 42;
+            this.txtEmail.Visible = false;
+            this.txtEmail.Validated += new System.EventHandler(this.txtEmail_Validated);
             // 
-            // label9
+            // lblEmail
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(398, 539);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 18);
-            this.label9.TabIndex = 43;
-            this.label9.Text = "E MAIL :";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(397, 541);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(72, 18);
+            this.lblEmail.TabIndex = 43;
+            this.lblEmail.Text = "E MAIL :";
+            this.lblEmail.Visible = false;
             // 
             // lblTimeeee
             // 
@@ -454,15 +456,38 @@ namespace projeto1
             this.rbFinalS.UseVisualStyleBackColor = true;
             this.rbFinalS.CheckedChanged += new System.EventHandler(this.rbFinalS_CheckedChanged);
             // 
+            // mskNumero
+            // 
+            this.mskNumero.Location = new System.Drawing.Point(475, 539);
+            this.mskNumero.Mask = "(99) 0 0000-0000 ";
+            this.mskNumero.Name = "mskNumero";
+            this.mskNumero.Size = new System.Drawing.Size(95, 20);
+            this.mskNumero.TabIndex = 47;
+            this.mskNumero.Visible = false;
+            this.mskNumero.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskNumero_MaskInputRejected);
+            // 
+            // lblTel
+            // 
+            this.lblTel.AutoSize = true;
+            this.lblTel.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTel.Location = new System.Drawing.Point(398, 541);
+            this.lblTel.Name = "lblTel";
+            this.lblTel.Size = new System.Drawing.Size(47, 18);
+            this.lblTel.TabIndex = 48;
+            this.lblTel.Text = "TEL :";
+            this.lblTel.Visible = false;
+            // 
             // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1473, 655);
+            this.Controls.Add(this.lblTel);
+            this.Controls.Add(this.mskNumero);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.lblTimeeee);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.gbEmail);
             this.Controls.Add(this.gpBox4);
@@ -531,14 +556,16 @@ namespace projeto1
         private System.Windows.Forms.RadioButton rb9;
         private System.Windows.Forms.GroupBox gpBox4;
         private System.Windows.Forms.GroupBox gbEmail;
-        private System.Windows.Forms.RadioButton rb11;
-        private System.Windows.Forms.RadioButton rb10;
+        private System.Windows.Forms.RadioButton rbTelefone;
+        private System.Windows.Forms.RadioButton rbEmail;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblTimeeee;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rbFinalN;
         private System.Windows.Forms.RadioButton rbFinalS;
+        private System.Windows.Forms.MaskedTextBox mskNumero;
+        private System.Windows.Forms.Label lblTel;
     }
 }
