@@ -40,7 +40,8 @@ namespace projeto1
             else if (rbPremiun.Checked)
             {
                 plano1 = " Plano Gratuito";
-                MessageBox.Show("Parabens você selecionou o nosso plano premiun");
+                Form Form1 = new frmPagamento();
+                Form1.Show();
             }
         }
 
@@ -52,7 +53,7 @@ namespace projeto1
 
         private void frmPlanos_Load(object sender, EventArgs e)
         {
-            btnProsseguir.Enabled = false;
+            
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)

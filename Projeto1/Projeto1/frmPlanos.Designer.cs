@@ -197,9 +197,9 @@
             // 
             this.btnProsseguir.BackColor = System.Drawing.Color.Red;
             this.btnProsseguir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProsseguir.Location = new System.Drawing.Point(995, 540);
+            this.btnProsseguir.Location = new System.Drawing.Point(1011, 544);
             this.btnProsseguir.Name = "btnProsseguir";
-            this.btnProsseguir.Size = new System.Drawing.Size(134, 64);
+            this.btnProsseguir.Size = new System.Drawing.Size(107, 54);
             this.btnProsseguir.TabIndex = 17;
             this.btnProsseguir.Text = "Prosseguir";
             this.btnProsseguir.UseVisualStyleBackColor = false;
@@ -290,8 +290,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPlanos";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.frmPlanos_Load);
-            this.Click += new System.EventHandler(this.button1_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
