@@ -131,21 +131,9 @@ namespace projeto1
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            rb1.Checked = false;
-            rb2.Checked = false;
-            rb3.Checked = false;
-            rb4.Checked = false;
-            rb5.Checked = false;
-            rb6.Checked = false;
-            rb7.Checked = false;
-            rb8.Checked = false;
-            rb9.Checked = false;
-            rbEmail.Checked = false;
-            rbTelefone.Checked = false;
+            rb1.Checked = rb2.Checked = rb3.Checked = rb4.Checked = rb5.Checked = rb6.Checked = rb7.Checked = rb8.Checked = rb9.Checked = rbEmail.Checked = rbTelefone.Checked = false;
 
-            cbLigas.Text = "";
-            txtVoce.Text = "";
-            txtEmail.Text = "";
+            cbLigas.Text = txtVoce.Text = txtEmail.Text = cbLigas.Text = txtVoce.Text = txtEmail.Text = "";
         }
 
 
