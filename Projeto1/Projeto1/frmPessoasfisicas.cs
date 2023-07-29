@@ -57,18 +57,19 @@ namespace projeto1
             MessageBox.Show("usuario Cadastrado");
         }
 
-        private void txtEmail_TextChanged(object sender, EventArgs e)
+
+        private void txtEmail_Validated(object sender, EventArgs e)
         {
             string email = txtEmail.Text;
             Regex regex = new Regex(@"^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$");
             if (!regex.IsMatch(email))
+             
             {
                 MessageBox.Show("Email inválido");
                 txtEmail.BackColor = Color.Red;
             }
 
-
         }
-}
+    }
 }
 

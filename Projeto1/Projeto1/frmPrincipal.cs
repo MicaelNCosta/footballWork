@@ -62,7 +62,7 @@ namespace projeto1
             vetor[0] = "https://brasilapi.com.br/docs#tag/IBGE ";
             vetor[1] = "https://aws.amazon.com/pt/transcribe/";
             vetor[2] = "https://www.gov.br/conecta/catalogo/apis/cadastro-base-do-cidadao-cbc-cpf/swagger-v2.json/swagger_view";
-            vetor[3] = "Api 4";
+            vetor[3] = "https";
             vetor[4] = "Api 5";
             vetor[5] = "Api 6";
       
@@ -119,6 +119,17 @@ namespace projeto1
 
                 btnRes.ForeColor = Color.Red;
             }
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form frmPessoas = new frmPessoasfisicas();
+            frmPessoas.Show();
         }
     }
 }
