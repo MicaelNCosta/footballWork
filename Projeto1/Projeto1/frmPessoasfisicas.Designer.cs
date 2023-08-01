@@ -55,9 +55,9 @@ namespace projeto1
             this.lblEmail.ForeColor = System.Drawing.Color.Red;
             this.lblEmail.Location = new System.Drawing.Point(152, 91);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(62, 24);
+            this.lblEmail.Size = new System.Drawing.Size(69, 24);
             this.lblEmail.TabIndex = 0;
-            this.lblEmail.Text = "Email";
+            this.lblEmail.Text = "E-Mail";
             // 
             // lblNome
             // 
@@ -103,9 +103,9 @@ namespace projeto1
             this.lblCpf.ForeColor = System.Drawing.Color.Red;
             this.lblCpf.Location = new System.Drawing.Point(758, 190);
             this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(38, 24);
+            this.lblCpf.Size = new System.Drawing.Size(50, 24);
             this.lblCpf.TabIndex = 4;
-            this.lblCpf.Text = "cpf";
+            this.lblCpf.Text = "CPF";
             // 
             // lblCep
             // 
@@ -115,9 +115,9 @@ namespace projeto1
             this.lblCep.ForeColor = System.Drawing.Color.Red;
             this.lblCep.Location = new System.Drawing.Point(758, 291);
             this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(45, 24);
+            this.lblCep.Size = new System.Drawing.Size(51, 24);
             this.lblCep.TabIndex = 5;
-            this.lblCep.Text = "cep";
+            this.lblCep.Text = "CEP";
             // 
             // lblEndereco
             // 
@@ -127,9 +127,9 @@ namespace projeto1
             this.lblEndereco.ForeColor = System.Drawing.Color.Red;
             this.lblEndereco.Location = new System.Drawing.Point(729, 382);
             this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(100, 24);
+            this.lblEndereco.Size = new System.Drawing.Size(102, 24);
             this.lblEndereco.TabIndex = 6;
-            this.lblEndereco.Text = "endereço";
+            this.lblEndereco.Text = "Endereço";
             // 
             // btnCadastre
             // 
