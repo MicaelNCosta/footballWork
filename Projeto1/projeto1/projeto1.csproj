@@ -82,6 +82,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPessoasfisicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPessoasfisicas.Designer.cs">
+      <DependentUpon>frmPessoasfisicas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPlanos.resx">
       <DependentUpon>frmPlanos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPessoasfisicas.resx">
+      <DependentUpon>frmPessoasfisicas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
