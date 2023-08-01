@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmEsqueceuSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEsqueceuSenha.Designer.cs">
+      <DependentUpon>frmEsqueceuSenha.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFormulario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,12 @@
     <Compile Include="frmPessoasjuridica.Designer.cs">
       <DependentUpon>frmPessoasjuridica.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,11 +78,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmEsqueceuSenha.resx">
+      <DependentUpon>frmEsqueceuSenha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFormulario.resx">
       <DependentUpon>frmFormulario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPessoasjuridica.resx">
       <DependentUpon>frmPessoasjuridica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
