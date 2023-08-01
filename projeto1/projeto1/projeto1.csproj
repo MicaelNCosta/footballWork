@@ -52,6 +52,12 @@
     <Compile Include="frmFormulario.Designer.cs">
       <DependentUpon>frmFormulario.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPessoasjuridica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPessoasjuridica.Designer.cs">
+      <DependentUpon>frmPessoasjuridica.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmFormulario.resx">
       <DependentUpon>frmFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPessoasjuridica.resx">
+      <DependentUpon>frmPessoasjuridica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPrincipal.resx">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
