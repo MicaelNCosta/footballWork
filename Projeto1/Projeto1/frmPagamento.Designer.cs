@@ -52,6 +52,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.pbOlho1 = new System.Windows.Forms.PictureBox();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.gbSelecione.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbOlho1)).BeginInit();
             this.SuspendLayout();
@@ -302,6 +303,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 13);
             this.label8.TabIndex = 20;
+            this.label8.UseWaitCursor = true;
             // 
             // button1
             // 
@@ -312,6 +314,7 @@
             this.button1.TabIndex = 21;
             this.button1.Text = "Limpar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pbOlho1
@@ -322,13 +325,26 @@
             this.pbOlho1.Size = new System.Drawing.Size(27, 31);
             this.pbOlho1.TabIndex = 22;
             this.pbOlho1.TabStop = false;
+            this.pbOlho1.UseWaitCursor = true;
             this.pbOlho1.Click += new System.EventHandler(this.pbOlho1_Click);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(583, 415);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(87, 35);
+            this.btnVoltar.TabIndex = 23;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // frmPagamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.pbOlho1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
@@ -389,5 +405,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pbOlho1;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

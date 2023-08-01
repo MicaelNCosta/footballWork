@@ -206,5 +206,11 @@ namespace projeto1
                 pbOlho1.Image = Image.FromFile(@"..\..\Imagem\olho (3) certo.png");
             }
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Form frmPlanos = new frmPlanos();
+            frmPlanos.Show();
+        }
     }
 }
