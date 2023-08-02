@@ -45,6 +45,7 @@ namespace projeto1
             this.txtPessoa = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.btnVoltar1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCnpj
@@ -178,21 +179,36 @@ namespace projeto1
             // 
             // btnCadastrar
             // 
+            this.btnCadastrar.BackColor = System.Drawing.Color.Red;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btnCadastrar.Location = new System.Drawing.Point(843, 422);
+            this.btnCadastrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCadastrar.Location = new System.Drawing.Point(892, 511);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(172, 48);
             this.btnCadastrar.TabIndex = 17;
             this.btnCadastrar.Text = "CADASTRA-SE";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // btnVoltar1
+            // 
+            this.btnVoltar1.BackColor = System.Drawing.Color.Red;
+            this.btnVoltar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnVoltar1.Location = new System.Drawing.Point(12, 511);
+            this.btnVoltar1.Name = "btnVoltar1";
+            this.btnVoltar1.Size = new System.Drawing.Size(172, 48);
+            this.btnVoltar1.TabIndex = 18;
+            this.btnVoltar1.Text = "VOLTAR";
+            this.btnVoltar1.UseVisualStyleBackColor = false;
+            this.btnVoltar1.Click += new System.EventHandler(this.btnVoltar1_Click);
             // 
             // frmPessoasjuridica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 527);
+            this.ClientSize = new System.Drawing.Size(1085, 571);
+            this.Controls.Add(this.btnVoltar1);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.txtPessoa);
@@ -235,5 +251,6 @@ namespace projeto1
         private System.Windows.Forms.TextBox txtPessoa;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Button btnVoltar1;
     }
 }

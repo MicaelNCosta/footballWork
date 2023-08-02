@@ -19,8 +19,11 @@ namespace projeto1
 
         private void btnEsqueceuSenha_Click(object sender, EventArgs e)
         {
-             Form formEsqueceuSenha = new frmEsqueceuSenha();
-             formEsqueceuSenha.Show();
+             Form frmEsqueceuSenhaa = new frmEsqueceuSenha();
+            frmEsqueceuSenhaa.WindowState = FormWindowState.Maximized;
+            frmEsqueceuSenhaa.Show();
+             
+
         }
 
         bool IsValidEmail(string emailLog)
@@ -73,5 +76,28 @@ namespace projeto1
             }
         }
 
+        private void btnCadastroF_Click(object sender, EventArgs e)
+        {
+            Form frmPessoasFisicas = new frmPessoasfisicas();
+            frmPessoasFisicas.WindowState = FormWindowState.Maximized;
+            frmPessoasFisicas.Show();
+        }
+
+        private void btnCadastroJ_Click(object sender, EventArgs e)
+        {
+            Form frmPessoasJuridicas = new frmPessoasjuridica();
+            frmPessoasJuridicas.WindowState = FormWindowState.Maximized;
+            frmPessoasJuridicas.Show();
+        }
+
+        private void btnForm_Click(object sender, EventArgs e)
+        {
+            Form frmFormulario = new frmCadastro();
+            frmFormulario.WindowState = FormWindowState.Maximized;
+            frmFormulario.Show();
+
+            btnCadastroF.Visible = true;
+            btnCadastroJ.Visible = true;
+        }
     }
 }

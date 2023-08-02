@@ -34,12 +34,16 @@ namespace projeto1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1275, 22);
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Bodoni Bd BT", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(559, 260);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 29);
+            this.button1.Size = new System.Drawing.Size(354, 86);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Formulario";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "INICIAR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmPrincipal
             // 

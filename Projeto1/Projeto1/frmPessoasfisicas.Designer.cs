@@ -45,6 +45,7 @@ namespace projeto1
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblEmail
@@ -133,10 +134,10 @@ namespace projeto1
             // 
             // btnCadastre
             // 
-            this.btnCadastre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCadastre.BackColor = System.Drawing.Color.Red;
             this.btnCadastre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastre.ForeColor = System.Drawing.Color.Black;
-            this.btnCadastre.Location = new System.Drawing.Point(407, 470);
+            this.btnCadastre.ForeColor = System.Drawing.Color.White;
+            this.btnCadastre.Location = new System.Drawing.Point(978, 534);
             this.btnCadastre.Name = "btnCadastre";
             this.btnCadastre.Size = new System.Drawing.Size(160, 61);
             this.btnCadastre.TabIndex = 7;
@@ -213,12 +214,26 @@ namespace projeto1
             this.dateTimePicker1.Size = new System.Drawing.Size(270, 29);
             this.dateTimePicker1.TabIndex = 17;
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackColor = System.Drawing.Color.Red;
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ForeColor = System.Drawing.Color.White;
+            this.btnVoltar.Location = new System.Drawing.Point(12, 534);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(160, 61);
+            this.btnVoltar.TabIndex = 18;
+            this.btnVoltar.Text = "VOLTAR";
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // frmPessoasfisicas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1167, 607);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtEndereco);
@@ -261,5 +276,6 @@ namespace projeto1
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

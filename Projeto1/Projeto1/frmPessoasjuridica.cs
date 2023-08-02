@@ -57,6 +57,17 @@ namespace projeto1
             }
             MessageBox.Show(" Usuario cadrastrado");
 
+
+            Form frmPlanos = new frmPlanos();
+            frmPlanos.WindowState = FormWindowState.Maximized;
+            frmPlanos.Show();
+
+        }
+
+        private void btnVoltar1_Click(object sender, EventArgs e)
+        {
+            Form frmVoltar = new frmLogin();
+            this.Hide();
         }
     }
 }

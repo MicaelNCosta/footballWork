@@ -39,10 +39,12 @@ namespace projeto1
             this.btnLogin = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.btnEsqueceuSenha = new System.Windows.Forms.Button();
-            this.btnCadastro = new System.Windows.Forms.Button();
+            this.btnCadastroF = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.pbSenhas = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnCadastroJ = new System.Windows.Forms.Button();
+            this.btnForm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbSenhas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -151,18 +153,20 @@ namespace projeto1
             this.btnEsqueceuSenha.UseVisualStyleBackColor = false;
             this.btnEsqueceuSenha.Click += new System.EventHandler(this.btnEsqueceuSenha_Click);
             // 
-            // btnCadastro
+            // btnCadastroF
             // 
-            this.btnCadastro.BackColor = System.Drawing.Color.White;
-            this.btnCadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastro.ForeColor = System.Drawing.Color.Red;
-            this.btnCadastro.Location = new System.Drawing.Point(648, 449);
-            this.btnCadastro.Name = "btnCadastro";
-            this.btnCadastro.Size = new System.Drawing.Size(222, 29);
-            this.btnCadastro.TabIndex = 11;
-            this.btnCadastro.Text = "CADASTRAR-SE";
-            this.btnCadastro.UseVisualStyleBackColor = false;
+            this.btnCadastroF.BackColor = System.Drawing.Color.White;
+            this.btnCadastroF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastroF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastroF.ForeColor = System.Drawing.Color.Red;
+            this.btnCadastroF.Location = new System.Drawing.Point(567, 500);
+            this.btnCadastroF.Name = "btnCadastroF";
+            this.btnCadastroF.Size = new System.Drawing.Size(166, 36);
+            this.btnCadastroF.TabIndex = 11;
+            this.btnCadastroF.Text = "PESSOA FISICA";
+            this.btnCadastroF.UseVisualStyleBackColor = false;
+            this.btnCadastroF.Visible = false;
+            this.btnCadastroF.Click += new System.EventHandler(this.btnCadastroF_Click);
             // 
             // label6
             // 
@@ -191,14 +195,45 @@ namespace projeto1
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
+            // btnCadastroJ
+            // 
+            this.btnCadastroJ.BackColor = System.Drawing.Color.White;
+            this.btnCadastroJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCadastroJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastroJ.ForeColor = System.Drawing.Color.Red;
+            this.btnCadastroJ.Location = new System.Drawing.Point(739, 500);
+            this.btnCadastroJ.Name = "btnCadastroJ";
+            this.btnCadastroJ.Size = new System.Drawing.Size(190, 36);
+            this.btnCadastroJ.TabIndex = 16;
+            this.btnCadastroJ.Text = "PESSOA JURIDICA";
+            this.btnCadastroJ.UseVisualStyleBackColor = false;
+            this.btnCadastroJ.Visible = false;
+            this.btnCadastroJ.Click += new System.EventHandler(this.btnCadastroJ_Click);
+            // 
+            // btnForm
+            // 
+            this.btnForm.BackColor = System.Drawing.Color.White;
+            this.btnForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnForm.ForeColor = System.Drawing.Color.Red;
+            this.btnForm.Location = new System.Drawing.Point(567, 458);
+            this.btnForm.Name = "btnForm";
+            this.btnForm.Size = new System.Drawing.Size(362, 36);
+            this.btnForm.TabIndex = 17;
+            this.btnForm.Text = "FORMULARIO";
+            this.btnForm.UseVisualStyleBackColor = false;
+            this.btnForm.Click += new System.EventHandler(this.btnForm_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 581);
+            this.Controls.Add(this.btnForm);
+            this.Controls.Add(this.btnCadastroJ);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pbSenhas);
-            this.Controls.Add(this.btnCadastro);
+            this.Controls.Add(this.btnCadastroF);
             this.Controls.Add(this.btnEsqueceuSenha);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnLogin);
@@ -231,9 +266,11 @@ namespace projeto1
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnEsqueceuSenha;
-        private System.Windows.Forms.Button btnCadastro;
+        private System.Windows.Forms.Button btnCadastroF;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pbSenhas;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnCadastroJ;
+        private System.Windows.Forms.Button btnForm;
     }
 }

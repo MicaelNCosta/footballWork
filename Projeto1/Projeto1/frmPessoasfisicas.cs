@@ -55,6 +55,13 @@ namespace projeto1
                 return;
             }
             MessageBox.Show("usuario Cadastrado");
+
+
+            Form frmPlanos = new frmPlanos();
+            frmPlanos.WindowState = FormWindowState.Maximized;
+            frmPlanos.Show();
+
+
         }
 
 
@@ -69,6 +76,14 @@ namespace projeto1
                 txtEmail.BackColor = Color.Red;
             }
 
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Form frmLogin = new frmLogin();
+            this.Hide();
+            
+            
         }
     }
 }

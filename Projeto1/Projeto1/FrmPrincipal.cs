@@ -24,9 +24,9 @@ namespace projeto1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form frmCadastro = new frmCadastro();
-            frmCadastro.WindowState = FormWindowState.Maximized;
-            frmCadastro.Show();
+            Form frmLogin = new frmLogin();
+            frmLogin.WindowState = FormWindowState.Maximized;
+            frmLogin.Show();
         }
 
         private void label3_Click(object sender, EventArgs e)

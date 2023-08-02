@@ -20,7 +20,8 @@ namespace projeto1
         private void button2_Click(object sender, EventArgs e)
         {
             Form formVoltar = new frmLogin();
-            formVoltar.Show();
+            this.Hide();
+
         }
 
         bool IsValidEmail(string email)
