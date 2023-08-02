@@ -29,12 +29,21 @@ namespace projeto1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+
+
+
             string planos = "";
             string plano1 = "";
             if (rbGratuito.Checked)
             {
                 planos = "Plano Gratuito";
+                
                 MessageBox.Show("Parabens você selecionou o nosso plano gratuito");
+
+                Form frmligas = new frmligas();
+                frmligas.WindowState = FormWindowState.Maximized;
+                frmligas.Show();
             }
 
             else if (rbPremiun.Checked)

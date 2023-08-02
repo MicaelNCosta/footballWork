@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmligas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmligas.Designer.cs">
+      <DependentUpon>frmligas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPagamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFormulario.resx">
       <DependentUpon>frmFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmligas.resx">
+      <DependentUpon>frmligas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPessoasjuridica.resx">
       <DependentUpon>frmPessoasjuridica.cs</DependentUpon>
