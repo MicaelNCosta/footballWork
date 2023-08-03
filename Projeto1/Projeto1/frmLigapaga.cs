@@ -17,46 +17,67 @@ namespace projeto1
             InitializeComponent();
         }
 
-        private void frmLigapaga_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string txt = "";
             
-            if (chInglesa.Checked)
+            if (chInglesa.Checked )
             {
-                txt += chInglesa.Text + " |Liga inglesa ";
+                txt += chInglesa.Text + " Liga inglesa |";
                 
             }
             if (chFrancesa.Checked)
             {
-                txt += chFrancesa.Text + " |Liga Francesa";
+                txt += chFrancesa.Text +  " Liga Francesa |";
                 
             }
-            if (chPortuguesa.Checked)
+            if (chAlema.Checked)
             {
-                txt += chPortuguesa.Text + " |Liga Portuguesa";
-               
+                txt += chAlema.Text + " LigaAlema |";
+                
             }
             if (chEspanhola.Checked)
             {
-                txt += chEspanhola.Text + "|Liga Espanhola";
+                txt += chEspanhola.Text + " Liga Espanhola |";
                 
             }
-            if (chItaliana.Checked)
+            if (chItalia.Checked)
             {
-                txt += chItaliana.Text + "|Liga Italiana";
-                
+                txt += chItalia.Text + " Liga Italiana |";            
+              
             }
 
+            MessageBox.Show(txt ,"Ligas selecionadas : ");
+                      
+           
             
-            else
-            {
-                MessageBox.Show(txt);
-            }
+             
+            
+
+
+
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+            this.Hide();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            chEspanhola.Checked = false;
+            chFrancesa.Checked = false;
+            chInglesa.Checked = false;
+            chItalia.Checked = false;
+            chAlema.Checked = false;
+        }
+
+        private void chItalia_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

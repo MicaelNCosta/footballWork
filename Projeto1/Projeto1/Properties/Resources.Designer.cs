@@ -184,6 +184,16 @@ namespace projeto1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap premierING_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("premierING-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap serie_a_tim___2020_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("serie_a_tim_-_2020-removebg-preview", resourceCulture);

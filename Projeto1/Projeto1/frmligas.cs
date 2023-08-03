@@ -31,9 +31,9 @@ namespace projeto1
                 txt += chFrancesa.Text + " |Liga Francesa";
                 contador++;
             }
-            if (chPortuguesa.Checked)
+            if (chAlema.Checked)
             {
-                txt += chPortuguesa.Text + " |Liga Portuguesa";
+                txt += chAlema.Text + " |LigaAlema";
                 contador++;
             }
             if (chEspanhola.Checked)
@@ -67,7 +67,23 @@ namespace projeto1
             chFrancesa.Checked = false;
             chInglesa.Checked = false;
             chItaliana.Checked = false;
-            chPortuguesa.Checked = false;
+            chAlema.Checked = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+        
+            this.Hide();
+        }
+
+        private void chItaliana_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chItalia_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
