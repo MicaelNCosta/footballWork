@@ -114,6 +114,9 @@
     <EmbeddedResource Include="frmFormulario.resx">
       <DependentUpon>frmFormulario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLigapaga.resx">
+      <DependentUpon>frmLigapaga.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmligas.resx">
       <DependentUpon>frmligas.cs</DependentUpon>
     </EmbeddedResource>

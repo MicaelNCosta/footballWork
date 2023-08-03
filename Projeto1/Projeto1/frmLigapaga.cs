@@ -16,5 +16,47 @@ namespace projeto1
         {
             InitializeComponent();
         }
+
+        private void frmLigapaga_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string txt = "";
+            
+            if (chInglesa.Checked)
+            {
+                txt += chInglesa.Text + " |Liga inglesa ";
+                
+            }
+            if (chFrancesa.Checked)
+            {
+                txt += chFrancesa.Text + " |Liga Francesa";
+                
+            }
+            if (chPortuguesa.Checked)
+            {
+                txt += chPortuguesa.Text + " |Liga Portuguesa";
+               
+            }
+            if (chEspanhola.Checked)
+            {
+                txt += chEspanhola.Text + "|Liga Espanhola";
+                
+            }
+            if (chItaliana.Checked)
+            {
+                txt += chItaliana.Text + "|Liga Italiana";
+                
+            }
+
+            
+            else
+            {
+                MessageBox.Show(txt);
+            }
+        }
     }
 }

@@ -132,7 +132,7 @@ namespace projeto1
                 "Numero do cartão"+mskCartao.Text );
 
             this.Hide();
-            Form frmligas = new frmligas();
+            Form frmligas = new frmLigapaga();
             frmligas.WindowState = FormWindowState.Maximized;
             frmligas.Show();
             
