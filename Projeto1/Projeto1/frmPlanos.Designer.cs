@@ -46,6 +46,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -262,12 +264,22 @@
             this.label16.TabIndex = 21;
             this.label16.Text = "$100,00";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::projeto1.Properties.Resources.Chart_Talk_logo_template_Financial_growth_talk_logo__removebg_preview_updated_removebg_preview;
+            this.pictureBox2.Location = new System.Drawing.Point(941, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(213, 228);
+            this.pictureBox2.TabIndex = 22;
+            this.pictureBox2.TabStop = false;
+            // 
             // frmPlanos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1200, 623);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.rbPremiun);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.rbGratuito);
@@ -290,6 +302,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPlanos";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,5 +327,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

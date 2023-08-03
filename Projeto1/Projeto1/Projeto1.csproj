@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmLigapaga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLigapaga.Designer.cs">
+      <DependentUpon>frmLigapaga.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmligas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,18 +137,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -157,8 +163,19 @@
     <None Include="Resources\login.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="imagem\italia %281%29.png" />
     <Content Include="imagem\olho %282%29 certo.png" />
     <Content Include="imagem\olho %283%29 certo.png" />
+    <None Include="Resources\premier__1_-removebg-preview %281%291.png" />
+    <None Include="Resources\serie_a_tim_-_2020-removebg-preview.png" />
+    <None Include="Resources\laliga-removebg-preview.png" />
+    <None Include="Resources\ligue-1.png" />
+    <None Include="Resources\200px-Bundesliga_logo_%282017%29.png" />
+    <None Include="Resources\premier__1_-removebg-preview %281%29.png" />
+    <None Include="Resources\Chart_Talk_logo_template.Financial_growth_talk_logo_-removebg-preview_updated-removebg-preview.png" />
+    <None Include="Resources\Chart Talk logo template.Financial growth talk logo 1.png" />
+    <None Include="Resources\Chart Talk logo template.Financial growth talk logo .png" />
+    <None Include="Resources\Chart_Talk_logo_template.Financial_growth_talk_logo_-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

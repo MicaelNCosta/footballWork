@@ -67,12 +67,14 @@ namespace projeto1
             this.rbFinalS = new System.Windows.Forms.RadioButton();
             this.mskNumero = new System.Windows.Forms.MaskedTextBox();
             this.lblTel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gpBox1.SuspendLayout();
             this.gpBox3.SuspendLayout();
             this.gpBox2.SuspendLayout();
             this.gpBox4.SuspendLayout();
             this.gbEmail.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -80,7 +82,7 @@ namespace projeto1
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 19);
+            this.label1.Location = new System.Drawing.Point(25, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(205, 37);
             this.label1.TabIndex = 0;
@@ -128,24 +130,28 @@ namespace projeto1
             // 
             // btnLimpar
             // 
+            this.btnLimpar.BackColor = System.Drawing.Color.Red;
             this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpar.Location = new System.Drawing.Point(1209, 576);
+            this.btnLimpar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnLimpar.Location = new System.Drawing.Point(1102, 576);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar.Size = new System.Drawing.Size(157, 39);
             this.btnLimpar.TabIndex = 10;
-            this.btnLimpar.Text = "Limpar";
-            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Text = "LIMPAR";
+            this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // btnFinalizar
             // 
+            this.btnFinalizar.BackColor = System.Drawing.Color.Red;
             this.btnFinalizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFinalizar.Location = new System.Drawing.Point(1305, 576);
+            this.btnFinalizar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFinalizar.Location = new System.Drawing.Point(1265, 576);
             this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(109, 23);
+            this.btnFinalizar.Size = new System.Drawing.Size(157, 39);
             this.btnFinalizar.TabIndex = 11;
-            this.btnFinalizar.Text = "Finalizar formulário";
-            this.btnFinalizar.UseVisualStyleBackColor = true;
+            this.btnFinalizar.Text = "FINALIZAR FORMULÁRIO";
+            this.btnFinalizar.UseVisualStyleBackColor = false;
             this.btnFinalizar.Click += new System.EventHandler(this.bntFinalizar_Click);
             // 
             // cbLigas
@@ -198,7 +204,7 @@ namespace projeto1
             // 
             this.rb1.AutoSize = true;
             this.rb1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rb1.Location = new System.Drawing.Point(6, 19);
+            this.rb1.Location = new System.Drawing.Point(6, 20);
             this.rb1.Name = "rb1";
             this.rb1.Size = new System.Drawing.Size(44, 17);
             this.rb1.TabIndex = 28;
@@ -210,7 +216,7 @@ namespace projeto1
             // 
             this.rb2.AutoSize = true;
             this.rb2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rb2.Location = new System.Drawing.Point(125, 19);
+            this.rb2.Location = new System.Drawing.Point(125, 20);
             this.rb2.Name = "rb2";
             this.rb2.Size = new System.Drawing.Size(48, 17);
             this.rb2.TabIndex = 29;
@@ -242,7 +248,7 @@ namespace projeto1
             // 
             this.rb6.AutoSize = true;
             this.rb6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rb6.Location = new System.Drawing.Point(125, 19);
+            this.rb6.Location = new System.Drawing.Point(125, 20);
             this.rb6.Name = "rb6";
             this.rb6.Size = new System.Drawing.Size(80, 17);
             this.rb6.TabIndex = 29;
@@ -254,7 +260,7 @@ namespace projeto1
             // 
             this.rb5.AutoSize = true;
             this.rb5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rb5.Location = new System.Drawing.Point(6, 19);
+            this.rb5.Location = new System.Drawing.Point(6, 20);
             this.rb5.Name = "rb5";
             this.rb5.Size = new System.Drawing.Size(62, 17);
             this.rb5.TabIndex = 28;
@@ -276,7 +282,7 @@ namespace projeto1
             // 
             this.rb4.AutoSize = true;
             this.rb4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rb4.Location = new System.Drawing.Point(125, 19);
+            this.rb4.Location = new System.Drawing.Point(125, 20);
             this.rb4.Name = "rb4";
             this.rb4.Size = new System.Drawing.Size(48, 17);
             this.rb4.TabIndex = 29;
@@ -288,7 +294,7 @@ namespace projeto1
             // 
             this.rb3.AutoSize = true;
             this.rb3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rb3.Location = new System.Drawing.Point(6, 19);
+            this.rb3.Location = new System.Drawing.Point(6, 20);
             this.rb3.Name = "rb3";
             this.rb3.Size = new System.Drawing.Size(44, 17);
             this.rb3.TabIndex = 28;
@@ -308,7 +314,7 @@ namespace projeto1
             // rb7
             // 
             this.rb7.AutoSize = true;
-            this.rb7.Location = new System.Drawing.Point(6, 19);
+            this.rb7.Location = new System.Drawing.Point(6, 20);
             this.rb7.Name = "rb7";
             this.rb7.Size = new System.Drawing.Size(78, 17);
             this.rb7.TabIndex = 37;
@@ -319,7 +325,7 @@ namespace projeto1
             // rb8
             // 
             this.rb8.AutoSize = true;
-            this.rb8.Location = new System.Drawing.Point(126, 19);
+            this.rb8.Location = new System.Drawing.Point(126, 20);
             this.rb8.Name = "rb8";
             this.rb8.Size = new System.Drawing.Size(111, 17);
             this.rb8.TabIndex = 38;
@@ -330,7 +336,7 @@ namespace projeto1
             // rb9
             // 
             this.rb9.AutoSize = true;
-            this.rb9.Location = new System.Drawing.Point(281, 19);
+            this.rb9.Location = new System.Drawing.Point(281, 20);
             this.rb9.Name = "rb9";
             this.rb9.Size = new System.Drawing.Size(84, 17);
             this.rb9.TabIndex = 39;
@@ -363,7 +369,7 @@ namespace projeto1
             // 
             this.rbTelefone.AutoSize = true;
             this.rbTelefone.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbTelefone.Location = new System.Drawing.Point(125, 19);
+            this.rbTelefone.Location = new System.Drawing.Point(125, 20);
             this.rbTelefone.Name = "rbTelefone";
             this.rbTelefone.Size = new System.Drawing.Size(81, 17);
             this.rbTelefone.TabIndex = 29;
@@ -375,7 +381,7 @@ namespace projeto1
             // 
             this.rbEmail.AutoSize = true;
             this.rbEmail.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbEmail.Location = new System.Drawing.Point(6, 19);
+            this.rbEmail.Location = new System.Drawing.Point(6, 20);
             this.rbEmail.Name = "rbEmail";
             this.rbEmail.Size = new System.Drawing.Size(57, 17);
             this.rbEmail.TabIndex = 28;
@@ -385,7 +391,7 @@ namespace projeto1
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(476, 539);
+            this.txtEmail.Location = new System.Drawing.Point(476, 540);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(327, 20);
             this.txtEmail.TabIndex = 42;
@@ -425,7 +431,7 @@ namespace projeto1
             // 
             this.groupBox1.Controls.Add(this.rbFinalN);
             this.groupBox1.Controls.Add(this.rbFinalS);
-            this.groupBox1.Location = new System.Drawing.Point(995, 474);
+            this.groupBox1.Location = new System.Drawing.Point(995, 475);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(228, 49);
             this.groupBox1.TabIndex = 46;
@@ -435,7 +441,7 @@ namespace projeto1
             // 
             this.rbFinalN.AutoSize = true;
             this.rbFinalN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbFinalN.Location = new System.Drawing.Point(153, 19);
+            this.rbFinalN.Location = new System.Drawing.Point(153, 20);
             this.rbFinalN.Name = "rbFinalN";
             this.rbFinalN.Size = new System.Drawing.Size(48, 17);
             this.rbFinalN.TabIndex = 29;
@@ -448,7 +454,7 @@ namespace projeto1
             // 
             this.rbFinalS.AutoSize = true;
             this.rbFinalS.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbFinalS.Location = new System.Drawing.Point(31, 19);
+            this.rbFinalS.Location = new System.Drawing.Point(31, 20);
             this.rbFinalS.Name = "rbFinalS";
             this.rbFinalS.Size = new System.Drawing.Size(44, 17);
             this.rbFinalS.TabIndex = 28;
@@ -459,7 +465,7 @@ namespace projeto1
             // 
             // mskNumero
             // 
-            this.mskNumero.Location = new System.Drawing.Point(475, 539);
+            this.mskNumero.Location = new System.Drawing.Point(475, 540);
             this.mskNumero.Mask = "(99) 0 0000-0000 ";
             this.mskNumero.Name = "mskNumero";
             this.mskNumero.Size = new System.Drawing.Size(95, 20);
@@ -478,12 +484,21 @@ namespace projeto1
             this.lblTel.Text = "TEL :";
             this.lblTel.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::projeto1.Properties.Resources.Chart_Talk_logo_template_Financial_growth_talk_logo__removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(653, 107);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(606, 508);
+            this.pictureBox1.TabIndex = 50;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1473, 655);
+            this.ClientSize = new System.Drawing.Size(1473, 690);
             this.Controls.Add(this.lblTel);
             this.Controls.Add(this.mskNumero);
             this.Controls.Add(this.groupBox1);
@@ -508,6 +523,7 @@ namespace projeto1
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadastro";
@@ -525,6 +541,7 @@ namespace projeto1
             this.gbEmail.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -569,5 +586,6 @@ namespace projeto1
         private System.Windows.Forms.RadioButton rbFinalS;
         private System.Windows.Forms.MaskedTextBox mskNumero;
         private System.Windows.Forms.Label lblTel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

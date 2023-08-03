@@ -46,6 +46,8 @@ namespace projeto1
             this.txtNome = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnVoltar1 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCnpj
@@ -203,6 +205,15 @@ namespace projeto1
             this.btnVoltar1.UseVisualStyleBackColor = false;
             this.btnVoltar1.Click += new System.EventHandler(this.btnVoltar1_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::projeto1.Properties.Resources.Chart_Talk_logo_template_Financial_growth_talk_logo__removebg_preview;
+            this.pictureBox2.Location = new System.Drawing.Point(632, -29);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(432, 422);
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
             // frmPessoasjuridica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,9 +236,11 @@ namespace projeto1
             this.Controls.Add(this.lblNomefantasia);
             this.Controls.Add(this.lblRazãosocial);
             this.Controls.Add(this.lblCnpj);
+            this.Controls.Add(this.pictureBox2);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frmPessoasjuridica";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,5 +265,6 @@ namespace projeto1
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnVoltar1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

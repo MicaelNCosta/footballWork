@@ -62,19 +62,6 @@ namespace projeto1
             }
         }
 
-        private void pbSenhas_Click_1(object sender, EventArgs e)
-        {
-            if (txtSenha.PasswordChar == '*')
-            {
-                txtSenha.PasswordChar = '\0'; // Mostrar a senha
-                pbSenhas.Image = Image.FromFile(@"..\..\ImagensBrian\MostrarSenha.png");
-            }
-            else
-            {
-                txtSenha.PasswordChar = '*'; // Ocultar a senha
-                pbSenhas.Image = Image.FromFile(@"..\..\ImagensBrian\Ocultarsenha.png");
-            }
-        }
 
         private void btnCadastroF_Click(object sender, EventArgs e)
         {
@@ -98,6 +85,20 @@ namespace projeto1
 
             btnCadastroF.Visible = true;
             btnCadastroJ.Visible = true;
+        }
+
+        private void pbSenhas_Click(object sender, EventArgs e)
+        {
+            if (txtSenha.PasswordChar == '*')
+            {
+                txtSenha.PasswordChar = '\0'; // Mostrar a senha
+                pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (3) certo.png");
+            }
+            else
+            {
+               txtSenha.PasswordChar = '*'; // Ocultar a senha
+               pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (2) certo.png");
+            }
         }
     }
 }

@@ -131,11 +131,14 @@ namespace projeto1
                 "Senha:"+txtSenha.Text + "\n" +
                 "Numero do cartão"+mskCartao.Text );
 
-                
-                
-
-               
+            this.Hide();
+            Form frmligas = new frmligas();
+            frmligas.WindowState = FormWindowState.Maximized;
+            frmligas.Show();
             
+
+
+
         }
 
         private void mskCvc_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)

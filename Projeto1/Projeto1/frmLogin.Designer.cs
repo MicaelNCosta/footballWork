@@ -41,10 +41,10 @@ namespace projeto1
             this.btnEsqueceuSenha = new System.Windows.Forms.Button();
             this.btnCadastroF = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.pbSenhas = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnCadastroJ = new System.Windows.Forms.Button();
             this.btnForm = new System.Windows.Forms.Button();
+            this.pbSenhas = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbSenhas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -178,23 +178,6 @@ namespace projeto1
             this.label6.TabIndex = 12;
             this.label6.Text = "FOOTBALLWORK";
             // 
-            // pbSenhas
-            // 
-            this.pbSenhas.Location = new System.Drawing.Point(899, 241);
-            this.pbSenhas.Name = "pbSenhas";
-            this.pbSenhas.Size = new System.Drawing.Size(30, 26);
-            this.pbSenhas.TabIndex = 13;
-            this.pbSenhas.TabStop = false;
-            this.pbSenhas.Click += new System.EventHandler(this.pbSenhas_Click_1);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(923, -9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(159, 173);
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
             // btnCadastroJ
             // 
             this.btnCadastroJ.BackColor = System.Drawing.Color.White;
@@ -224,6 +207,25 @@ namespace projeto1
             this.btnForm.UseVisualStyleBackColor = false;
             this.btnForm.Click += new System.EventHandler(this.btnForm_Click);
             // 
+            // pbSenhas
+            // 
+            this.pbSenhas.Image = global::projeto1.Properties.Resources.olho__2__certo;
+            this.pbSenhas.Location = new System.Drawing.Point(899, 241);
+            this.pbSenhas.Name = "pbSenhas";
+            this.pbSenhas.Size = new System.Drawing.Size(30, 26);
+            this.pbSenhas.TabIndex = 13;
+            this.pbSenhas.TabStop = false;
+            this.pbSenhas.Click += new System.EventHandler(this.pbSenhas_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::projeto1.Properties.Resources.Chart_Talk_logo_template_Financial_growth_talk_logo__removebg_preview_updated_removebg_preview;
+            this.pictureBox2.Location = new System.Drawing.Point(919, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(213, 228);
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,7 +233,6 @@ namespace projeto1
             this.ClientSize = new System.Drawing.Size(1094, 581);
             this.Controls.Add(this.btnForm);
             this.Controls.Add(this.btnCadastroJ);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pbSenhas);
             this.Controls.Add(this.btnCadastroF);
             this.Controls.Add(this.btnEsqueceuSenha);
@@ -245,6 +246,7 @@ namespace projeto1
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox2);
             this.Name = "frmLogin";
             this.Text = "Login FootballWork";
             ((System.ComponentModel.ISupportInitialize)(this.pbSenhas)).EndInit();

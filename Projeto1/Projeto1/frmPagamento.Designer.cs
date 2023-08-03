@@ -181,6 +181,7 @@
             // 
             this.btnProsseguir.BackColor = System.Drawing.Color.Red;
             this.btnProsseguir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProsseguir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnProsseguir.Location = new System.Drawing.Point(523, 299);
             this.btnProsseguir.Name = "btnProsseguir";
             this.btnProsseguir.Size = new System.Drawing.Size(135, 60);
@@ -280,7 +281,7 @@
             this.label2.ForeColor = System.Drawing.Color.Brown;
             this.label2.Location = new System.Drawing.Point(12, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 16);
+            this.label2.Size = new System.Drawing.Size(208, 16);
             this.label2.TabIndex = 18;
             this.label2.Text = "Preencha seus dados";
             this.label2.UseWaitCursor = true;
@@ -337,6 +338,7 @@
             this.btnVoltar.TabIndex = 23;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.UseWaitCursor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // frmPagamento
