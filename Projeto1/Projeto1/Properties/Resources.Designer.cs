@@ -73,6 +73,16 @@ namespace projeto1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _200px_Bundesliga_logo__2017_1 {
+            get {
+                object obj = ResourceManager.GetObject("200px-Bundesliga_logo_(2017)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Chart_Talk_logo_template_Financial_growth_talk_logo_ {
             get {
                 object obj = ResourceManager.GetObject("Chart Talk logo template.Financial growth talk logo ", resourceCulture);
@@ -114,9 +124,29 @@ namespace projeto1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap laliga_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("laliga-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ligue_1 {
             get {
                 object obj = ResourceManager.GetObject("ligue-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ligue_11 {
+            get {
+                object obj = ResourceManager.GetObject("ligue-11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -197,6 +227,16 @@ namespace projeto1.Properties {
         internal static System.Drawing.Bitmap serie_a_tim___2020_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("serie_a_tim_-_2020-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap serie_a_tim___2020_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("serie_a_tim_-_2020-removebg-preview1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

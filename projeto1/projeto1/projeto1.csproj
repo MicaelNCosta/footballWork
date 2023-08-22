@@ -169,6 +169,10 @@
     <Content Include="imagem\italia %281%29.png" />
     <Content Include="imagem\olho %282%29 certo.png" />
     <Content Include="imagem\olho %283%29 certo.png" />
+    <None Include="Resources\serie_a_tim_-_2020-removebg-preview1.png" />
+    <None Include="Resources\laliga-removebg-preview1.png" />
+    <None Include="Resources\200px-Bundesliga_logo_%282017%291.png" />
+    <None Include="Resources\ligue-11.png" />
     <None Include="Resources\premierING-removebg-preview.png" />
     <None Include="Resources\premier__1_-removebg-preview %281%291.png" />
     <None Include="Resources\serie_a_tim_-_2020-removebg-preview.png" />
