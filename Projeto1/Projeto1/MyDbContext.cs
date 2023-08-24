@@ -12,6 +12,5 @@ namespace projeto1
     class MyDbContext:DbContext
     {
       public MyDbContext() : base("name=MyDbContext") { }
-
     }
 }

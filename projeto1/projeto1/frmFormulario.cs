@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
+using MySql.Data.MySqlClient;
 
 namespace projeto1
 {
@@ -126,6 +127,44 @@ namespace projeto1
                 "\n" + 
                 "\n" +
                 "Obrigado por responder o formulário.", "Fomulário finalizado", MessageBoxButtons.OK);//MessageBoxIcon.Information);
+
+            using (MyDbContext db = new MyDbContext())
+
+            {
+                /*pergunta_3,pergunta_4,pergunta_5,pergunta_6,pergunta_7,sobre) primerio parentese*/
+               
+                /*@pergunta_3,@pergunta_4,@pergunta_5,@pergunta_6,@pergunta_7,@sobre)" segundo parenteses*/
+               
+                string query = @"INSERT INTO formulario (pergunta_1, pergunta_2, sobre, usuario_id) VALUES (@pergunta_1, @pergunta_2,@sobre,@usuario_id)";
+
+                bool csim = rb1.Checked; // Obtém o estado do RadioButton
+                bool csim2 = rb3.Checked;
+                int bsim = csim ? 1 : 0; // Converte para 1 ou 0
+                int bsim2 = csim2 ? 1 : 0;
+
+
+
+                var parameters = new[]
+
+                {
+
+
+                    new MySqlParameter("@pergunta_1", bsim ),
+
+                    new MySqlParameter("@pergunta_2", bsim2 ),
+
+                    new MySqlParameter("@sobre", voce),
+
+                    new MySqlParameter("@usuario_id", 1)
+
+                };
+
+
+
+                int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
+
+            }
+
             this.Close();
         }
 
