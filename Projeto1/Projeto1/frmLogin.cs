@@ -7,9 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
 
 namespace projeto1
-{
+{ 
     public partial class frmLogin : Form
     {
         public frmLogin()
@@ -19,10 +22,10 @@ namespace projeto1
 
         private void btnEsqueceuSenha_Click(object sender, EventArgs e)
         {
-             Form frmEsqueceuSenhaa = new frmEsqueceuSenha();
+            Form frmEsqueceuSenhaa = new frmEsqueceuSenha();
             frmEsqueceuSenhaa.WindowState = FormWindowState.Maximized;
             frmEsqueceuSenhaa.Show();
-             
+
 
         }
 
@@ -34,20 +37,26 @@ namespace projeto1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string senhacorrect = txtSenha.Text;
-            int n = 1234;
+            string senha = txtSenha.Text;
+            string email = txtEmail.Text;
 
-            if (int.TryParse(senhacorrect, out int login) && login == n)
+            using (MyDbContext db = new MyDbContext())
             {
-                MessageBox.Show("Obrigado por Se juntar a Nós ", " BEM VINDO ", MessageBoxButtons.OK);
-            }
-            else
-            {
-                MessageBox.Show("SENHA INCORRETA,POR FAVOR TENTE NOVAMENTE");
-            }
-         }
+                string select = @"SELECT 1 FROM usuarios  WHERE email = '"+email+"' AND senha = '"+senha+"';";
+                MessageBox.Show(select);
 
-
+                int rowsAffect = db.Database.ExecuteSqlCommand(select);
+                if (rowsAffect == 1)
+                {
+                    MessageBox.Show("Obrigado por Se juntar a Nós ", " BEM VINDO ", MessageBoxButtons.OK);
+                }
+                else
+                {
+                    MessageBox.Show("SENHA INCORRETA,POR FAVOR TENTE NOVAMENTE");
+                }
+            }
+            
+        }
         private void txtEmail_Validated(object sender, EventArgs e)
         {
             string email = txtEmail.Text;
@@ -63,42 +72,43 @@ namespace projeto1
         }
 
 
-        private void btnCadastroF_Click(object sender, EventArgs e)
-        {
-            Form frmPessoasFisicas = new frmPessoasfisicas();
-            frmPessoasFisicas.WindowState = FormWindowState.Maximized;
-            frmPessoasFisicas.Show();
-        }
-
-        private void btnCadastroJ_Click(object sender, EventArgs e)
-        {
-            Form frmPessoasJuridicas = new frmPessoasjuridica();
-            frmPessoasJuridicas.WindowState = FormWindowState.Maximized;
-            frmPessoasJuridicas.Show();
-        }
-
-        private void btnForm_Click(object sender, EventArgs e)
-        {
-            Form frmFormulario = new frmCadastro();
-            frmFormulario.WindowState = FormWindowState.Maximized;
-            frmFormulario.Show();
-
-            btnCadastroF.Visible = true;
-            btnCadastroJ.Visible = true;
-        }
-
-        private void pbSenhas_Click(object sender, EventArgs e)
-        {
-            if (txtSenha.PasswordChar == '*')
+            private void btnCadastroF_Click(object sender, EventArgs e)
             {
-                txtSenha.PasswordChar = '\0'; // Mostrar a senha
-                pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (3) certo.png");
+                Form frmPessoasFisicas = new frmPessoasfisicas();
+                frmPessoasFisicas.WindowState = FormWindowState.Maximized;
+                frmPessoasFisicas.Show();
             }
-            else
+
+            private void btnCadastroJ_Click(object sender, EventArgs e)
             {
-               txtSenha.PasswordChar = '*'; // Ocultar a senha
-               pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (2) certo.png");
+                Form frmPessoasJuridicas = new frmPessoasjuridica();
+                frmPessoasJuridicas.WindowState = FormWindowState.Maximized;
+                frmPessoasJuridicas.Show();
             }
-        }
+
+            private void btnForm_Click(object sender, EventArgs e)
+            {
+                Form frmFormulario = new frmCadastro();
+                frmFormulario.WindowState = FormWindowState.Maximized;
+                frmFormulario.Show();
+
+                btnCadastroF.Visible = true;
+                btnCadastroJ.Visible = true;
+            }
+
+            private void pbSenhas_Click(object sender, EventArgs e)
+            {
+                if (txtSenha.PasswordChar == '*')
+                {
+                    txtSenha.PasswordChar = '\0'; // Mostrar a senha
+                    pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (3) certo.png");
+                }
+                else
+                {
+                    txtSenha.PasswordChar = '*'; // Ocultar a senha
+                    pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (2) certo.png");
+                }
+            }
     }
 }
+

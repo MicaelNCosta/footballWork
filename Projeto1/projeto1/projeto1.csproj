@@ -173,6 +173,7 @@
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="MyDbContext.cs" />
+    <Compile Include="MysqlParameter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmEsqueceuSenha.resx">
