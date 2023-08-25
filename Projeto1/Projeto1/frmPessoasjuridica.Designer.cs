@@ -31,9 +31,8 @@ namespace projeto1
         {
             this.lblCnpj = new System.Windows.Forms.Label();
             this.lblRazãosocial = new System.Windows.Forms.Label();
-            this.lblNomefantasia = new System.Windows.Forms.Label();
-            this.lblTipopessoajurídica = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblPessoajurídica = new System.Windows.Forms.Label();
             this.lblCidade = new System.Windows.Forms.Label();
             this.lblNaturalidade = new System.Windows.Forms.Label();
             this.lblUf = new System.Windows.Forms.Label();
@@ -41,12 +40,13 @@ namespace projeto1
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.txtRazão = new System.Windows.Forms.TextBox();
             this.txtUf = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPessoa = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.btnVoltar1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCep = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,35 +70,25 @@ namespace projeto1
             this.lblRazãosocial.TabIndex = 1;
             this.lblRazãosocial.Text = "Razão Social:";
             // 
-            // lblNomefantasia
+            // lblNome
             // 
-            this.lblNomefantasia.AutoSize = true;
-            this.lblNomefantasia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomefantasia.Location = new System.Drawing.Point(49, 168);
-            this.lblNomefantasia.Name = "lblNomefantasia";
-            this.lblNomefantasia.Size = new System.Drawing.Size(156, 24);
-            this.lblNomefantasia.TabIndex = 2;
-            this.lblNomefantasia.Text = "Nome Fantasia:";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(109, 172);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(72, 24);
+            this.lblNome.TabIndex = 2;
+            this.lblNome.Text = "Nome:";
             // 
-            // lblTipopessoajurídica
+            // lblPessoajurídica
             // 
-            this.lblTipopessoajurídica.AutoSize = true;
-            this.lblTipopessoajurídica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipopessoajurídica.Location = new System.Drawing.Point(12, 229);
-            this.lblTipopessoajurídica.Name = "lblTipopessoajurídica";
-            this.lblTipopessoajurídica.Size = new System.Drawing.Size(211, 24);
-            this.lblTipopessoajurídica.TabIndex = 3;
-            this.lblTipopessoajurídica.Text = "Tipo Pessoa Jurídica:";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(130, 290);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(75, 24);
-            this.lblEmail.TabIndex = 4;
-            this.lblEmail.Text = "E-mail:";
+            this.lblPessoajurídica.AutoSize = true;
+            this.lblPessoajurídica.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPessoajurídica.Location = new System.Drawing.Point(27, 229);
+            this.lblPessoajurídica.Name = "lblPessoajurídica";
+            this.lblPessoajurídica.Size = new System.Drawing.Size(169, 24);
+            this.lblPessoajurídica.TabIndex = 3;
+            this.lblPessoajurídica.Text = " Pessoa Jurídica:";
             // 
             // lblCidade
             // 
@@ -158,13 +148,6 @@ namespace projeto1
             this.txtUf.Size = new System.Drawing.Size(176, 20);
             this.txtUf.TabIndex = 12;
             // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(223, 295);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(279, 20);
-            this.txtEmail.TabIndex = 14;
-            // 
             // txtPessoa
             // 
             this.txtPessoa.Location = new System.Drawing.Point(223, 229);
@@ -214,16 +197,35 @@ namespace projeto1
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(363, 485);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // txtCep
+            // 
+            this.txtCep.Location = new System.Drawing.Point(434, 478);
+            this.txtCep.Name = "txtCep";
+            this.txtCep.Size = new System.Drawing.Size(100, 20);
+            this.txtCep.TabIndex = 21;
+            this.txtCep.TextChanged += new System.EventHandler(this.txtCep_TextChanged);
+            // 
             // frmPessoasjuridica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1085, 571);
+            this.Controls.Add(this.txtCep);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVoltar1);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.txtPessoa);
-            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtUf);
             this.Controls.Add(this.txtRazão);
             this.Controls.Add(this.txtCidade);
@@ -231,9 +233,8 @@ namespace projeto1
             this.Controls.Add(this.lblUf);
             this.Controls.Add(this.lblNaturalidade);
             this.Controls.Add(this.lblCidade);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblTipopessoajurídica);
-            this.Controls.Add(this.lblNomefantasia);
+            this.Controls.Add(this.lblPessoajurídica);
+            this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblRazãosocial);
             this.Controls.Add(this.lblCnpj);
             this.Controls.Add(this.pictureBox2);
@@ -250,9 +251,8 @@ namespace projeto1
 
         private System.Windows.Forms.Label lblCnpj;
         private System.Windows.Forms.Label lblRazãosocial;
-        private System.Windows.Forms.Label lblNomefantasia;
-        private System.Windows.Forms.Label lblTipopessoajurídica;
-        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblPessoajurídica;
         private System.Windows.Forms.Label lblCidade;
         private System.Windows.Forms.Label lblNaturalidade;
         private System.Windows.Forms.Label lblUf;
@@ -260,11 +260,12 @@ namespace projeto1
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.TextBox txtRazão;
         private System.Windows.Forms.TextBox txtUf;
-        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPessoa;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnVoltar1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtCep;
     }
 }

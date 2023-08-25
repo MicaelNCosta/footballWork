@@ -172,6 +172,7 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models2\pessoas_juridicas.cs" />
     <Compile Include="MyDbContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

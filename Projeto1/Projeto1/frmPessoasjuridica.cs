@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using projeto1.Models2;
 
 namespace projeto1
 {
@@ -19,6 +21,10 @@ namespace projeto1
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+
+            string cep = txtCep.Text;
+
+
             if (txtCnpj.Text == "")
 
             {
@@ -39,35 +45,85 @@ namespace projeto1
             {
                 MessageBox.Show(" Obrigatorio preencher tudo ");
                 return;
-            }
-            if (txtEmail.Text == "")
-            {
-                MessageBox.Show("Obrigatorio preencher tudo ");
-                return;
-            }
-            if (txtUf.Text == "")
-            {
-                MessageBox.Show("Obrigatorio preencher tudo ");
-                return;
-            }
-            if (txtCidade.Text == "")
-            {
-                MessageBox.Show("Obrigatorio preencher tudo");
-                return;
-            }
-            MessageBox.Show(" Usuario cadrastrado");
+                {
+
+                }
+                if (txtUf.Text == "")
+                {
+                    MessageBox.Show("Obrigatorio preencher tudo ");
+                    return;
+                }
+                if (txtCidade.Text == "")
+                {
+                    MessageBox.Show("Obrigatorio preencher tudo");
+                    return;
+
+                }
+                MessageBox.Show(" Usuario cadrastrado");
+
+                using (MyDbContext db = new MyDbContext())
+
+                {
+
+                    string query = @"INSERT INTO pessoas_juridicas (cnpj,cep,razao_social,nome,uf,cidade) VALUES (@cnpj,@cep,@razao_social,@nome_fantasia,@uf,@cidade)";
+
+                    var parameters = new[]
+
+                    {
+
+                    new MySqlParameter("@cnpj",txtCnpj),
+
+                    new MySqlParameter("@cep",txtCep),
+
+                    new MySqlParameter("@razao_social",txtRazão),
+
+                    new MySqlParameter("@nome",txtNome),
+
+                    new MySqlParameter("@uf",txtUf),
+
+                    new MySqlParameter("@cidade",txtCidade),
+
+                    };
 
 
-            Form frmPlanos = new frmPlanos();
-            frmPlanos.WindowState = FormWindowState.Maximized;
-            frmPlanos.Show();
 
+                    int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
+
+                }
+
+
+
+
+
+
+
+
+                Form frmPlanos = new frmPlanos();
+                frmPlanos.WindowState = FormWindowState.Maximized;
+                frmPlanos.Show();
+
+            }
+
+           
+        
         }
 
+        private void txtCep_TextChanged(object sender, EventArgs e)
+        {
+
+        
+        }
         private void btnVoltar1_Click(object sender, EventArgs e)
         {
             Form frmVoltar = new frmLogin();
             this.Hide();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+
+
 }
