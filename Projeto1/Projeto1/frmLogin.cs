@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using MySql.Data.MySqlClient;
+using projeto1.Models;
 
 namespace projeto1
 { 
@@ -43,7 +44,7 @@ namespace projeto1
             using (MyDbContext db = new MyDbContext())
             {
                 string select = @"SELECT 1 FROM usuarios  WHERE email = '"+email+"' AND senha = '"+senha+"';";
-                MessageBox.Show(select);
+               // MessageBox.Show(select);
 
                 int rowsAffect = db.Database.ExecuteSqlCommand(select);
                 if (rowsAffect == 1)
