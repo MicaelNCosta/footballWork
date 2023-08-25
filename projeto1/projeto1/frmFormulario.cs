@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using MySql.Data.MySqlClient;
+using projeto1.Models;
 
 namespace projeto1
 {
@@ -20,7 +21,7 @@ namespace projeto1
 
         }
         
-           //* string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+           // string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
             
         
 
@@ -135,7 +136,7 @@ namespace projeto1
                
                 /*@pergunta_3,@pergunta_4,@pergunta_5,@pergunta_6,@pergunta_7,@sobre)" segundo parenteses*/
                
-                string query = @"INSERT INTO formulario (pergunta_1, pergunta_2, sobre, usuario_id) VALUES (@pergunta_1, @pergunta_2,@sobre,@usuario_id)";
+                string query = @"INSERT INTO formularios (pergunta_1, pergunta_2, sobre, usuario_id) VALUES (@pergunta_1, @pergunta_2,@sobre,@usuario_id)";
 
                 bool csim = rb1.Checked; // Obtém o estado do RadioButton
                 bool csim2 = rb3.Checked;
