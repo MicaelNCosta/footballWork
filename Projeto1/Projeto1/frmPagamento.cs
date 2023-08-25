@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using projeto1.Models;
 
 namespace projeto1
 {
@@ -136,7 +138,14 @@ namespace projeto1
             frmligas.WindowState = FormWindowState.Maximized;
             frmligas.Show();
             
-
+            using (MyDbContext db = new MyDbContext())
+            { 
+                       string query = @"INSERT INTO pagamentos(cartao) VALUES (@pcartao )";
+                var paramenters = new[]
+                {
+                    new MySqlParameter("@pcpf", CPF)
+                };
+            }
 
 
         }
