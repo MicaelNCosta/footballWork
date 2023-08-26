@@ -80,6 +80,7 @@ namespace projeto1
             string CNPJ = mskCnpj.Text.Trim(cleanchar);
             string CVC = mskCvc.Text.Trim(cleanchar);
             string Cartao = mskCartao.Text.Trim();
+            string VALIDADE = dtpValidade.Text.Trim();
             if (txtTitular.Text == "")
             {
                 txtTitular.Focus();
@@ -140,11 +141,20 @@ namespace projeto1
             
             using (MyDbContext db = new MyDbContext())
             { 
-                       string query = @"INSERT INTO pagamentos(cartao) VALUES (@pcartao )";
+                       string query = @"INSERT INTO pagamentos(,cpf_pagamento,cnpj_pagamento,numero_cartao,senha_cartao,data_validade,cvc,nome_titular,) 
+                                        VALUES (@pcartao,@cpf_pagamento,@pcnpj_pagamento,@pnumero_cartao,@psenha_cartao,@pdata_validade,@pcvc,@pnome_titular )";
                 var paramenters = new[]
                 {
-                    new MySqlParameter("@pcpf", CPF)
+                    
+                    new MySqlParameter("@pcpf_pagamento", CPF),
+                    new MySqlParameter("@pcnpj_pagamento",CNPJ),
+                    new MySqlParameter("@Pnumero_cartao",Cartao),
+                    new MySqlParameter("@psenha_cartao",senha),
+                    new MySqlParameter("@pdata_validade",VALIDADE),
+                    new MySqlParameter("@pcvc",CVC),
+                    new MySqlParameter("@pnome_titular",nome)
                 };
+                
             }
 
 
