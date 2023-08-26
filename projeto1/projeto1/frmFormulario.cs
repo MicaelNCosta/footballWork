@@ -132,16 +132,33 @@ namespace projeto1
             using (MyDbContext db = new MyDbContext())
 
             {
-                /*pergunta_3,pergunta_4,pergunta_5,pergunta_6,pergunta_7,sobre) primerio parentese*/
+                               
                
-                /*@pergunta_3,@pergunta_4,@pergunta_5,@pergunta_6,@pergunta_7,@sobre)" segundo parenteses*/
                
-                string query = @"INSERT INTO formularios (pergunta_1, pergunta_2, sobre, usuario_id) VALUES (@pergunta_1, @pergunta_2,@sobre,@usuario_id)";
+                string query = @"INSERT INTO formularios (pergunta_1, pergunta_2,pergunta_3,pergunta_5,pergunta_6,sobre, usuario_id) VALUES (@pergunta_1, @pergunta_2,@pergunta_3,@pergunta_5,@pergunta_6,@sobre,@usuario_id)";
 
                 bool csim = rb1.Checked; // Obtém o estado do RadioButton
+                
                 bool csim2 = rb3.Checked;
-                int bsim = csim ? 1 : 0; // Converte para 1 ou 0
+
+                bool csim3 = rb5.Checked;
+
+                bool csim4 = rbEmail.Checked;
+
+                bool csim5 = rbFinalS.Checked;
+                
+                
+
+                int bsim = csim ? 1 : 0; // Converte para 1 ou 0             
+                
                 int bsim2 = csim2 ? 1 : 0;
+                
+                int bsim3 = csim3 ? 1 : 0;
+
+                int bsim4 = csim4 ? 1 : 0;
+
+                int bsim5 = csim5 ? 1 : 0;
+
 
 
 
@@ -156,7 +173,13 @@ namespace projeto1
 
                     new MySqlParameter("@sobre", voce),
 
-                    new MySqlParameter("@usuario_id", 1)
+                    new MySqlParameter("@pergunta_3", bsim3),
+
+                    new MySqlParameter("@pergunta_5", bsim4),
+
+                    new MySqlParameter("@pergunta_6", bsim5),
+
+                    new MySqlParameter("@usuario_id", 1),
 
                 };
 

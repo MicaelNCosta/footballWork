@@ -112,6 +112,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCartaoPixBoleto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCartaoPixBoleto.Designer.cs">
+      <DependentUpon>frmCartaoPixBoleto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLigapaga.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +182,9 @@
     <Compile Include="MyDbContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCartaoPixBoleto.resx">
+      <DependentUpon>frmCartaoPixBoleto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEsqueceuSenha.resx">
       <DependentUpon>frmEsqueceuSenha.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,9 +244,23 @@
     <None Include="Resources\login.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="imagem\boleto.png" />
+    <Content Include="imagem\cartao_black.png" />
+    <Content Include="imagem\cartao_colors.png" />
     <Content Include="imagem\italia %281%29.png" />
     <Content Include="imagem\olho %282%29 certo.png" />
     <Content Include="imagem\olho %283%29 certo.png" />
+    <Content Include="Resources\boleto.png" />
+    <None Include="Resources\logo-pix-icone-512.png" />
+    <None Include="Resources\boleto1.png" />
+    <None Include="Resources\cartao_black %283%29.png" />
+    <None Include="Resources\cartao_black %284%29.png" />
+    <None Include="Resources\cartao_black %285%29.png" />
+    <None Include="Resources\cartao_black %286%29.png" />
+    <Content Include="Resources\cartao_black.png" />
+    <None Include="Resources\cartao_black1.png" />
+    <None Include="Resources\cartao_black2.png" />
+    <Content Include="Resources\cartao_colors.png" />
     <None Include="Resources\serie_a_tim_-_2020-removebg-preview1.png" />
     <None Include="Resources\laliga-removebg-preview1.png" />
     <None Include="Resources\200px-Bundesliga_logo_%282017%291.png" />

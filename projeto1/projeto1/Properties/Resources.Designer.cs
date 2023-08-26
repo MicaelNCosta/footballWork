@@ -83,6 +83,76 @@ namespace projeto1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap boleto {
+            get {
+                object obj = ResourceManager.GetObject("boleto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cartao_black {
+            get {
+                object obj = ResourceManager.GetObject("cartao_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cartao_black__3_ {
+            get {
+                object obj = ResourceManager.GetObject("cartao_black (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cartao_black__4_ {
+            get {
+                object obj = ResourceManager.GetObject("cartao_black (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cartao_black__5_ {
+            get {
+                object obj = ResourceManager.GetObject("cartao_black (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cartao_black__6_ {
+            get {
+                object obj = ResourceManager.GetObject("cartao_black (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cartao_black1 {
+            get {
+                object obj = ResourceManager.GetObject("cartao_black1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Chart_Talk_logo_template_Financial_growth_talk_logo_ {
             get {
                 object obj = ResourceManager.GetObject("Chart Talk logo template.Financial growth talk logo ", resourceCulture);
@@ -157,6 +227,16 @@ namespace projeto1.Properties {
         internal static System.Drawing.Bitmap login {
             get {
                 object obj = ResourceManager.GetObject("login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_pix_icone_512 {
+            get {
+                object obj = ResourceManager.GetObject("logo-pix-icone-512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
