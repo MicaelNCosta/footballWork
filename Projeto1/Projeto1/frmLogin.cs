@@ -11,6 +11,7 @@ using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using MySql.Data.MySqlClient;
 using projeto1.Models;
+using System.Data.SqlClient;
 
 namespace projeto1
 { 
@@ -36,28 +37,11 @@ namespace projeto1
             return System.Text.RegularExpressions.Regex.IsMatch(emailLog, pattern);
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e, object senha)
         {
-            string senha = txtSenha.Text;
-            string email = txtEmail.Text;
 
-            using (MyDbContext db = new MyDbContext())
-            {
-                string select = @"SELECT 1 FROM usuarios  WHERE email = '"+email+"' AND senha = '"+senha+"';";
-               // MessageBox.Show(select);
-
-                int rowsAffect = db.Database.ExecuteSqlCommand(select);
-                if (rowsAffect == 1)
-                {
-                    MessageBox.Show("Obrigado por Se juntar a Nós ", " BEM VINDO ", MessageBoxButtons.OK);
-                }
-                else
-                {
-                    MessageBox.Show("SENHA INCORRETA,POR FAVOR TENTE NOVAMENTE");
-                }
-            }
-            
         }
+
         private void txtEmail_Validated(object sender, EventArgs e)
         {
             string email = txtEmail.Text;
@@ -110,6 +94,41 @@ namespace projeto1
                     pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (2) certo.png");
                 }
             }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+
+            string email = txtEmail.Text;
+            string senha = txtSenha.Text;
+
+            using (MyDbContext db = new MyDbContext())
+            {
+                string query = @"SELECT COUNT(*) FROM usuarios WHERE email = @pemail AND senha = @psenha;";
+                var parameters = new[]
+                {
+        new MySqlParameter("@pemail", email),
+        new MySqlParameter("@psenha", senha)
+    };
+
+                int resul = db.Database.SqlQuery<int>(query, parameters).SingleOrDefault();
+
+                if (resul > 0)
+                {
+                    Form frmTelaInicial1 = new frmTelaInicial1(resul);
+                    frmTelaInicial1.WindowState = FormWindowState.Maximized;
+                    frmTelaInicial1.Show();
+                }
+                else
+                {
+                    MessageBox.Show("EMAIL OU SENHA INCORRETOS, TENTE NOVAMENTE", "Erro de Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

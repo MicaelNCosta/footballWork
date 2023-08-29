@@ -106,6 +106,7 @@ namespace projeto1
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(268, 20);
             this.txtSenha.TabIndex = 6;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // txtEmail
             // 
@@ -230,7 +231,7 @@ namespace projeto1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1094, 581);
+            this.ClientSize = new System.Drawing.Size(1222, 655);
             this.Controls.Add(this.btnForm);
             this.Controls.Add(this.btnCadastroJ);
             this.Controls.Add(this.pbSenhas);
