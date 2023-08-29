@@ -1,13 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using projeto1.Models;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
 
 
 namespace projeto1.Models
 {
+   /* public class MyDbContext : DbContext
+
+    {
+
+        public MyDbContext() : base("MyDbContext") { }
+
+        public DbSet<formulario> formularios { get; set; }
+
+    }*/
     public class formulario
     {
          [Column("id")]

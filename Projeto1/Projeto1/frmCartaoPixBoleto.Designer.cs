@@ -139,7 +139,7 @@ namespace projeto1
             this.Controls.Add(this.rbBoleto);
             this.Controls.Add(this.rbCartao);
             this.Name = "frmCartaoPixBoleto";
-            this.Text = "s";
+            this.Text = "PAGAMENTOS";
             ((System.ComponentModel.ISupportInitialize)(this.picBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBox1)).EndInit();

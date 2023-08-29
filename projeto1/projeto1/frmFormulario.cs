@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using MySql.Data.MySqlClient;
 using projeto1.Models;
+using System.ComponentModel.DataAnnotations.Schema; 
+using System.Data.Entity; 
+using System.Data.Entity.ModelConfiguration.Conventions; 
 
 namespace projeto1
 {
@@ -129,13 +132,14 @@ namespace projeto1
                 "\n" +
                 "Obrigado por responder o formulário.", "Fomulário finalizado", MessageBoxButtons.OK);//MessageBoxIcon.Information);
 
+            // INSERT INTO formulario (usuario_id) VALUES (@usuario_id)"; //
             using (MyDbContext db = new MyDbContext())
 
             {
-                               
-               
-               
-                string query = @"INSERT INTO formularios (pergunta_1, pergunta_2,pergunta_3,pergunta_5,pergunta_6,sobre, usuario_id) VALUES (@pergunta_1, @pergunta_2,@pergunta_3,@pergunta_5,@pergunta_6,@sobre,@usuario_id)";
+
+                string query = @"INSERT INTO formularios (pergunta_1, pergunta_2, pergunta_3, pergunta_5, pergunta_6, sobre, usuario_id) 
+                    VALUES (@pergunta_1, @pergunta_2, @pergunta_3, @pergunta_5, @pergunta_6, @sobre, LAST_INSERT_ID())";
+
 
                 bool csim = rb1.Checked; // Obtém o estado do RadioButton
                 
@@ -179,7 +183,7 @@ namespace projeto1
 
                     new MySqlParameter("@pergunta_6", bsim5),
 
-                    new MySqlParameter("@usuario_id", 1),
+                   // new MySqlParameter("@usuario_id", query2),
 
                 };
 
@@ -187,6 +191,17 @@ namespace projeto1
 
                 int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
 
+               /* using (MyDbContext db = new MyDbContext())
+
+                {
+
+                    string query = "SELECT * FROM formularios;";
+
+                    List<formulario> users = db.Database.SqlQuery<formulario>(query).ToList();
+
+                    
+                    
+                }*/
             }
 
             this.Close();
@@ -278,3 +293,38 @@ namespace projeto1
         }
     }
 }
+/*
+using (MyDbContext db = new MyDbContext())
+{
+    // Supondo que você tenha obtido o ID do usuário de algum lugar, vamos chamá-lo de 'userId'
+    int userId = ObterIdDoUsuario(); // Substitua isso pela lógica real de obtenção do ID
+
+    string query = @"INSERT INTO formularios (pergunta_1, pergunta_2, pergunta_3, pergunta_5, pergunta_6, sobre, usuario_id) 
+                    VALUES (@pergunta_1, @pergunta_2, @pergunta_3, @pergunta_5, @pergunta_6, @sobre, @usuario_id)";
+
+    bool csim = rb1.Checked;
+    bool csim2 = rb3.Checked;
+    bool csim3 = rb5.Checked;
+    bool csim4 = rbEmail.Checked;
+    bool csim5 = rbFinalS.Checked;
+
+    int bsim = csim ? 1 : 0;
+    int bsim2 = csim2 ? 1 : 0;
+    int bsim3 = csim3 ? 1 : 0;
+    int bsim4 = csim4 ? 1 : 0;
+    int bsim5 = csim5 ? 1 : 0;
+
+    var parametros = new[]
+    {
+        new MySqlParameter("@pergunta_1", bsim ),
+        new MySqlParameter("@pergunta_2", bsim2 ),
+        new MySqlParameter("@sobre", voce),
+        new MySqlParameter("@pergunta_3", bsim3),
+        new MySqlParameter("@pergunta_5", bsim4),
+        new MySqlParameter("@pergunta_6", bsim5),
+        new MySqlParameter("@usuario_id", userId), // Use o ID do usuário obtido aqui
+    };
+
+    int linhasAfetadas = db.Database.ExecuteSqlCommand(query, parametros);
+}
+*/
