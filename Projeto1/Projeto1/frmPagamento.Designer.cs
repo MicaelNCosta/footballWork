@@ -53,6 +53,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pbOlho1 = new System.Windows.Forms.PictureBox();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.mySqlDataAdapter1 = new MySql.Data.MySqlClient.MySqlDataAdapter();
             this.gbSelecione.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbOlho1)).BeginInit();
             this.SuspendLayout();
@@ -141,8 +142,9 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 24);
             this.label4.TabIndex = 8;
-            this.label4.Text = "CVC";
+            this.label4.Text = "CVV";
             this.label4.UseWaitCursor = true;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -341,6 +343,13 @@
             this.btnVoltar.UseWaitCursor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
+            // mySqlDataAdapter1
+            // 
+            this.mySqlDataAdapter1.DeleteCommand = null;
+            this.mySqlDataAdapter1.InsertCommand = null;
+            this.mySqlDataAdapter1.SelectCommand = null;
+            this.mySqlDataAdapter1.UpdateCommand = null;
+            // 
             // frmPagamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,5 +417,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pbOlho1;
         private System.Windows.Forms.Button btnVoltar;
+        private MySql.Data.MySqlClient.MySqlDataAdapter mySqlDataAdapter1;
     }
 }
