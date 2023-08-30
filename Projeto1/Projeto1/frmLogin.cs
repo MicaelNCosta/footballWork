@@ -106,9 +106,9 @@ namespace projeto1
                 string query = @"SELECT COUNT(*) FROM usuarios WHERE email = @pemail AND senha = @psenha;";
                 var parameters = new[]
                 {
-        new MySqlParameter("@pemail", email),
-        new MySqlParameter("@psenha", senha)
-    };
+                     new MySqlParameter("@pemail", email),
+                     new MySqlParameter("@psenha", senha)
+                };
 
                 int resul = db.Database.SqlQuery<int>(query, parameters).SingleOrDefault();
 

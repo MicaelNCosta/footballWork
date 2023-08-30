@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,16 +33,31 @@ namespace projeto1
 
         private void btnRedefinir_Click(object sender, EventArgs e)
         {
-            string email = txtEmailRecapSenha.Text;
+            string emailrec = txtEmailRecapSenha.Text;
+            string senhanova = txtSenhaNova.Text;
+            string senhaatual = txtSenhaAtual.Text;
 
-            if (IsValidEmail(email))
+            using (MyDbContext db = new MyDbContext())
             {
-                MessageBox.Show("Um Email foi enviado para o destinatario para fazer a alterção de senha");
+                string query = @"UPDATE usuarios SET senha = @psenhanova WHERE email = @pemail AND senha = @psenhaatual;";
+                var parameters = new[]
+                {
+                     new MySqlParameter("@pemail", emailrec),
+                     new MySqlParameter("@psenhanova", senhanova),
+                     new MySqlParameter("@psenhaatual", senhaatual)
+                };
+
+                int nRowAfetted = db.Database.ExecuteSqlCommand(query, parameters);
+
+
+                Form formVoltar = new frmLogin();
+                this.Hide();
             }
-            else
-            {
-                MessageBox.Show("Endereço de e-mail inválido!");
-            }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
