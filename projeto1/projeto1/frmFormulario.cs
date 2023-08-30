@@ -132,17 +132,12 @@ namespace projeto1
                 "\n" +
                 "Obrigado por responder o formulário.", "Fomulário finalizado", MessageBoxButtons.OK);//MessageBoxIcon.Information);
 
-            // INSERT INTO formulario (usuario_id) VALUES (@usuario_id)"; //
+            //LAST_INSERT_ID())
             using (MyDbContext db = new MyDbContext())
 
             {
-
-                string query = @"INSERT INTO formularios (pergunta_1, pergunta_2, pergunta_3, pergunta_5, pergunta_6, sobre, usuario_id) 
-                    VALUES (@pergunta_1, @pergunta_2, @pergunta_3, @pergunta_5, @pergunta_6, @sobre, LAST_INSERT_ID())";
-
-
                 bool csim = rb1.Checked; // Obtém o estado do RadioButton
-                
+
                 bool csim2 = rb3.Checked;
 
                 bool csim3 = rb5.Checked;
@@ -150,13 +145,13 @@ namespace projeto1
                 bool csim4 = rbEmail.Checked;
 
                 bool csim5 = rbFinalS.Checked;
-                
-                
+
+
 
                 int bsim = csim ? 1 : 0; // Converte para 1 ou 0             
-                
+
                 int bsim2 = csim2 ? 1 : 0;
-                
+
                 int bsim3 = csim3 ? 1 : 0;
 
                 int bsim4 = csim4 ? 1 : 0;
@@ -164,7 +159,8 @@ namespace projeto1
                 int bsim5 = csim5 ? 1 : 0;
 
 
-
+                string query = @"INSERT INTO formularios (pergunta_1, pergunta_2, pergunta_3, pergunta_5, pergunta_6, sobre, usuario_id) VALUES (@pergunta_1, @pergunta_2, @pergunta_3, @pergunta_5, @pergunta_6, @sobre, @usuario_id)";
+                             
 
                 var parameters = new[]
 
@@ -183,25 +179,14 @@ namespace projeto1
 
                     new MySqlParameter("@pergunta_6", bsim5),
 
-                   // new MySqlParameter("@usuario_id", query2),
+                    new MySqlParameter("@usuario_id", 3),
 
                 };
 
 
 
                 int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
-
-               /* using (MyDbContext db = new MyDbContext())
-
-                {
-
-                    string query = "SELECT * FROM formularios;";
-
-                    List<formulario> users = db.Database.SqlQuery<formulario>(query).ToList();
-
-                    
-                    
-                }*/
+              
             }
 
             this.Close();

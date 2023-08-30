@@ -111,6 +111,7 @@ namespace projeto1
             this.btnLimpar.TabIndex = 11;
             this.btnLimpar.Text = "VOLTAR";
             this.btnLimpar.UseVisualStyleBackColor = false;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // button1
             // 
@@ -124,6 +125,7 @@ namespace projeto1
             this.button1.TabIndex = 12;
             this.button1.Text = "FINALIZAR";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmCartaoPixBoleto
             // 
