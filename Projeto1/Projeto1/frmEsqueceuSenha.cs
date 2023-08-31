@@ -59,5 +59,19 @@ namespace projeto1
         {
 
         }
+
+        private void pbSenhas_Click(object sender, EventArgs e)
+        {
+            if (txtSenhaNova.PasswordChar == '*')
+            {
+                txtSenhaNova.PasswordChar = '\0'; // Mostrar a senha
+                pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (3) certo.png");
+            }
+            else
+            {
+                txtSenhaNova.PasswordChar = '*'; // Ocultar a senha
+                pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (2) certo.png");
+            }
+        }
     }
 }

@@ -40,7 +40,9 @@ namespace projeto1
             this.txtSenhaNova = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtSenhaAtual = new System.Windows.Forms.TextBox();
+            this.pbSenhas = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSenhas)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -48,20 +50,20 @@ namespace projeto1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(322, 157);
+            this.label1.Location = new System.Drawing.Point(337, 159);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(503, 37);
+            this.label1.Size = new System.Drawing.Size(493, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Informe um email para o desejado";
+            this.label1.Text = "Informe os seguintes campo para";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(334, 89);
+            this.label2.Location = new System.Drawing.Point(331, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(477, 55);
+            this.label2.Size = new System.Drawing.Size(630, 73);
             this.label2.TabIndex = 1;
             this.label2.Text = "REDEFINIR SENHA";
             // 
@@ -70,11 +72,11 @@ namespace projeto1
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(415, 205);
+            this.label3.Location = new System.Drawing.Point(337, 207);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(309, 37);
+            this.label3.Size = new System.Drawing.Size(264, 37);
             this.label3.TabIndex = 2;
-            this.label3.Text = " redefinir uma senha";
+            this.label3.Text = " redefinir a senha";
             // 
             // label4
             // 
@@ -101,7 +103,7 @@ namespace projeto1
             this.btnRedefinir.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnRedefinir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRedefinir.ForeColor = System.Drawing.Color.Red;
-            this.btnRedefinir.Location = new System.Drawing.Point(526, 577);
+            this.btnRedefinir.Location = new System.Drawing.Point(686, 577);
             this.btnRedefinir.Name = "btnRedefinir";
             this.btnRedefinir.Size = new System.Drawing.Size(450, 46);
             this.btnRedefinir.TabIndex = 5;
@@ -114,7 +116,7 @@ namespace projeto1
             this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(723, 629);
+            this.button2.Location = new System.Drawing.Point(883, 629);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(253, 27);
             this.button2.TabIndex = 6;
@@ -147,6 +149,7 @@ namespace projeto1
             this.txtSenhaNova.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenhaNova.Location = new System.Drawing.Point(122, 436);
             this.txtSenhaNova.Name = "txtSenhaNova";
+            this.txtSenhaNova.PasswordChar = '*';
             this.txtSenhaNova.Size = new System.Drawing.Size(406, 31);
             this.txtSenhaNova.TabIndex = 17;
             // 
@@ -155,7 +158,7 @@ namespace projeto1
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(622, 291);
+            this.label6.Location = new System.Drawing.Point(607, 291);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(280, 25);
             this.label6.TabIndex = 18;
@@ -169,12 +172,24 @@ namespace projeto1
             this.txtSenhaAtual.Size = new System.Drawing.Size(406, 31);
             this.txtSenhaAtual.TabIndex = 19;
             // 
+            // pbSenhas
+            // 
+            this.pbSenhas.Image = global::projeto1.Properties.Resources.olho__2__certo;
+            this.pbSenhas.InitialImage = global::projeto1.Properties.Resources.olho__3__certo;
+            this.pbSenhas.Location = new System.Drawing.Point(534, 441);
+            this.pbSenhas.Name = "pbSenhas";
+            this.pbSenhas.Size = new System.Drawing.Size(30, 26);
+            this.pbSenhas.TabIndex = 20;
+            this.pbSenhas.TabStop = false;
+            this.pbSenhas.Click += new System.EventHandler(this.pbSenhas_Click);
+            // 
             // frmEsqueceuSenha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCoral;
-            this.ClientSize = new System.Drawing.Size(1118, 741);
+            this.ClientSize = new System.Drawing.Size(1204, 741);
+            this.Controls.Add(this.pbSenhas);
             this.Controls.Add(this.txtSenhaAtual);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtSenhaNova);
@@ -190,6 +205,7 @@ namespace projeto1
             this.Name = "frmEsqueceuSenha";
             this.Text = "ESQUECEU A SENHA?";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSenhas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +225,6 @@ namespace projeto1
         private System.Windows.Forms.TextBox txtSenhaNova;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtSenhaAtual;
+        private System.Windows.Forms.PictureBox pbSenhas;
     }
 }
