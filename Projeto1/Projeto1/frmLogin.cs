@@ -65,27 +65,23 @@ namespace projeto1
 
         private void btnCadastroF_Click(object sender, EventArgs e)
         {
-            Form frmPessoasFisicas = new frmPessoasfisicas();
-            frmPessoasFisicas.WindowState = FormWindowState.Maximized;
-            frmPessoasFisicas.Show();
+            Form Formulario = new frmCadastro(null, "fisico");
+            Formulario.WindowState = FormWindowState.Maximized;
+            Formulario.Show();
+
+          
         }
 
         private void btnCadastroJ_Click(object sender, EventArgs e)
         {
-            Form frmPessoasJuridicas = new frmPessoasjuridica();
-            frmPessoasJuridicas.WindowState = FormWindowState.Maximized;
-            frmPessoasJuridicas.Show();
+            Form Formulario = new frmCadastro("juridico",null);
+            Formulario.WindowState = FormWindowState.Maximized;
+            Formulario.Show();
+
+            
         }
 
-        private void btnForm_Click(object sender, EventArgs e)
-        {
-            Form frmFormulario = new frmCadastro();
-            frmFormulario.WindowState = FormWindowState.Maximized;
-            frmFormulario.Show();
-
-            btnCadastroF.Visible = true;
-            btnCadastroJ.Visible = true;
-        }
+      
 
         private void pbSenhas_Click(object sender, EventArgs e)
         {

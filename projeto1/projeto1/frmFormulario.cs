@@ -18,8 +18,13 @@ namespace projeto1
 {
     public partial class frmCadastro : Form
     {
-        public frmCadastro()
+        string acesso;
+        string acesso2;
+        public frmCadastro(string acesso, string acesso2)
         {
+            this.acesso = acesso;
+            this.acesso2 = acesso2;
+
             InitializeComponent();
 
         }
@@ -159,7 +164,7 @@ namespace projeto1
                 int bsim5 = csim5 ? 1 : 0;
 
 
-                string query = @"INSERT INTO formularios (pergunta_1, pergunta_2, pergunta_3, pergunta_5, pergunta_6, sobre, usuario_id) VALUES (@pergunta_1, @pergunta_2, @pergunta_3, @pergunta_5, @pergunta_6, @sobre, @usuario_id)";
+                string query = @"INSERT INTO formularios (pergunta_1, pergunta_2, pergunta_3, pergunta_5, pergunta_6, sobre) VALUES (@pergunta_1, @pergunta_2, @pergunta_3, @pergunta_5, @pergunta_6, @sobre)";
                              
 
                 var parameters = new[]
@@ -178,9 +183,7 @@ namespace projeto1
                     new MySqlParameter("@pergunta_5", bsim4),
 
                     new MySqlParameter("@pergunta_6", bsim5),
-
-                    new MySqlParameter("@usuario_id", 3),
-
+                                        
                 };
 
 
@@ -189,7 +192,20 @@ namespace projeto1
               
             }
 
-            this.Close();
+        if (acesso == "juridico")
+        {
+                Form juridco = new frmPessoasjuridica();                
+                juridco.WindowState = FormWindowState.Maximized;
+                juridco.Show();
+        }
+
+            if (acesso2 == "fisico")
+            {
+                Form fisico = new frmPessoasfisicas();
+                fisico.WindowState = FormWindowState.Maximized;
+                fisico.Show();
+            }
+
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)

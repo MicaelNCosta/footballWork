@@ -42,7 +42,6 @@ namespace projeto1
             this.btnCadastroF = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.btnCadastroJ = new System.Windows.Forms.Button();
-            this.btnForm = new System.Windows.Forms.Button();
             this.pbSenhas = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbSenhas)).BeginInit();
@@ -159,13 +158,12 @@ namespace projeto1
             this.btnCadastroF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastroF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastroF.ForeColor = System.Drawing.Color.Red;
-            this.btnCadastroF.Location = new System.Drawing.Point(567, 500);
+            this.btnCadastroF.Location = new System.Drawing.Point(567, 468);
             this.btnCadastroF.Name = "btnCadastroF";
             this.btnCadastroF.Size = new System.Drawing.Size(166, 36);
             this.btnCadastroF.TabIndex = 11;
             this.btnCadastroF.Text = "PESSOA FISICA";
             this.btnCadastroF.UseVisualStyleBackColor = false;
-            this.btnCadastroF.Visible = false;
             this.btnCadastroF.Click += new System.EventHandler(this.btnCadastroF_Click);
             // 
             // label6
@@ -184,28 +182,13 @@ namespace projeto1
             this.btnCadastroJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastroJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastroJ.ForeColor = System.Drawing.Color.Red;
-            this.btnCadastroJ.Location = new System.Drawing.Point(739, 500);
+            this.btnCadastroJ.Location = new System.Drawing.Point(739, 468);
             this.btnCadastroJ.Name = "btnCadastroJ";
             this.btnCadastroJ.Size = new System.Drawing.Size(190, 36);
             this.btnCadastroJ.TabIndex = 16;
             this.btnCadastroJ.Text = "PESSOA JURIDICA";
             this.btnCadastroJ.UseVisualStyleBackColor = false;
-            this.btnCadastroJ.Visible = false;
             this.btnCadastroJ.Click += new System.EventHandler(this.btnCadastroJ_Click);
-            // 
-            // btnForm
-            // 
-            this.btnForm.BackColor = System.Drawing.Color.White;
-            this.btnForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnForm.ForeColor = System.Drawing.Color.Red;
-            this.btnForm.Location = new System.Drawing.Point(567, 458);
-            this.btnForm.Name = "btnForm";
-            this.btnForm.Size = new System.Drawing.Size(362, 36);
-            this.btnForm.TabIndex = 17;
-            this.btnForm.Text = "FORMULARIO";
-            this.btnForm.UseVisualStyleBackColor = false;
-            this.btnForm.Click += new System.EventHandler(this.btnForm_Click);
             // 
             // pbSenhas
             // 
@@ -231,7 +214,6 @@ namespace projeto1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1094, 581);
-            this.Controls.Add(this.btnForm);
             this.Controls.Add(this.btnCadastroJ);
             this.Controls.Add(this.pbSenhas);
             this.Controls.Add(this.btnCadastroF);
@@ -273,6 +255,5 @@ namespace projeto1
         private System.Windows.Forms.PictureBox pbSenhas;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnCadastroJ;
-        private System.Windows.Forms.Button btnForm;
     }
 }
