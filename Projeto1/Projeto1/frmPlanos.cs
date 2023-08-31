@@ -12,8 +12,10 @@ namespace projeto1
 {
     public partial class frmPlanos : Form
     {
+        int usuario_id;
         public frmPlanos()
         {
+            this.usuario_id = 1;
             InitializeComponent();
         }
 
@@ -49,7 +51,7 @@ namespace projeto1
             else if (rbPremiun.Checked)
             {
                 plano1 = " Plano Gratuito";
-                Form Form1 = new frmLigapaga();
+                Form Form1 = new frmPagamento(this.usuario_id);
                 Form1.Show();
             }
         }

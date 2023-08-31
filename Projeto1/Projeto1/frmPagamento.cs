@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,14 +9,38 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using projeto1.Models;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
 
 namespace projeto1
 {
     public partial class frmPagamento : Form
     {
-        public frmPagamento()
+        int usuario_id;
+        public frmPagamento(int usuario_id)
         {
+            this.usuario_id = usuario_id;
             InitializeComponent();
+            using (MyDbContext db = new MyDbContext())
+            {
+                string query = "SELECT * FROM pagamentos WHERE  usuario_id = @pusuario_id AND YEAR(data_pagamento) = YEAR(CURRENT_DATE) AND MONTH(data_pagamento) = MONTH(CURRENT_DATE) LIMIT 1;";
+
+                var paramenters2 = new[]
+                {
+                    new MySqlParameter("@pusuario_id", this.usuario_id)
+                };
+
+
+                Pagamento pagamento = db.Database.SqlQuery<Pagamento>(query, paramenters2).SingleOrDefault();
+                if (pagamento != null)
+                {
+                    MessageBox.Show("Você ja efetouo o pagamento ");
+                    Form frmPlanos = new frmPlanos();
+                    frmPlanos.Show();
+                }
+            } 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -76,8 +101,10 @@ namespace projeto1
             string senha = txtSenha.Text;
             string  CPF = mskCpf.Text.Trim(cleanchar);
             string CNPJ = mskCnpj.Text.Trim(cleanchar);
-            string CVC = mskCvc.Text.Trim(cleanchar);
+            string CVV = mskCvc.Text.Trim(cleanchar);
             string Cartao = mskCartao.Text.Trim();
+            string VALIDADE = dtpValidade.Text.Trim();
+            string USUARIO = label2.Text;
             if (txtTitular.Text == "")
             {
                 txtTitular.Focus();
@@ -110,7 +137,7 @@ namespace projeto1
                 mskCnpj.BackColor = Color.Red;
             }
 
-            if (CVC.Length<3)
+            if (CVV.Length<3)
             { 
                     mskCvc.Focus();
                     MessageBox.Show("preencha CVC com 3 caracteres");
@@ -125,20 +152,51 @@ namespace projeto1
             }
             MessageBox.Show("CPF :" + mskCpf.Text + "\n" +
                 "CNPJ :" + mskCnpj.Text +"\n" +
-                "CVC :"+ mskCvc.Text +"\n" +
+                "CVV :"+ mskCvc.Text +"\n" +
                 "Data de validade :" + dtpValidade.Text + "\n" +
                 "Titular do cartão:"+ txtTitular.Text + "\n" +
                 "Senha:"+txtSenha.Text + "\n" +
                 "Numero do cartão"+mskCartao.Text );
 
+            string hoje = DateTime.Now.ToString("yyyy-MM-dd");
+
             this.Hide();
             Form frmligas = new frmLigapaga();
             frmligas.WindowState = FormWindowState.Maximized;
             frmligas.Show();
+
+            using(MyDbContext db = new MyDbContext())
+            {
+                
+                
+
+
+
+               string query = @"INSERT INTO pagamentos(cpf_pagamento,cnpj_pagamento,numero_cartao,senha_cartao,data_validade,cvv,nome_titular,usuario_id,data_pagamento) 
+                                        VALUES (@pcpf_pagamento, @pcnpj_pagamento, @pnumero_cartao, @psenha_cartao, @pdata_validade, @pcvv,@pnome_titular,@pusuario_id,@pdata_pagamento );
+                                        SELECT LAST_INSERT_ID();";  
+                var paramenters = new[]
+                {
+                    
+                    new MySqlParameter("@pcpf_pagamento", CPF),
+                    new MySqlParameter("@pcnpj_pagamento",CNPJ),
+                    new MySqlParameter("@Pnumero_cartao",Cartao),
+                    new MySqlParameter("@psenha_cartao",senha),
+                    new MySqlParameter("@pdata_validade",VALIDADE),
+                    new MySqlParameter("@pcvv",CVV),
+                    new MySqlParameter("@pnome_titular",nome),
+                    new MySqlParameter("@pusuario_id", this.usuario_id),
+                    new MySqlParameter("@pdata_pagamento",hoje)
+                };
+
+                int newUserId = db.Database.SqlQuery<int>(query, paramenters).Single();
+                
+
+                
+
+            }
+
             
-
-
-
         }
 
         private void mskCvc_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -218,5 +276,9 @@ namespace projeto1
             this.Close();
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

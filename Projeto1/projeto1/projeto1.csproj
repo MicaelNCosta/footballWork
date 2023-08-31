@@ -172,6 +172,7 @@
     <Compile Include="FrmPrincipal.Designer.cs">
       <DependentUpon>FrmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Pagamento.cs" />
     <Compile Include="frmTelaInicial1.cs">
       <SubType>Form</SubType>
     </Compile>
