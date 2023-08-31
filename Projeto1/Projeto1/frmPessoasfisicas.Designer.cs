@@ -44,9 +44,11 @@ namespace projeto1
             this.txtCep = new System.Windows.Forms.TextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtp_data_de_nacimento = new System.Windows.Forms.DateTimePicker();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lbltelefone = new System.Windows.Forms.Label();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -208,13 +210,13 @@ namespace projeto1
             this.label9.TabIndex = 16;
             this.label9.Text = "Digite seus dados";
             // 
-            // dateTimePicker1
+            // dtp_data_de_nacimento
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(636, 136);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(270, 29);
-            this.dateTimePicker1.TabIndex = 17;
+            this.dtp_data_de_nacimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtp_data_de_nacimento.Location = new System.Drawing.Point(636, 136);
+            this.dtp_data_de_nacimento.Name = "dtp_data_de_nacimento";
+            this.dtp_data_de_nacimento.Size = new System.Drawing.Size(270, 29);
+            this.dtp_data_de_nacimento.TabIndex = 17;
             // 
             // btnVoltar
             // 
@@ -238,15 +240,37 @@ namespace projeto1
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 
+            // lbltelefone
+            // 
+            this.lbltelefone.AutoSize = true;
+            this.lbltelefone.BackColor = System.Drawing.Color.White;
+            this.lbltelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltelefone.ForeColor = System.Drawing.Color.Red;
+            this.lbltelefone.Location = new System.Drawing.Point(142, 392);
+            this.lbltelefone.Name = "lbltelefone";
+            this.lbltelefone.Size = new System.Drawing.Size(93, 24);
+            this.lbltelefone.TabIndex = 20;
+            this.lbltelefone.Text = "Telefone";
+            // 
+            // txtTelefone
+            // 
+            this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefone.Location = new System.Drawing.Point(62, 437);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(264, 29);
+            this.txtTelefone.TabIndex = 21;
+            // 
             // frmPessoasfisicas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1167, 607);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.lbltelefone);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtp_data_de_nacimento);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.txtCep);
@@ -288,8 +312,10 @@ namespace projeto1
         private System.Windows.Forms.TextBox txtCep;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtp_data_de_nacimento;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lbltelefone;
+        private System.Windows.Forms.TextBox txtTelefone;
     }
 }
