@@ -1,20 +1,28 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using projeto1.models;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
 
 
 namespace projeto1
 {
     public partial class frmligas : Form
     {
-        public frmligas()
+        bool pagamentos;
+        public frmligas(bool pagamentos)
         {
+            this.pagamentos = pagamentos;
             InitializeComponent();
 
          
@@ -26,38 +34,45 @@ namespace projeto1
             int contador = 0;
             if (chInglesa.Checked)
             {
-                txt += chInglesa.Text + " |Liga inglesa ";
+                txt += chInglesa.Text + " Liga inglesa,";
                 contador++;
             }
             if (chFrancesa.Checked)
             {
-                txt += chFrancesa.Text + " |Liga Francesa";
+                txt += chFrancesa.Text + " Liga Francesa,";
                 contador++;
             }
             if (chAlema.Checked)
             {
-                txt += chAlema.Text + " |LigaAlema";
+                txt += chAlema.Text + " Liga Alema,";
                 contador++;
             }
             if (chEspanhola.Checked)
             {
-                txt += chEspanhola.Text + "|Liga Espanhola";
+                txt += chEspanhola.Text + "Liga Espanhola,";
                 contador++;
             }
             if (chItaliana.Checked)
             {
-                txt += chItaliana.Text + "|Liga Italiana";
+                txt += chItaliana.Text + "Liga Italiana,";
                 contador++;
             }
 
-            if (contador > 3)
+            if (this.pagamentos && contador > 1)
             {
-                MessageBox.Show("Selecione Apenas 3 Ligas");
-                return;
+                Form form1 = new frmtimes(txt);
+                form1.Show();
+
             }
-            else { 
-                MessageBox.Show(txt);
-             }
+            else if(!this.pagamentos && contador == 1){
+
+                Form form1 = new frmtimes(txt);
+                form1.Show();
+            }
+            else
+            {
+                MessageBox.Show("quantidade de ligas incorreto");
+            }
         }
            
        

@@ -29,6 +29,7 @@ namespace projeto1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -230,7 +231,7 @@ namespace projeto1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1094, 581);
+            this.ClientSize = new System.Drawing.Size(1140, 581);
             this.Controls.Add(this.btnForm);
             this.Controls.Add(this.btnCadastroJ);
             this.Controls.Add(this.pbSenhas);
@@ -248,7 +249,7 @@ namespace projeto1
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
             this.Name = "frmLogin";
-            this.Text = "Login FootballWork";
+            this.Text = resources.GetString("$this.Text");
             ((System.ComponentModel.ISupportInitialize)(this.pbSenhas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

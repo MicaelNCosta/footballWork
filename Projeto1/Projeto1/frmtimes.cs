@@ -14,12 +14,14 @@ namespace projeto1
 {
     public partial class frmtimes : Form
     {
-        public frmtimes()
+        string ligas;
+        public frmtimes(string ligas)
         {
+            this.ligas = ligas;
             InitializeComponent();
             using (MyDbContext db = new MyDbContext())
             {
-                string query = " SELECT * FROM times ;";
+                string query =  @"SELECT * FROM times AS t JOIN ligas AS l ON t.ligas_id = l.id WHERE l.ligas IN ("+ligas+") ; ";
                 List<frmtimes> frmtimes = db.Database.SqlQuery<frmtimes>(query).ToList();
                 dataGVtimes.DataSource = frmtimes;
             }
