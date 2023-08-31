@@ -194,16 +194,16 @@ namespace projeto1
 
         if (acesso == "juridico")
         {
-                Form juridco = new frmPessoasjuridica();                
-                juridco.WindowState = FormWindowState.Maximized;
-                juridco.Show();
+                Form formulario = new frmCadastro("juridico",null);                
+                formulario.WindowState = FormWindowState.Maximized;
+                formulario.Show();
         }
 
             if (acesso2 == "fisico")
             {
-                Form fisico = new frmPessoasfisicas();
-                fisico.WindowState = FormWindowState.Maximized;
-                fisico.Show();
+                Form formulario = new frmCadastro(null,"fisico");
+                formulario.WindowState = FormWindowState.Maximized;
+                formulario.Show();
             }
 
         }
