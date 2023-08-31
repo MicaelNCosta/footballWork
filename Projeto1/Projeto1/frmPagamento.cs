@@ -33,7 +33,7 @@ namespace projeto1
                 };
 
 
-                Pagamento pagamento = db.Database.SqlQuery<Pagamento>(query).Single();
+                Pagamento pagamento = db.Database.SqlQuery<Pagamento>(query, paramenters2).SingleOrDefault();
                 if (pagamento != null)
                 {
                     MessageBox.Show("Você ja efetouo o pagamento ");
@@ -158,6 +158,8 @@ namespace projeto1
                 "Senha:"+txtSenha.Text + "\n" +
                 "Numero do cartão"+mskCartao.Text );
 
+            string hoje = DateTime.Now.ToString("yyyy-MM-dd");
+
             this.Hide();
             Form frmligas = new frmLigapaga();
             frmligas.WindowState = FormWindowState.Maximized;
@@ -170,8 +172,8 @@ namespace projeto1
 
 
 
-               string query = @"INSERT INTO pagamentos(cpf_pagamento,cnpj_pagamento,numero_cartao,senha_cartao,data_validade,cvv,nome_titular,usuario_id) 
-                                        VALUES (@pcpf_pagamento, @pcnpj_pagamento, @pnumero_cartao, @psenha_cartao, @pdata_validade, @pcvv,@pnome_titular,@pusuario_id );
+               string query = @"INSERT INTO pagamentos(cpf_pagamento,cnpj_pagamento,numero_cartao,senha_cartao,data_validade,cvv,nome_titular,usuario_id,data_pagamento) 
+                                        VALUES (@pcpf_pagamento, @pcnpj_pagamento, @pnumero_cartao, @psenha_cartao, @pdata_validade, @pcvv,@pnome_titular,@pusuario_id,@pdata_pagamento );
                                         SELECT LAST_INSERT_ID();";  
                 var paramenters = new[]
                 {
@@ -183,7 +185,8 @@ namespace projeto1
                     new MySqlParameter("@pdata_validade",VALIDADE),
                     new MySqlParameter("@pcvv",CVV),
                     new MySqlParameter("@pnome_titular",nome),
-                    new MySqlParameter("@pusuario_id", this.usuario_id)
+                    new MySqlParameter("@pusuario_id", this.usuario_id),
+                    new MySqlParameter("@pdata_pagamento",hoje)
                 };
 
                 int newUserId = db.Database.SqlQuery<int>(query, paramenters).Single();

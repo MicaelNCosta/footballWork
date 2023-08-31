@@ -15,7 +15,15 @@ namespace projeto1.Models
         [Column("id")]
         
         public int id { get; set;  }
-        
+
+        [Column("usuario_id")]
+
+        public int usuario_id { get; set; }
+
+        [Column("data_pagamento")]
+
+        public string data_pagamento { get; set; }
+
 
         [Column("cpf_pagamento")]
 
