@@ -101,11 +101,14 @@ namespace projeto1
 
             
 
-                 query = @"INSERT INTO pessoas_juridicas (cnpj,cep,razao_social,nome,uf,cidade,usuario_id) VALUES (@cnpj,@cep,@razao_social,@nome_fantasia,@uf,@cidade,@usuario_id)";
+                 query = @"INSERT INTO pessoas_juridicas (senha,email,cnpj,cep,razao_social,nome,uf,cidade,usuario_id) VALUES (@senha,@email,@cnpj,@cep,@razao_social,@nome_fantasia,@uf,@cidade,@usuario_id)";
 
                 parameters = new[]
 
                 {
+            new MySqlParameter("@senha", txtSenha),
+
+            new MySqlParameter("@email",txtEmail),
 
             new MySqlParameter("@cnpj",txtCnpj ),
 
