@@ -7,9 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using MySql.Data.MySqlClient;
+using projeto1.Models;
+using System.Data.SqlClient;
 
 namespace projeto1
-{
+{ 
     public partial class frmLogin : Form
     {
         public frmLogin()
@@ -19,10 +24,10 @@ namespace projeto1
 
         private void btnEsqueceuSenha_Click(object sender, EventArgs e)
         {
-             Form frmEsqueceuSenhaa = new frmEsqueceuSenha();
+            Form frmEsqueceuSenhaa = new frmEsqueceuSenha();
             frmEsqueceuSenhaa.WindowState = FormWindowState.Maximized;
             frmEsqueceuSenhaa.Show();
-             
+
 
         }
 
@@ -32,21 +37,10 @@ namespace projeto1
             return System.Text.RegularExpressions.Regex.IsMatch(emailLog, pattern);
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e, object senha)
         {
-            string senhacorrect = txtSenha.Text;
-            int n = 1234;
 
-            if (int.TryParse(senhacorrect, out int login) && login == n)
-            {
-                MessageBox.Show("Obrigado por Se juntar a Nós ", " BEM VINDO ", MessageBoxButtons.OK);
-            }
-            else
-            {
-                MessageBox.Show("SENHA INCORRETA,POR FAVOR TENTE NOVAMENTE");
-            }
-         }
-
+        }
 
         private void txtEmail_Validated(object sender, EventArgs e)
         {
@@ -83,18 +77,59 @@ namespace projeto1
 
       
 
-        private void pbSenhas_Click(object sender, EventArgs e)
+            private void pbSenhas_Click(object sender, EventArgs e)
+            {
+                if (txtSenha.PasswordChar == '*')
+                {
+                    txtSenha.PasswordChar = '\0'; // Mostrar a senha
+                    pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (3) certo.png");
+                }
+                else
+                {
+                    txtSenha.PasswordChar = '*'; // Ocultar a senha
+                    pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (2) certo.png");
+                }
+            }
+
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtSenha.PasswordChar == '*')
+
+            string email = txtEmail.Text;
+            string senha = txtSenha.Text;
+
+            using (MyDbContext db = new MyDbContext())
             {
-                txtSenha.PasswordChar = '\0'; // Mostrar a senha
-                pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (3) certo.png");
+                string query = @"SELECT COUNT(*) FROM usuarios WHERE email = @pemail AND senha = @psenha;";
+                var parameters = new[]
+                {
+                     new MySqlParameter("@pemail", email),
+                     new MySqlParameter("@psenha", senha)
+                };
+
+                int resul = db.Database.SqlQuery<int>(query, parameters).SingleOrDefault();
+
+                if (resul > 0)
+                {
+                    Form frmTelaInicial1 = new frmTelaInicial1(resul);
+                    frmTelaInicial1.WindowState = FormWindowState.Maximized;
+                    frmTelaInicial1.Show();
+                }
+                else
+                {
+                    MessageBox.Show("EMAIL OU SENHA INCORRETOS, TENTE NOVAMENTE", "Erro de Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
-            {
-               txtSenha.PasswordChar = '*'; // Ocultar a senha
-               pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (2) certo.png");
-            }
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
+
