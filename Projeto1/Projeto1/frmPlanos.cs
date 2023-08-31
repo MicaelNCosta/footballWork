@@ -49,7 +49,7 @@ namespace projeto1
             else if (rbPremiun.Checked)
             {
                 plano1 = " Plano Gratuito";
-                Form Form1 = new frmCartaoPixBoleto();
+                Form Form1 = new frmLigapaga();
                 Form1.Show();
             }
         }

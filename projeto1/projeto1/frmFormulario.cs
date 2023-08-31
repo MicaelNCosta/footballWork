@@ -292,6 +292,13 @@ namespace projeto1
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form login = new frmLogin();
+            login.WindowState = FormWindowState.Maximized;
+            login.Show();
+        }
     }
 }
 /*

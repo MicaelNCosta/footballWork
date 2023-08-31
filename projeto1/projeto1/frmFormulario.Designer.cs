@@ -68,6 +68,7 @@ namespace projeto1
             this.mskNumero = new System.Windows.Forms.MaskedTextBox();
             this.lblTel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.gpBox1.SuspendLayout();
             this.gpBox3.SuspendLayout();
             this.gpBox2.SuspendLayout();
@@ -493,12 +494,26 @@ namespace projeto1
             this.pictureBox1.TabIndex = 50;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(32, 576);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(157, 39);
+            this.button1.TabIndex = 51;
+            this.button1.Text = "VOLTAR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1473, 690);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblTel);
             this.Controls.Add(this.mskNumero);
             this.Controls.Add(this.groupBox1);
@@ -587,5 +602,6 @@ namespace projeto1
         private System.Windows.Forms.MaskedTextBox mskNumero;
         private System.Windows.Forms.Label lblTel;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

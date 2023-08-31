@@ -112,12 +112,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCartaoPixBoleto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCartaoPixBoleto.Designer.cs">
-      <DependentUpon>frmCartaoPixBoleto.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmLigapaga.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,9 +176,6 @@
     <Compile Include="MyDbContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCartaoPixBoleto.resx">
-      <DependentUpon>frmCartaoPixBoleto.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmEsqueceuSenha.resx">
       <DependentUpon>frmEsqueceuSenha.cs</DependentUpon>
     </EmbeddedResource>

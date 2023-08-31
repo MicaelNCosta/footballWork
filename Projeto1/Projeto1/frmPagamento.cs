@@ -212,9 +212,9 @@ namespace projeto1
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            Form frmcartoapixboleto = new frmCartaoPixBoleto();
-            frmcartoapixboleto.WindowState = FormWindowState.Maximized;
-            frmcartoapixboleto.Show();            
+            Form planos = new frmPlanos();
+            planos.WindowState = FormWindowState.Maximized;
+            planos.Show();            
             this.Close();
         }
 
