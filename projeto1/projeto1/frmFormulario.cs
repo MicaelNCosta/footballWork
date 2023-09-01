@@ -20,7 +20,15 @@ namespace projeto1
     {
         string acesso;
         string acesso2;
+        int formulario_id;
+       /* public frmPessoasjuridica(int formulario_id)
+        {
+            this.formulario_id = formulario_id;
+            InitializeComponent();
+        }*/
+
         public frmCadastro(string acesso, string acesso2)
+
         {
             this.acesso = acesso;
             this.acesso2 = acesso2;
@@ -194,18 +202,18 @@ namespace projeto1
 
         if (acesso == "juridico")
         {
-                Form formulario = new frmCadastro("juridico",null);                
-                formulario.WindowState = FormWindowState.Maximized;
-                formulario.Show();
+                Form juridico = new frmPessoasjuridica(formulario_id);                
+                juridico.WindowState = FormWindowState.Maximized;
+                juridico.Show();
         }
 
             if (acesso2 == "fisico")
             {
-                Form formulario = new frmCadastro(null,"fisico");
-                formulario.WindowState = FormWindowState.Maximized;
-                formulario.Show();
+                Form fisico = new frmPessoasfisicas(formulario_id);
+                fisico.WindowState = FormWindowState.Maximized;
+                fisico.Show();
             }
-
+            this.Close();
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)

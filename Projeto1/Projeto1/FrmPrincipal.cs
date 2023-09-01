@@ -24,11 +24,13 @@ namespace projeto1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             Form frmLogin = new frmLogin();
             frmLogin.WindowState = FormWindowState.Maximized;
             frmLogin.Show();
+            this.Hide();
         }
-
+       
         private void label3_Click(object sender, EventArgs e)
         {
 

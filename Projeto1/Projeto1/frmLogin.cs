@@ -27,7 +27,7 @@ namespace projeto1
             Form frmEsqueceuSenhaa = new frmEsqueceuSenha();
             frmEsqueceuSenhaa.WindowState = FormWindowState.Maximized;
             frmEsqueceuSenhaa.Show();
-
+            this.Hide();
 
         }
 
@@ -62,8 +62,8 @@ namespace projeto1
             Form Formulario = new frmCadastro(null, "fisico");
             Formulario.WindowState = FormWindowState.Maximized;
             Formulario.Show();
+            this.Hide();
 
-          
         }
 
         private void btnCadastroJ_Click(object sender, EventArgs e)
@@ -71,8 +71,8 @@ namespace projeto1
             Form Formulario = new frmCadastro("juridico",null);
             Formulario.WindowState = FormWindowState.Maximized;
             Formulario.Show();
+            this.Hide();
 
-            
         }
 
       
@@ -119,6 +119,7 @@ namespace projeto1
                     MessageBox.Show("EMAIL OU SENHA INCORRETOS, TENTE NOVAMENTE", "Erro de Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            this.Hide();
         }
 
         private void txtSenha_TextChanged(object sender, EventArgs e)

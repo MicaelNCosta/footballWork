@@ -196,7 +196,7 @@ namespace projeto1
 
             }
 
-            
+            this.Hide();
         }
 
         private void mskCvc_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)

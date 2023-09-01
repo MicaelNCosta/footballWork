@@ -140,7 +140,7 @@ namespace projeto1
             Form frmPlanos = new frmPlanos();
             frmPlanos.WindowState = FormWindowState.Maximized;
             frmPlanos.Show();
-
+            this.Hide();
 
         }
 
@@ -161,7 +161,7 @@ namespace projeto1
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             Form frmLogin = new frmLogin();
-            this.Hide();
+            this.Close();
             
             
         }

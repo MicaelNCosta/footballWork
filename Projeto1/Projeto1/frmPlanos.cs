@@ -54,6 +54,7 @@ namespace projeto1
                 Form Form1 = new frmPagamento(this.usuario_id);
                 Form1.Show();
             }
+            this.Hide();
         }
 
         private void cbGratuito_CheckedChanged(object sender, EventArgs e)

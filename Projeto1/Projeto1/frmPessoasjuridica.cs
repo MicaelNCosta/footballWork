@@ -79,7 +79,7 @@ namespace projeto1
         }
         MessageBox.Show(" Usuario cadrastrado");
 
-
+            
 
             using (MyDbContext db = new MyDbContext())
 
@@ -93,7 +93,7 @@ namespace projeto1
                     new MySqlParameter("@pnome",Nome),
                     new MySqlParameter("@pemail",Email),
                     new MySqlParameter("@psenha",Senha),
-                    new MySqlParameter("@pformulario_id", this.formulario_id),
+                    new MySqlParameter("@pformulario_id", formulario_id),
 
                 };
 
@@ -106,27 +106,27 @@ namespace projeto1
                 parameters = new[]
 
                 {
-            new MySqlParameter("@senha", txtSenha),
+                      new MySqlParameter("@senha", txtSenha),
 
-            new MySqlParameter("@email",txtEmail),
+                      new MySqlParameter("@email",txtEmail),
 
-            new MySqlParameter("@cnpj",txtCnpj ),
+                      new MySqlParameter("@cnpj",txtCnpj ),
 
-            new MySqlParameter("@cep",txtCep),
+                      new MySqlParameter("@cep",txtCep),
 
-            new MySqlParameter("@razao_social",txtRazão),
+                      new MySqlParameter("@razao_social",txtRazão),
 
-            new MySqlParameter("@nome",txtNome),
+                      new MySqlParameter("@nome",txtNome),
 
-            new MySqlParameter("@uf",txtUf),
+                      new MySqlParameter("@uf",txtUf),
 
-            new MySqlParameter("@cidade",txtCidade),
+                      new MySqlParameter("@cidade",txtCidade),
 
-            new MySqlParameter("@usuario_id", batatinha),
+                      new MySqlParameter("@usuario_id", batatinha),
 
 
 
-            };
+                };
 
 
 
@@ -144,7 +144,7 @@ namespace projeto1
             Form frmPlanos = new frmPlanos();
             frmPlanos.WindowState = FormWindowState.Maximized;
             frmPlanos.Show();
-
+            this.Hide();
         }
 
         private void txtCep_TextChanged(object sender, EventArgs e)
@@ -155,7 +155,7 @@ namespace projeto1
         private void btnVoltar1_Click(object sender, EventArgs e)
         {
             Form frmVoltar = new frmLogin();
-            this.Hide();
+            this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
