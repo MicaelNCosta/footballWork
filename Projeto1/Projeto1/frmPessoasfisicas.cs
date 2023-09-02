@@ -77,7 +77,8 @@ namespace projeto1
             string Nome = txtNome.Text;
             string Email = txtEmail.Text;
             string Telefone = txtTelefone.Text;
-            string data_de_nacimento = dtp_data_de_nacimento.Text;
+            string data_de_nacimento = dtp_data_de_nacimento.Value.ToString("yyyy-MM-dd");
+
 
 
 
@@ -102,7 +103,7 @@ namespace projeto1
 
                     new MySqlParameter("@psenha", Senha),
 
-                    new MySqlParameter("@pformulario_id", this.formulario_id),
+                    new MySqlParameter("@pformulario_id", this.formulario_id)
 
                 };
 
@@ -110,7 +111,7 @@ namespace projeto1
 
 
 
-                query = @"INSERT INTO Pessoas_fisicas (cpf, data_de_nacimento, cep, endereco, usuario_id) VALUES (@pCpf, @pdata_de_nacimento, @pcep, @pendereco, @pUsuario_id);";
+                query = @"INSERT INTO Pessoas_fisicas (cpf, data_de_nascimento, cep, endereco, usuario_id) VALUES (@pCpf, @pdata_de_nascimento, @pcep, @pendereco, @pUsuario_id);";
 
                 parameters = new[]
 
@@ -118,13 +119,13 @@ namespace projeto1
 
                     new MySqlParameter("@pcpf", Cpf),
 
-                    new MySqlParameter("@pdata_de_nacimento", data_de_nacimento),
+                    new MySqlParameter("@pdata_de_nascimento", data_de_nacimento),
 
                     new MySqlParameter("@pcep",cep) ,
 
                     new MySqlParameter("@pendereco", Endereco),
 
-                    new MySqlParameter("@pusuario_id", batatinha),
+                    new MySqlParameter("@pusuario_id", batatinha)
 
                 };
 

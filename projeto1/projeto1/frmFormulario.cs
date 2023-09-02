@@ -20,12 +20,7 @@ namespace projeto1
     {
         string acesso;
         string acesso2;
-        int formulario_id;
-       /* public frmPessoasjuridica(int formulario_id)
-        {
-            this.formulario_id = formulario_id;
-            InitializeComponent();
-        }*/
+        
 
         public frmCadastro(string acesso, string acesso2)
 
@@ -172,7 +167,7 @@ namespace projeto1
                 int bsim5 = csim5 ? 1 : 0;
 
 
-                string query = @"INSERT INTO formularios (pergunta_1, pergunta_2, pergunta_3, pergunta_5, pergunta_6, sobre) VALUES (@pergunta_1, @pergunta_2, @pergunta_3, @pergunta_5, @pergunta_6, @sobre)";
+                string query = @"INSERT INTO formularios (pergunta_1, pergunta_2, pergunta_3, pergunta_5, pergunta_6, sobre) VALUES (@pergunta_1, @pergunta_2, @pergunta_3, @pergunta_5, @pergunta_6, @sobre); SELECT LAST_INSERT_ID();";
                              
 
                 var parameters = new[]
@@ -196,25 +191,25 @@ namespace projeto1
 
 
 
-                int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
-              
+                int formulario_id = db.Database.SqlQuery<int>(query, parameters).Single();
+               if (acesso == "juridico")
+                {
+                        Form juridico = new frmPessoasjuridica(formulario_id);                
+                        juridico.WindowState = FormWindowState.Maximized;
+                        juridico.Show();
+                }
+
+                    if (acesso2 == "fisico")
+                    {
+                        Form fisico = new frmPessoasfisicas(formulario_id);
+                        fisico.WindowState = FormWindowState.Maximized;
+                        fisico.Show();
+                    }
+                    this.Close();
+                }
             }
 
-        if (acesso == "juridico")
-        {
-                Form juridico = new frmPessoasjuridica(formulario_id);                
-                juridico.WindowState = FormWindowState.Maximized;
-                juridico.Show();
-        }
-
-            if (acesso2 == "fisico")
-            {
-                Form fisico = new frmPessoasfisicas(formulario_id);
-                fisico.WindowState = FormWindowState.Maximized;
-                fisico.Show();
-            }
-            this.Close();
-        }
+       
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
