@@ -34,27 +34,27 @@ namespace projeto1
             int contador = 0;
             if (chInglesa.Checked)
             {
-                txt += chInglesa.Text + " Liga inglesa,";
+                txt += chInglesa.Text + " 'Liga inglesa',";
                 contador++;
             }
             if (chFrancesa.Checked)
             {
-                txt += chFrancesa.Text + " Liga Francesa,";
+                txt += chFrancesa.Text + " 'Liga Francesa',";
                 contador++;
             }
             if (chAlema.Checked)
             {
-                txt += chAlema.Text + " Liga Alema,";
+                txt += chAlema.Text + " 'Liga Alema',";
                 contador++;
             }
             if (chEspanhola.Checked)
             {
-                txt += chEspanhola.Text + "Liga Espanhola,";
+                txt += chEspanhola.Text + "'Liga Espanhola',";
                 contador++;
             }
             if (chItaliana.Checked)
             {
-                txt += chItaliana.Text + "Liga Italiana,";
+                txt += chItaliana.Text + "'Liga Italiana',";
                 contador++;
             }
 

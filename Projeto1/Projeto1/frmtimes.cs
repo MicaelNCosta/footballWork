@@ -17,12 +17,19 @@ namespace projeto1
         string ligas;
         public frmtimes(string ligas)
         {
+            if (!string.IsNullOrEmpty(ligas) && ligas.Length > 0)
+            {
+                ligas = ligas.Substring(0, ligas.Length - 1);
+            }
+            MessageBox.Show(ligas);
+
             this.ligas = ligas;
+           
             InitializeComponent();
             using (MyDbContext db = new MyDbContext())
             {
                 string query =  @"SELECT * FROM times AS t JOIN ligas AS l ON t.ligas_id = l.id WHERE l.ligas IN ("+ligas+") ; ";
-                List<frmtimes> frmtimes = db.Database.SqlQuery<frmtimes>(query).ToList();
+                List<Time> frmtimes = db.Database.SqlQuery<Time>(query).ToList();
                 dataGVtimes.DataSource = frmtimes;
             }
         }

@@ -179,6 +179,7 @@
       <DependentUpon>frmtimes.cs</DependentUpon>
     </Compile>
     <Compile Include="models\liga.cs" />
+    <Compile Include="models\Time.cs" />
     <Compile Include="MyDbContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

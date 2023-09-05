@@ -41,7 +41,7 @@ namespace projeto1
                 
                 MessageBox.Show("Parabens você selecionou o nosso plano gratuito");
 
-                Form frmligas = new frmligas();
+                Form frmligas = new frmligas(true);
                 frmligas.WindowState = FormWindowState.Maximized;
                 frmligas.Show();
             }
