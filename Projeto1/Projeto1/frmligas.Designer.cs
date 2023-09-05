@@ -230,7 +230,6 @@ namespace projeto1
             // pictureBox6
             // 
             this.pictureBox6.ErrorImage = null;
-            this.pictureBox6.Image = global::projeto1.Properties.Resources.serie_a_tim___2020_removebg_preview1;
             this.pictureBox6.ImageLocation = "C:\\Users\\brian.ssampaio\\source\\repos\\footballWork2\\Projeto1\\projeto1\\Resources\\se" +
     "rie_a_tim_-_2020-removebg-preview.png";
             this.pictureBox6.Location = new System.Drawing.Point(1061, 148);
@@ -298,6 +297,7 @@ namespace projeto1
             this.Controls.Add(this.label1);
             this.Name = "frmligas";
             this.Text = "frmligas";
+            this.Load += new System.EventHandler(this.frmligas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
