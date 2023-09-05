@@ -21,6 +21,8 @@ namespace projeto1
         private void button2_Click(object sender, EventArgs e)
         {
             Form formVoltar = new frmLogin();
+            formVoltar.WindowState = FormWindowState.Maximized;
+            formVoltar.Show();            
             this.Hide();
 
         }
@@ -49,11 +51,17 @@ namespace projeto1
 
                 int nRowAfetted = db.Database.ExecuteSqlCommand(query, parameters);
 
-
                 Form formVoltar = new frmLogin();
+                formVoltar.WindowState = FormWindowState.Maximized;
+                formVoltar.Show();
                 this.Hide();
+
+
             }
+            
+            this.Hide();
         }
+
 
         private void label4_Click(object sender, EventArgs e)
         {

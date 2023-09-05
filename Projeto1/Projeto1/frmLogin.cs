@@ -113,13 +113,14 @@ namespace projeto1
                     Form frmTelaInicial1 = new frmTelaInicial1(resul);
                     frmTelaInicial1.WindowState = FormWindowState.Maximized;
                     frmTelaInicial1.Show();
+                    this.Hide();
                 }
                 else
                 {
                     MessageBox.Show("EMAIL OU SENHA INCORRETOS, TENTE NOVAMENTE", "Erro de Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            this.Hide();
+            
         }
 
         private void txtSenha_TextChanged(object sender, EventArgs e)
