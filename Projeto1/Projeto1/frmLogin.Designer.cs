@@ -217,7 +217,7 @@ namespace projeto1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 581);
-            this.Controls.Add(this.btnForm);
+            //this.Controls.Add(this.btnForm);
             this.ClientSize = new System.Drawing.Size(1222, 655);           
             this.ClientSize = new System.Drawing.Size(1094, 581);
             this.Controls.Add(this.btnCadastroJ);
