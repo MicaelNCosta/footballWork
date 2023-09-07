@@ -54,7 +54,7 @@ namespace projeto1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(144, 76);
+            this.label1.Location = new System.Drawing.Point(549, 295);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(283, 108);
             this.label1.TabIndex = 0;
@@ -65,7 +65,7 @@ namespace projeto1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(144, 167);
+            this.label2.Location = new System.Drawing.Point(549, 386);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(354, 108);
             this.label2.TabIndex = 1;
@@ -74,9 +74,9 @@ namespace projeto1
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
-            this.panel1.Location = new System.Drawing.Point(515, 43);
+            this.panel1.Location = new System.Drawing.Point(920, 262);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 484);
+            this.panel1.Size = new System.Drawing.Size(14, 485);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -84,7 +84,7 @@ namespace projeto1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(621, 137);
+            this.label3.Location = new System.Drawing.Point(1026, 356);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 24);
             this.label3.TabIndex = 4;
@@ -94,7 +94,7 @@ namespace projeto1
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(621, 214);
+            this.label4.Location = new System.Drawing.Point(1026, 433);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 24);
             this.label4.TabIndex = 5;
@@ -102,18 +102,18 @@ namespace projeto1
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(625, 241);
+            this.txtSenha.Location = new System.Drawing.Point(1030, 460);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(268, 20);
+            this.txtSenha.Size = new System.Drawing.Size(272, 20);
             this.txtSenha.TabIndex = 6;
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(625, 164);
+            this.txtEmail.Location = new System.Drawing.Point(1030, 383);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(268, 20);
+            this.txtEmail.Size = new System.Drawing.Size(272, 20);
             this.txtEmail.TabIndex = 7;
             this.txtEmail.Validated += new System.EventHandler(this.txtEmail_Validated);
             // 
@@ -123,9 +123,9 @@ namespace projeto1
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnLogin.Location = new System.Drawing.Point(567, 294);
+            this.btnLogin.Location = new System.Drawing.Point(972, 513);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(362, 35);
+            this.btnLogin.Size = new System.Drawing.Size(366, 36);
             this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -135,7 +135,7 @@ namespace projeto1
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(563, 422);
+            this.label5.Location = new System.Drawing.Point(968, 641);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(381, 24);
             this.label5.TabIndex = 9;
@@ -147,9 +147,9 @@ namespace projeto1
             this.btnEsqueceuSenha.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEsqueceuSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEsqueceuSenha.ForeColor = System.Drawing.Color.Red;
-            this.btnEsqueceuSenha.Location = new System.Drawing.Point(567, 335);
+            this.btnEsqueceuSenha.Location = new System.Drawing.Point(972, 554);
             this.btnEsqueceuSenha.Name = "btnEsqueceuSenha";
-            this.btnEsqueceuSenha.Size = new System.Drawing.Size(228, 29);
+            this.btnEsqueceuSenha.Size = new System.Drawing.Size(232, 30);
             this.btnEsqueceuSenha.TabIndex = 10;
             this.btnEsqueceuSenha.Text = "ESQUECEU A SENHA?";
             this.btnEsqueceuSenha.UseVisualStyleBackColor = false;
@@ -161,9 +161,9 @@ namespace projeto1
             this.btnCadastroF.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastroF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastroF.ForeColor = System.Drawing.Color.Red;
-            this.btnCadastroF.Location = new System.Drawing.Point(567, 468);
+            this.btnCadastroF.Location = new System.Drawing.Point(972, 687);
             this.btnCadastroF.Name = "btnCadastroF";
-            this.btnCadastroF.Size = new System.Drawing.Size(166, 36);
+            this.btnCadastroF.Size = new System.Drawing.Size(170, 37);
             this.btnCadastroF.TabIndex = 11;
             this.btnCadastroF.Text = "PESSOA FISICA";
             this.btnCadastroF.UseVisualStyleBackColor = false;
@@ -173,7 +173,7 @@ namespace projeto1
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(179, 288);
+            this.label6.Location = new System.Drawing.Point(584, 507);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(248, 36);
             this.label6.TabIndex = 12;
@@ -185,9 +185,9 @@ namespace projeto1
             this.btnCadastroJ.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastroJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastroJ.ForeColor = System.Drawing.Color.Red;
-            this.btnCadastroJ.Location = new System.Drawing.Point(739, 468);
+            this.btnCadastroJ.Location = new System.Drawing.Point(1144, 687);
             this.btnCadastroJ.Name = "btnCadastroJ";
-            this.btnCadastroJ.Size = new System.Drawing.Size(190, 36);
+            this.btnCadastroJ.Size = new System.Drawing.Size(194, 37);
             this.btnCadastroJ.TabIndex = 16;
             this.btnCadastroJ.Text = "PESSOA JURIDICA";
             this.btnCadastroJ.UseVisualStyleBackColor = false;
@@ -196,9 +196,9 @@ namespace projeto1
             // pbSenhas
             // 
             this.pbSenhas.Image = global::projeto1.Properties.Resources.olho__2__certo;
-            this.pbSenhas.Location = new System.Drawing.Point(899, 241);
+            this.pbSenhas.Location = new System.Drawing.Point(1304, 460);
             this.pbSenhas.Name = "pbSenhas";
-            this.pbSenhas.Size = new System.Drawing.Size(30, 26);
+            this.pbSenhas.Size = new System.Drawing.Size(34, 27);
             this.pbSenhas.TabIndex = 13;
             this.pbSenhas.TabStop = false;
             this.pbSenhas.Click += new System.EventHandler(this.pbSenhas_Click);
@@ -206,9 +206,9 @@ namespace projeto1
             // pictureBox2
             // 
             this.pictureBox2.Image = global::projeto1.Properties.Resources.Chart_Talk_logo_template_Financial_growth_talk_logo__removebg_preview_updated_removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(919, 7);
+            this.pictureBox2.Location = new System.Drawing.Point(1324, 226);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(213, 228);
+            this.pictureBox2.Size = new System.Drawing.Size(217, 229);
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
@@ -216,10 +216,7 @@ namespace projeto1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1140, 581);
-            //this.Controls.Add(this.btnForm);
-            this.ClientSize = new System.Drawing.Size(1222, 655);           
-            this.ClientSize = new System.Drawing.Size(1094, 581);
+            this.ClientSize = new System.Drawing.Size(1613, 844);
             this.Controls.Add(this.btnCadastroJ);
             this.Controls.Add(this.pbSenhas);
             this.Controls.Add(this.btnCadastroF);

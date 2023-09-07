@@ -488,9 +488,9 @@ namespace projeto1
             // pictureBox1
             // 
             this.pictureBox1.Image = global::projeto1.Properties.Resources.Chart_Talk_logo_template_Financial_growth_talk_logo__removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(653, 107);
+            this.pictureBox1.Location = new System.Drawing.Point(659, 169);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(606, 508);
+            this.pictureBox1.Size = new System.Drawing.Size(483, 388);
             this.pictureBox1.TabIndex = 50;
             this.pictureBox1.TabStop = false;
             // 

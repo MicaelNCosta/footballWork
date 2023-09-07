@@ -58,7 +58,7 @@ namespace projeto1
             this.lblEmail.BackColor = System.Drawing.Color.White;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.Red;
-            this.lblEmail.Location = new System.Drawing.Point(152, 91);
+            this.lblEmail.Location = new System.Drawing.Point(584, 285);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(69, 24);
             this.lblEmail.TabIndex = 0;
@@ -70,7 +70,7 @@ namespace projeto1
             this.lblNome.BackColor = System.Drawing.Color.White;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.Red;
-            this.lblNome.Location = new System.Drawing.Point(105, 190);
+            this.lblNome.Location = new System.Drawing.Point(537, 384);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(161, 24);
             this.lblNome.TabIndex = 1;
@@ -82,7 +82,7 @@ namespace projeto1
             this.lblSenha.BackColor = System.Drawing.Color.White;
             this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSenha.ForeColor = System.Drawing.Color.Red;
-            this.lblSenha.Location = new System.Drawing.Point(152, 291);
+            this.lblSenha.Location = new System.Drawing.Point(584, 485);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(70, 24);
             this.lblSenha.TabIndex = 2;
@@ -94,7 +94,7 @@ namespace projeto1
             this.lblData.BackColor = System.Drawing.Color.White;
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData.ForeColor = System.Drawing.Color.Red;
-            this.lblData.Location = new System.Drawing.Point(679, 91);
+            this.lblData.Location = new System.Drawing.Point(1111, 285);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(187, 24);
             this.lblData.TabIndex = 3;
@@ -106,7 +106,7 @@ namespace projeto1
             this.lblCpf.BackColor = System.Drawing.Color.White;
             this.lblCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCpf.ForeColor = System.Drawing.Color.Red;
-            this.lblCpf.Location = new System.Drawing.Point(758, 190);
+            this.lblCpf.Location = new System.Drawing.Point(1190, 384);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(50, 24);
             this.lblCpf.TabIndex = 4;
@@ -118,7 +118,7 @@ namespace projeto1
             this.lblCep.BackColor = System.Drawing.Color.White;
             this.lblCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCep.ForeColor = System.Drawing.Color.Red;
-            this.lblCep.Location = new System.Drawing.Point(758, 291);
+            this.lblCep.Location = new System.Drawing.Point(1190, 485);
             this.lblCep.Name = "lblCep";
             this.lblCep.Size = new System.Drawing.Size(51, 24);
             this.lblCep.TabIndex = 5;
@@ -130,7 +130,7 @@ namespace projeto1
             this.lblEndereco.BackColor = System.Drawing.Color.White;
             this.lblEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEndereco.ForeColor = System.Drawing.Color.Red;
-            this.lblEndereco.Location = new System.Drawing.Point(729, 382);
+            this.lblEndereco.Location = new System.Drawing.Point(1161, 576);
             this.lblEndereco.Name = "lblEndereco";
             this.lblEndereco.Size = new System.Drawing.Size(102, 24);
             this.lblEndereco.TabIndex = 6;
@@ -141,7 +141,7 @@ namespace projeto1
             this.btnCadastre.BackColor = System.Drawing.Color.Red;
             this.btnCadastre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastre.ForeColor = System.Drawing.Color.White;
-            this.btnCadastre.Location = new System.Drawing.Point(978, 534);
+            this.btnCadastre.Location = new System.Drawing.Point(1410, 728);
             this.btnCadastre.Name = "btnCadastre";
             this.btnCadastre.Size = new System.Drawing.Size(160, 61);
             this.btnCadastre.TabIndex = 7;
@@ -152,7 +152,7 @@ namespace projeto1
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(63, 127);
+            this.txtEmail.Location = new System.Drawing.Point(495, 321);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(263, 29);
             this.txtEmail.TabIndex = 8;
@@ -161,7 +161,7 @@ namespace projeto1
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(62, 331);
+            this.txtSenha.Location = new System.Drawing.Point(494, 525);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(264, 29);
             this.txtSenha.TabIndex = 9;
@@ -169,7 +169,7 @@ namespace projeto1
             // txtCpf
             // 
             this.txtCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpf.Location = new System.Drawing.Point(636, 228);
+            this.txtCpf.Location = new System.Drawing.Point(1068, 422);
             this.txtCpf.Name = "txtCpf";
             this.txtCpf.Size = new System.Drawing.Size(270, 29);
             this.txtCpf.TabIndex = 10;
@@ -177,7 +177,7 @@ namespace projeto1
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(62, 228);
+            this.txtNome.Location = new System.Drawing.Point(494, 422);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(264, 29);
             this.txtNome.TabIndex = 12;
@@ -185,7 +185,7 @@ namespace projeto1
             // txtCep
             // 
             this.txtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCep.Location = new System.Drawing.Point(636, 331);
+            this.txtCep.Location = new System.Drawing.Point(1068, 525);
             this.txtCep.Name = "txtCep";
             this.txtCep.Size = new System.Drawing.Size(270, 29);
             this.txtCep.TabIndex = 13;
@@ -193,7 +193,7 @@ namespace projeto1
             // txtEndereco
             // 
             this.txtEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEndereco.Location = new System.Drawing.Point(636, 422);
+            this.txtEndereco.Location = new System.Drawing.Point(1068, 616);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(270, 29);
             this.txtEndereco.TabIndex = 14;
@@ -204,7 +204,7 @@ namespace projeto1
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(275, 9);
+            this.label9.Location = new System.Drawing.Point(707, 203);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(423, 55);
             this.label9.TabIndex = 16;
@@ -213,7 +213,7 @@ namespace projeto1
             // dtp_data_de_nacimento
             // 
             this.dtp_data_de_nacimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtp_data_de_nacimento.Location = new System.Drawing.Point(636, 136);
+            this.dtp_data_de_nacimento.Location = new System.Drawing.Point(1068, 330);
             this.dtp_data_de_nacimento.Name = "dtp_data_de_nacimento";
             this.dtp_data_de_nacimento.Size = new System.Drawing.Size(270, 29);
             this.dtp_data_de_nacimento.TabIndex = 17;
@@ -223,7 +223,7 @@ namespace projeto1
             this.btnVoltar.BackColor = System.Drawing.Color.Red;
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(12, 534);
+            this.btnVoltar.Location = new System.Drawing.Point(444, 728);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(160, 61);
             this.btnVoltar.TabIndex = 18;
@@ -234,7 +234,7 @@ namespace projeto1
             // pictureBox2
             // 
             this.pictureBox2.Image = global::projeto1.Properties.Resources.Chart_Talk_logo_template_Financial_growth_talk_logo__removebg_preview_updated_removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(925, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(1357, 206);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(213, 228);
             this.pictureBox2.TabIndex = 19;
@@ -246,7 +246,7 @@ namespace projeto1
             this.lbltelefone.BackColor = System.Drawing.Color.White;
             this.lbltelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltelefone.ForeColor = System.Drawing.Color.Red;
-            this.lbltelefone.Location = new System.Drawing.Point(142, 392);
+            this.lbltelefone.Location = new System.Drawing.Point(574, 586);
             this.lbltelefone.Name = "lbltelefone";
             this.lbltelefone.Size = new System.Drawing.Size(93, 24);
             this.lbltelefone.TabIndex = 20;
@@ -255,7 +255,7 @@ namespace projeto1
             // txtTelefone
             // 
             this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefone.Location = new System.Drawing.Point(62, 437);
+            this.txtTelefone.Location = new System.Drawing.Point(494, 631);
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(264, 29);
             this.txtTelefone.TabIndex = 21;
@@ -265,7 +265,7 @@ namespace projeto1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1167, 607);
+            this.ClientSize = new System.Drawing.Size(1615, 837);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.lbltelefone);
             this.Controls.Add(this.pictureBox2);
