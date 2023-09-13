@@ -142,7 +142,7 @@ namespace projeto1
             this.btnCadastre.BackColor = System.Drawing.Color.Red;
             this.btnCadastre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastre.ForeColor = System.Drawing.Color.White;
-            this.btnCadastre.Location = new System.Drawing.Point(1410, 728);
+            this.btnCadastre.Location = new System.Drawing.Point(1472, 751);
             this.btnCadastre.Name = "btnCadastre";
             this.btnCadastre.Size = new System.Drawing.Size(160, 61);
             this.btnCadastre.TabIndex = 7;
@@ -153,7 +153,7 @@ namespace projeto1
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(495, 321);
+            this.txtEmail.Location = new System.Drawing.Point(63, 128);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(263, 29);
             this.txtEmail.TabIndex = 8;
@@ -163,7 +163,7 @@ namespace projeto1
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(494, 525);
+            this.txtSenha.Location = new System.Drawing.Point(56, 329);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(264, 29);
             this.txtSenha.TabIndex = 9;
@@ -171,9 +171,9 @@ namespace projeto1
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(494, 422);
+            this.txtNome.Location = new System.Drawing.Point(63, 230);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(264, 29);
+            this.txtNome.Size = new System.Drawing.Size(263, 29);
             this.txtNome.TabIndex = 12;
             // 
             // txtEndereco
@@ -197,7 +197,7 @@ namespace projeto1
             this.btnVoltar.BackColor = System.Drawing.Color.Red;
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.White;
-            this.btnVoltar.Location = new System.Drawing.Point(444, 728);
+            this.btnVoltar.Location = new System.Drawing.Point(56, 751);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(160, 61);
             this.btnVoltar.TabIndex = 18;
@@ -268,7 +268,7 @@ namespace projeto1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1178, 653);
+            this.ClientSize = new System.Drawing.Size(1698, 857);
             this.Controls.Add(this.mskTelefone);
             this.Controls.Add(this.mskCep);
             this.Controls.Add(this.mskCpf);
