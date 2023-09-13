@@ -132,6 +132,11 @@ namespace projeto1
         {
 
         }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

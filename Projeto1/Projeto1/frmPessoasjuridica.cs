@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using projeto1.Models2;
+using System.Text.RegularExpressions;
 
 namespace projeto1
 {
@@ -23,8 +24,8 @@ namespace projeto1
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            string Cnpj = txtCnpj.Text;
-            string Cep = txtCep.Text;
+            string Cnpj = mskCnpj.Text;
+            string Cep = mskCep.Text;
             string Razao_social = txtRazão.Text;
             string Nome = txtNome.Text;
             string Uf = txtUf.Text;
@@ -33,9 +34,11 @@ namespace projeto1
             string Senha = txtSenha.Text;
 
 
+            
 
 
-            if (txtCnpj.Text == "")
+
+            if (mskCnpj.Text == "")
 
             {
                 MessageBox.Show(" Obrigatorio preencher tudo ");
@@ -51,7 +54,7 @@ namespace projeto1
                 MessageBox.Show(" Obrigatorio preencher tudo ");
                 return;
             }
-            if (txtCep.Text == "")
+            if (mskCep.Text == "")
             {
                 MessageBox.Show(" Obrigatorio preencher tudo  ");
                 return;
@@ -101,7 +104,7 @@ namespace projeto1
 
             
 
-                 query = @"INSERT INTO pessoas_juridicas (senha,email,cnpj,cep,razao_social,nome,uf,cidade,usuario_id) VALUES (@senha,@email,@cnpj,@cep,@razao_social,@nome_fantasia,@uf,@cidade,@usuario_id)";
+                 query = @"INSERT INTO pessoas_juridicas (senha,email,cnpj,cep,razao_social,nome,uf,cidade,usuario_id) VALUES (@senha,@email,@cnpj,@cep,@razao_social,@uf,@cidade,@usuario_id)";
 
                 parameters = new[]
 
@@ -110,9 +113,9 @@ namespace projeto1
 
                       new MySqlParameter("@email",txtEmail),
 
-                      new MySqlParameter("@cnpj",txtCnpj ),
+                      new MySqlParameter("@cnpj",mskCnpj ),
 
-                      new MySqlParameter("@cep",txtCep),
+                      new MySqlParameter("@cep",mskCep),
 
                       new MySqlParameter("@razao_social",txtRazão),
 
@@ -156,13 +159,14 @@ namespace projeto1
         {
             Form frmVoltar = new frmLogin();
             this.Close();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
-
+               
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -174,6 +178,44 @@ namespace projeto1
         }
 
         private void txtRazão_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (txtSenha.PasswordChar == '*')
+            {
+                txtSenha.PasswordChar = '\0'; // Mostrar a senha
+                pbSenha.Image = Image.FromFile(@"..\..\Imagem\olho (2) certo.png");
+            }
+            else
+            {
+                txtSenha.PasswordChar = '*'; // Ocultar a senha
+                pbSenha.Image = Image.FromFile(@"..\..\Imagem\olho (3) certo.png");
+            }
+        }
+
+        private void txtEmail_Validated(object sender, EventArgs e)
+        {
+
+            string email = txtEmail.Text;
+            Regex regex = new Regex(@"^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$");
+            if (!regex.IsMatch(email))
+
+            {
+                MessageBox.Show("Email inválido");
+                
+            }
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }
