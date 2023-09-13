@@ -159,12 +159,7 @@ namespace projeto1
                 "Numero do cartão"+mskCartao.Text );
 
             string hoje = DateTime.Now.ToString("yyyy-MM-dd");
-
-            this.Hide();
-            Form frmligas = new frmLigapaga();
-            frmligas.WindowState = FormWindowState.Maximized;
-            frmligas.Show();
-
+            
             using(MyDbContext db = new MyDbContext())
             {
                 
@@ -196,6 +191,9 @@ namespace projeto1
 
             }
 
+            Form frmligas = new frmligas(true);
+            frmligas.WindowState = FormWindowState.Maximized;
+            frmligas.Show();
             this.Hide();
         }
 

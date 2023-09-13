@@ -32,6 +32,12 @@ namespace projeto1
         {
             string txt = "";
             int contador = 0;
+
+            if(!(!this.pagamentos && (chInglesa.Checked ^ chFrancesa.Checked ^ chAlema.Checked ^ chEspanhola.Checked ^ chItaliana.Checked)))
+            {
+                MessageBox.Show("Metodo gratuito só pode selecionar uma liga");
+            }
+
             if (chInglesa.Checked)
             {
                 txt += chInglesa.Text + " 'Liga inglesa',";
