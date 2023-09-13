@@ -115,6 +115,7 @@ namespace projeto1
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(272, 20);
             this.txtEmail.TabIndex = 7;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             this.txtEmail.Validated += new System.EventHandler(this.txtEmail_Validated);
             // 
             // btnLogin

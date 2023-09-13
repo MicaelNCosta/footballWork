@@ -46,12 +46,12 @@ namespace projeto1
                 return;
             }
           
-            if (txtCpf.Text == "")
+            if (mskCpf.Text == "")
             {
                 MessageBox.Show("Obrigatorio prencher tudo");
                 return;
             }
-            if (txtCep.Text == "")
+            if (mskCep.Text == "")
             {
                 MessageBox.Show("Obrigatorio prencher tudo");
                 return;
@@ -63,20 +63,20 @@ namespace projeto1
             }
             MessageBox.Show("usuario Cadastrado");
 
-            if (txtTelefone.Text == "Obrigatorio prencher tudo")
+            if (mskTelefone.Text == "Obrigatorio prencher tudo")
             {
                 MessageBox.Show("Obrigatorio prencher tudo");
                 return;
             }
-            MessageBox.Show("usuario Cadastrado");
+            
 
-            string cep = txtCep.Text;
+            string cep = mskCep.Text;
             string Endereco = txtEndereco.Text;
-            string Cpf = txtCpf.Text;
+            string Cpf = mskCpf.Text;
             string Senha = txtSenha.Text;
             string Nome = txtNome.Text;
             string Email = txtEmail.Text;
-            string Telefone = txtTelefone.Text;
+            string Telefone = mskTelefone.Text;
             string data_de_nacimento = dtp_data_de_nacimento.Value.ToString("yyyy-MM-dd");
 
 
@@ -154,7 +154,7 @@ namespace projeto1
              
             {
                 MessageBox.Show("Email inválido");
-                txtEmail.BackColor = Color.Red;
+                
             }
 
         }
@@ -165,6 +165,25 @@ namespace projeto1
             this.Close();
             
             
+        }
+
+        private void pbSenha_Click(object sender, EventArgs e)
+        {
+            if (txtSenha.PasswordChar == '*')
+            {
+                txtSenha.PasswordChar = '\0'; // Mostrar a senha
+                pbSenha.Image = Image.FromFile(@"..\..\Imagem\olho (2) certo.png");
+            }
+            else
+            {
+                txtSenha.PasswordChar = '*'; // Ocultar a senha
+                pbSenha.Image = Image.FromFile(@"..\..\Imagem\olho (3) certo.png");
+            }
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
