@@ -45,14 +45,14 @@ namespace projeto1
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.chItalia = new System.Windows.Forms.CheckBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -209,6 +209,7 @@ namespace projeto1
             // pictureBox6
             // 
             this.pictureBox6.ErrorImage = null;
+            this.pictureBox6.Image = global::projeto1.Properties.Resources.serie_a_tim___2020_removebg_preview;
             this.pictureBox6.ImageLocation = "C:\\Users\\brian.ssampaio\\source\\repos\\footballWork2\\Projeto1\\projeto1\\Resources\\se" +
     "rie_a_tim_-_2020-removebg-preview.png";
             this.pictureBox6.Location = new System.Drawing.Point(1061, 148);
@@ -220,6 +221,7 @@ namespace projeto1
             // pictureBox5
             // 
             this.pictureBox5.ErrorImage = null;
+            this.pictureBox5.Image = global::projeto1.Properties.Resources.laliga_removebg_preview;
             this.pictureBox5.ImageLocation = "C:\\Users\\brian.ssampaio\\source\\repos\\footballWork2\\Projeto1\\projeto1\\Resources\\la" +
     "liga-removebg-preview.png";
             this.pictureBox5.Location = new System.Drawing.Point(816, 148);
@@ -231,6 +233,7 @@ namespace projeto1
             // pictureBox4
             // 
             this.pictureBox4.ErrorImage = null;
+            this.pictureBox4.Image = global::projeto1.Properties.Resources._200px_Bundesliga_logo__2017_;
             this.pictureBox4.ImageLocation = "C:\\Users\\brian.ssampaio\\source\\repos\\footballWork2\\Projeto1\\projeto1\\Resources\\20" +
     "0px-Bundesliga_logo_(2017).png";
             this.pictureBox4.Location = new System.Drawing.Point(571, 148);
@@ -238,17 +241,6 @@ namespace projeto1
             this.pictureBox4.Size = new System.Drawing.Size(195, 209);
             this.pictureBox4.TabIndex = 19;
             this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.ErrorImage = null;
-            this.pictureBox3.ImageLocation = "C:\\Users\\brian.ssampaio\\source\\repos\\footballWork2\\Projeto1\\projeto1\\Resources\\li" +
-    "gue-1.png";
-            this.pictureBox3.Location = new System.Drawing.Point(332, 148);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(195, 209);
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -271,11 +263,24 @@ namespace projeto1
             this.chItalia.UseVisualStyleBackColor = true;
             this.chItalia.CheckedChanged += new System.EventHandler(this.chItalia_CheckedChanged);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.ErrorImage = null;
+            this.pictureBox3.Image = global::projeto1.Properties.Resources.ligue_1;
+            this.pictureBox3.ImageLocation = "C:\\Users\\brian.ssampaio\\source\\repos\\footballWork2\\Projeto1\\projeto1\\Resources\\li" +
+    "gue-1.png";
+            this.pictureBox3.Location = new System.Drawing.Point(332, 148);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(195, 209);
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
+            // 
             // frmLigapaga
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1477, 717);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1855, 798);
             this.Controls.Add(this.chItalia);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
@@ -300,8 +305,8 @@ namespace projeto1
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -321,12 +326,12 @@ namespace projeto1
         private System.Windows.Forms.CheckBox chFrancesa;
         private System.Windows.Forms.CheckBox chAlema;
         private System.Windows.Forms.CheckBox chEspanhola;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckBox chItalia;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

@@ -63,6 +63,36 @@ namespace projeto1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1 {
+            get {
+                object obj = ResourceManager.GetObject("1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("1-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1_removebg_preview1 {
+            get {
+                object obj = ResourceManager.GetObject("1-removebg-preview1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _200px_Bundesliga_logo__2017_ {
             get {
                 object obj = ResourceManager.GetObject("200px-Bundesliga_logo_(2017)", resourceCulture);
@@ -83,9 +113,109 @@ namespace projeto1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap apito_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("apito-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap boleto {
             get {
                 object obj = ResourceManager.GetObject("boleto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Branco_e_Quadrado_Preto_Imobiliária_Logotipo__2__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Branco_e_Quadrado_Preto_Imobiliária_Logotipo__2_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Branco_e_Quadrado_Preto_Imobiliária_Logotipo_resized {
+            get {
+                object obj = ResourceManager.GetObject("Branco e Quadrado Preto Imobiliária Logotipo_resized", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Branco_e_Quadrado_Preto_Imobiliária_Logotipo_resized__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Branco e Quadrado Preto Imobiliária Logotipo_resized (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Branco_e_Quadrado_Preto_Imobiliária_Logotipo_resized__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Branco e Quadrado Preto Imobiliária Logotipo_resized (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Branco_e_Quadrado_Preto_Imobiliária_Logotipo_resized__2__removebg {
+            get {
+                object obj = ResourceManager.GetObject("Branco_e_Quadrado_Preto_Imobiliária_Logotipo_resized__2_-removebg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Branco_e_Quadrado_Preto_Imobiliária_Logotipo_resized__2__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Branco_e_Quadrado_Preto_Imobiliária_Logotipo_resized__2_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap campo_resized_resized {
+            get {
+                object obj = ResourceManager.GetObject("campo_resized_resized", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap campo_resized_resized_resized {
+            get {
+                object obj = ResourceManager.GetObject("campo_resized_resized_resized", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap campo1200 {
+            get {
+                object obj = ResourceManager.GetObject("campo1200", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -194,6 +324,66 @@ namespace projeto1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Design sem nome (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome__1__PhotoRoom_png_PhotoRoom {
+            get {
+                object obj = ResourceManager.GetObject("Design sem nome (1)-PhotoRoom.png-PhotoRoom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome__1__PhotoRoom1 {
+            get {
+                object obj = ResourceManager.GetObject("Design sem nome (1)-PhotoRoom1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Design_sem_nome_PhotoRoom_png_PhotoRoom {
+            get {
+                object obj = ResourceManager.GetObject("Design sem nome-PhotoRoom.png-PhotoRoom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FUT {
+            get {
+                object obj = ResourceManager.GetObject("FUT", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FUT_PhotoRoom_png_PhotoRoom {
+            get {
+                object obj = ResourceManager.GetObject("FUT-PhotoRoom.png-PhotoRoom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap laliga_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("laliga-removebg-preview", resourceCulture);
@@ -237,6 +427,36 @@ namespace projeto1.Properties {
         internal static System.Drawing.Bitmap logo_pix_icone_512 {
             get {
                 object obj = ResourceManager.GetObject("logo-pix-icone-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_size_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("logo_size-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_size_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("logo_size-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_size_removebg_preview__2_ {
+            get {
+                object obj = ResourceManager.GetObject("logo_size-removebg-preview (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -297,6 +517,46 @@ namespace projeto1.Properties {
         internal static System.Drawing.Bitmap premierING_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("premierING-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seja_bem_vindo_para_culto__Post_para_Instagram___1_ {
+            get {
+                object obj = ResourceManager.GetObject("seja bem vindo para culto (Post para Instagram) (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap seja_bem_vindo_para_culto__Post_para_Instagram__PhotoRoom_png_PhotoRoom {
+            get {
+                object obj = ResourceManager.GetObject("seja bem vindo para culto (Post para Instagram)-PhotoRoom.png-PhotoRoom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sem_título {
+            get {
+                object obj = ResourceManager.GetObject("Sem título", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sem_título1 {
+            get {
+                object obj = ResourceManager.GetObject("Sem título1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

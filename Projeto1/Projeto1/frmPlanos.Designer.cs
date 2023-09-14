@@ -46,8 +46,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -264,14 +264,14 @@
             this.label16.TabIndex = 21;
             this.label16.Text = "$100,00";
             // 
-            // pictureBox2
+            // pictureBox1
             // 
-            this.pictureBox2.Image = global::projeto1.Properties.Resources.Chart_Talk_logo_template_Financial_growth_talk_logo__removebg_preview_updated_removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(1259, 213);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(213, 228);
-            this.pictureBox2.TabIndex = 22;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox1.Image = global::projeto1.Properties.Resources.FUT_PhotoRoom_png_PhotoRoom;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(483, 151);
+            this.pictureBox1.TabIndex = 51;
+            this.pictureBox1.TabStop = false;
             // 
             // frmPlanos
             // 
@@ -279,7 +279,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1579, 859);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.rbPremiun);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.rbGratuito);
@@ -302,7 +302,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPlanos";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,6 +327,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -195,7 +195,7 @@ namespace projeto1
             // 
             // txtVoce
             // 
-            this.txtVoce.Location = new System.Drawing.Point(995, 169);
+            this.txtVoce.Location = new System.Drawing.Point(1308, 204);
             this.txtVoce.Multiline = true;
             this.txtVoce.Name = "txtVoce";
             this.txtVoce.Size = new System.Drawing.Size(379, 128);
@@ -487,10 +487,10 @@ namespace projeto1
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::projeto1.Properties.Resources.Chart_Talk_logo_template_Financial_growth_talk_logo__removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(659, 169);
+            this.pictureBox1.Image = global::projeto1.Properties.Resources.FUT_PhotoRoom_png_PhotoRoom;
+            this.pictureBox1.Location = new System.Drawing.Point(1481, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(483, 388);
+            this.pictureBox1.Size = new System.Drawing.Size(483, 151);
             this.pictureBox1.TabIndex = 50;
             this.pictureBox1.TabStop = false;
             // 
@@ -512,7 +512,7 @@ namespace projeto1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1473, 690);
+            this.ClientSize = new System.Drawing.Size(1924, 931);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblTel);
             this.Controls.Add(this.mskNumero);

@@ -81,5 +81,10 @@ namespace projeto1
                 pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (2) certo.png");
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

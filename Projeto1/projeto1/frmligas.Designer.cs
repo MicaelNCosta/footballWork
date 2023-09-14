@@ -230,9 +230,10 @@ namespace projeto1
             // pictureBox6
             // 
             this.pictureBox6.ErrorImage = null;
+            this.pictureBox6.Image = global::projeto1.Properties.Resources.laliga_removebg_preview;
             this.pictureBox6.ImageLocation = "C:\\Users\\brian.ssampaio\\source\\repos\\footballWork2\\Projeto1\\projeto1\\Resources\\se" +
     "rie_a_tim_-_2020-removebg-preview.png";
-            this.pictureBox6.Location = new System.Drawing.Point(1061, 148);
+            this.pictureBox6.Location = new System.Drawing.Point(821, 148);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(195, 209);
             this.pictureBox6.TabIndex = 21;
@@ -241,9 +242,10 @@ namespace projeto1
             // pictureBox5
             // 
             this.pictureBox5.ErrorImage = null;
+            this.pictureBox5.Image = global::projeto1.Properties.Resources.serie_a_tim___2020_removebg_preview1;
             this.pictureBox5.ImageLocation = "C:\\Users\\brian.ssampaio\\source\\repos\\footballWork2\\Projeto1\\projeto1\\Resources\\la" +
     "liga-removebg-preview.png";
-            this.pictureBox5.Location = new System.Drawing.Point(816, 148);
+            this.pictureBox5.Location = new System.Drawing.Point(1056, 148);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(195, 209);
             this.pictureBox5.TabIndex = 20;
@@ -252,6 +254,7 @@ namespace projeto1
             // pictureBox4
             // 
             this.pictureBox4.ErrorImage = null;
+            this.pictureBox4.Image = global::projeto1.Properties.Resources._200px_Bundesliga_logo__2017_;
             this.pictureBox4.ImageLocation = "C:\\Users\\brian.ssampaio\\source\\repos\\footballWork2\\Projeto1\\projeto1\\Resources\\20" +
     "0px-Bundesliga_logo_(2017).png";
             this.pictureBox4.Location = new System.Drawing.Point(571, 148);
@@ -263,6 +266,7 @@ namespace projeto1
             // pictureBox3
             // 
             this.pictureBox3.ErrorImage = null;
+            this.pictureBox3.Image = global::projeto1.Properties.Resources.ligue_11;
             this.pictureBox3.ImageLocation = "C:\\Users\\brian.ssampaio\\source\\repos\\footballWork2\\Projeto1\\projeto1\\Resources\\li" +
     "gue-1.png";
             this.pictureBox3.Location = new System.Drawing.Point(332, 148);
@@ -275,6 +279,7 @@ namespace projeto1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1490, 717);
             this.Controls.Add(this.chItaliana);
             this.Controls.Add(this.button1);

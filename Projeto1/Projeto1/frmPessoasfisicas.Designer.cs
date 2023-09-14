@@ -46,10 +46,10 @@ namespace projeto1
             this.label9 = new System.Windows.Forms.Label();
             this.dtp_data_de_nacimento = new System.Windows.Forms.DateTimePicker();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lbltelefone = new System.Windows.Forms.Label();
             this.txtTelefone = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblEmail
@@ -231,15 +231,6 @@ namespace projeto1
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::projeto1.Properties.Resources.Chart_Talk_logo_template_Financial_growth_talk_logo__removebg_preview_updated_removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(1357, 206);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(213, 228);
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            // 
             // lbltelefone
             // 
             this.lbltelefone.AutoSize = true;
@@ -260,15 +251,24 @@ namespace projeto1
             this.txtTelefone.Size = new System.Drawing.Size(264, 29);
             this.txtTelefone.TabIndex = 21;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::projeto1.Properties.Resources.FUT_PhotoRoom_png_PhotoRoom;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(483, 151);
+            this.pictureBox1.TabIndex = 51;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmPessoasfisicas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1615, 837);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.lbltelefone);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.dtp_data_de_nacimento);
             this.Controls.Add(this.label9);
@@ -289,7 +289,7 @@ namespace projeto1
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "frmPessoasfisicas";
             this.Text = "pessoas fisiças";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -314,8 +314,8 @@ namespace projeto1
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dtp_data_de_nacimento;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lbltelefone;
         private System.Windows.Forms.TextBox txtTelefone;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
