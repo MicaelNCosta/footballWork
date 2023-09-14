@@ -37,24 +37,33 @@ namespace projeto1
         {
             string emailrec = txtEmailRecapSenha.Text;
             string senhanova = txtSenhaNova.Text;
-            string senhaatual = txtSenhaAtual.Text;
+            string confirmsenha = txtSenhaConfirmeSenh.Text;
 
             using (MyDbContext db = new MyDbContext())
             {
-                string query = @"UPDATE usuarios SET senha = @psenhanova WHERE email = @pemail AND senha = @psenhaatual;";
+                string query = @"UPDATE usuarios SET senha = @psenhanova WHERE email = @pemail";
                 var parameters = new[]
                 {
                      new MySqlParameter("@pemail", emailrec),
                      new MySqlParameter("@psenhanova", senhanova),
-                     new MySqlParameter("@psenhaatual", senhaatual)
+                    
                 };
 
                 int nRowAfetted = db.Database.ExecuteSqlCommand(query, parameters);
 
-                Form formVoltar = new frmLogin();
-                formVoltar.WindowState = FormWindowState.Maximized;
-                formVoltar.Show();
-                this.Hide();
+                if(senhanova == confirmsenha)
+                {
+                    Form formVoltar = new frmLogin();
+                    formVoltar.WindowState = FormWindowState.Maximized;
+                    formVoltar.Show();
+                    
+                }
+                else
+                {
+                    MessageBox.Show("A SENHA NÃO SÃO IGUAIS, POR FAVOR VERIFIQUE-AS", "Erro de Autenticação", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+                
 
 
             }
@@ -73,16 +82,23 @@ namespace projeto1
             if (txtSenhaNova.PasswordChar == '*')
             {
                 txtSenhaNova.PasswordChar = '\0'; // Mostrar a senha
-                pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (3) certo.png");
+                txtSenhaConfirmeSenh.PasswordChar = '\0'; // Mostrar a senha
+                pbSenhas.Image = Image.FromFile(@"..\..\Resources\Design sem nome-PhotoRoom.png-PhotoRoom.png");
             }
             else
             {
                 txtSenhaNova.PasswordChar = '*'; // Ocultar a senha
-                pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (2) certo.png");
+                txtSenhaConfirmeSenh.PasswordChar = '*'; // Ocultar a senha
+                pbSenhas.Image = Image.FromFile(@"..\..\Resources\Design sem nome (1)-PhotoRoom.png-PhotoRoom1.png");
             }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }

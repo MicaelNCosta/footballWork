@@ -54,30 +54,30 @@ namespace projeto1
             // lblCnpj
             // 
             this.lblCnpj.AutoSize = true;
-            this.lblCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCnpj.Location = new System.Drawing.Point(646, 420);
+            this.lblCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCnpj.Location = new System.Drawing.Point(645, 396);
             this.lblCnpj.Name = "lblCnpj";
-            this.lblCnpj.Size = new System.Drawing.Size(68, 24);
+            this.lblCnpj.Size = new System.Drawing.Size(82, 29);
             this.lblCnpj.TabIndex = 0;
             this.lblCnpj.Text = "CNPJ:";
             // 
             // lblRazãosocial
             // 
             this.lblRazãosocial.AutoSize = true;
-            this.lblRazãosocial.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRazãosocial.Location = new System.Drawing.Point(581, 577);
+            this.lblRazãosocial.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRazãosocial.Location = new System.Drawing.Point(597, 584);
             this.lblRazãosocial.Name = "lblRazãosocial";
-            this.lblRazãosocial.Size = new System.Drawing.Size(137, 24);
+            this.lblRazãosocial.Size = new System.Drawing.Size(160, 29);
             this.lblRazãosocial.TabIndex = 1;
             this.lblRazãosocial.Text = "Razão Social:";
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(642, 524);
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(645, 511);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(72, 24);
+            this.lblNome.Size = new System.Drawing.Size(85, 29);
             this.lblNome.TabIndex = 2;
             this.lblNome.Text = "Nome:";
             // 
@@ -85,7 +85,7 @@ namespace projeto1
             // 
             this.lblCidade.AutoSize = true;
             this.lblCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCidade.Location = new System.Drawing.Point(869, 655);
+            this.lblCidade.Location = new System.Drawing.Point(916, 656);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(82, 24);
             this.lblCidade.TabIndex = 5;
@@ -95,7 +95,7 @@ namespace projeto1
             // 
             this.lblUf.AutoSize = true;
             this.lblUf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUf.Location = new System.Drawing.Point(598, 656);
+            this.lblUf.Location = new System.Drawing.Point(696, 656);
             this.lblUf.Name = "lblUf";
             this.lblUf.Size = new System.Drawing.Size(43, 24);
             this.lblUf.TabIndex = 7;
@@ -103,38 +103,43 @@ namespace projeto1
             // 
             // txtCnpj
             // 
-            this.txtCnpj.Location = new System.Drawing.Point(745, 425);
+            this.txtCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCnpj.Location = new System.Drawing.Point(745, 401);
             this.txtCnpj.Name = "txtCnpj";
-            this.txtCnpj.Size = new System.Drawing.Size(324, 20);
+            this.txtCnpj.Size = new System.Drawing.Size(324, 24);
             this.txtCnpj.TabIndex = 8;
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(977, 655);
+            this.txtCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCidade.Location = new System.Drawing.Point(1004, 657);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(176, 20);
+            this.txtCidade.Size = new System.Drawing.Size(176, 24);
             this.txtCidade.TabIndex = 10;
             // 
             // txtRazão
             // 
-            this.txtRazão.Location = new System.Drawing.Point(745, 528);
+            this.txtRazão.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRazão.Location = new System.Drawing.Point(745, 516);
             this.txtRazão.Name = "txtRazão";
-            this.txtRazão.Size = new System.Drawing.Size(324, 20);
+            this.txtRazão.Size = new System.Drawing.Size(324, 24);
             this.txtRazão.TabIndex = 11;
             this.txtRazão.TextChanged += new System.EventHandler(this.txtRazão_TextChanged);
             // 
             // txtUf
             // 
-            this.txtUf.Location = new System.Drawing.Point(650, 660);
+            this.txtUf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUf.Location = new System.Drawing.Point(745, 656);
             this.txtUf.Name = "txtUf";
-            this.txtUf.Size = new System.Drawing.Size(139, 20);
+            this.txtUf.Size = new System.Drawing.Size(51, 24);
             this.txtUf.TabIndex = 12;
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(745, 577);
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(763, 589);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(324, 20);
+            this.txtNome.Size = new System.Drawing.Size(368, 24);
             this.txtNome.TabIndex = 16;
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
@@ -143,9 +148,9 @@ namespace projeto1
             this.btnCadastrar.BackColor = System.Drawing.Color.Red;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCadastrar.Location = new System.Drawing.Point(1390, 753);
+            this.btnCadastrar.Location = new System.Drawing.Point(1287, 771);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(172, 48);
+            this.btnCadastrar.Size = new System.Drawing.Size(207, 48);
             this.btnCadastrar.TabIndex = 17;
             this.btnCadastrar.Text = "CADASTRA-SE";
             this.btnCadastrar.UseVisualStyleBackColor = false;
@@ -153,12 +158,12 @@ namespace projeto1
             // 
             // btnVoltar1
             // 
-            this.btnVoltar1.BackColor = System.Drawing.Color.Red;
+            this.btnVoltar1.BackColor = System.Drawing.Color.Black;
             this.btnVoltar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnVoltar1.Location = new System.Drawing.Point(617, 753);
+            this.btnVoltar1.Location = new System.Drawing.Point(578, 770);
             this.btnVoltar1.Name = "btnVoltar1";
-            this.btnVoltar1.Size = new System.Drawing.Size(172, 48);
+            this.btnVoltar1.Size = new System.Drawing.Size(179, 49);
             this.btnVoltar1.TabIndex = 18;
             this.btnVoltar1.Text = "VOLTAR";
             this.btnVoltar1.UseVisualStyleBackColor = false;
@@ -167,54 +172,57 @@ namespace projeto1
             // lblCep
             // 
             this.lblCep.AutoSize = true;
-            this.lblCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCep.Location = new System.Drawing.Point(657, 476);
+            this.lblCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCep.Location = new System.Drawing.Point(659, 458);
             this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(57, 24);
+            this.lblCep.Size = new System.Drawing.Size(68, 29);
             this.lblCep.TabIndex = 20;
             this.lblCep.Text = "CEP:";
             this.lblCep.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtCep
             // 
-            this.txtCep.Location = new System.Drawing.Point(745, 481);
+            this.txtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCep.Location = new System.Drawing.Point(745, 458);
             this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(324, 20);
+            this.txtCep.Size = new System.Drawing.Size(324, 24);
             this.txtCep.TabIndex = 21;
             this.txtCep.TextChanged += new System.EventHandler(this.txtCep_TextChanged);
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(652, 313);
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(647, 283);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(62, 24);
+            this.lblEmail.Size = new System.Drawing.Size(80, 29);
             this.lblEmail.TabIndex = 22;
             this.lblEmail.Text = "Email:";
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSenha.Location = new System.Drawing.Point(648, 368);
+            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.Location = new System.Drawing.Point(640, 340);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(70, 24);
+            this.lblSenha.Size = new System.Drawing.Size(88, 29);
             this.lblSenha.TabIndex = 23;
             this.lblSenha.Text = "Senha:";
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(745, 373);
+            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.Location = new System.Drawing.Point(745, 345);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(324, 20);
+            this.txtSenha.Size = new System.Drawing.Size(324, 24);
             this.txtSenha.TabIndex = 24;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(745, 317);
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(745, 288);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(324, 20);
+            this.txtEmail.Size = new System.Drawing.Size(324, 24);
             this.txtEmail.TabIndex = 25;
             this.txtEmail.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -231,7 +239,7 @@ namespace projeto1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1653, 842);
+            this.ClientSize = new System.Drawing.Size(1924, 1061);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSenha);

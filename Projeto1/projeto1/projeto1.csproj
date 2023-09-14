@@ -265,6 +265,14 @@
     <Content Include="imagem\italia %281%29.png" />
     <Content Include="imagem\olho %282%29 certo.png" />
     <Content Include="imagem\olho %283%29 certo.png" />
+    <None Include="Resources\ligue-1-4096 %281%29.png" />
+    <None Include="Resources\ligue-1 %281%29.png" />
+    <None Include="Resources\ligue-1-4096.png" />
+    <None Include="Resources\pngwing.com %282%291.png" />
+    <None Include="Resources\pngwing.com %282%29.png" />
+    <None Include="Resources\pngwing.com %281%29.png" />
+    <None Include="Resources\pngwing.com.png" />
+    <None Include="Resources\d55e89657228964a776f7dab3c0537ca-icone-de-cartao-vermelho-de-futebol.png" />
     <None Include="Resources\Design sem nome-PhotoRoom.png-PhotoRoom.png" />
     <None Include="Resources\Design sem nome %281%29-PhotoRoom.png-PhotoRoom1.png" />
     <None Include="Resources\Design sem nome %281%29-PhotoRoom.png-PhotoRoom.png" />
@@ -280,6 +288,7 @@
     <None Include="Resources\1-removebg-preview.png" />
     <None Include="Resources\1-removebg-preview1.png" />
     <None Include="Resources\apito-removebg-preview.png" />
+    <None Include="Resources\apito-removebg-preview1.png" />
     <Content Include="Resources\boleto.png" />
     <None Include="Resources\Sem título1.png" />
     <None Include="Resources\Sem título.png" />

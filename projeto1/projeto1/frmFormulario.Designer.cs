@@ -93,7 +93,7 @@ namespace projeto1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(28, 282);
+            this.label3.Location = new System.Drawing.Point(34, 282);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(232, 22);
             this.label3.TabIndex = 6;
@@ -103,7 +103,7 @@ namespace projeto1
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(384, 282);
+            this.label4.Location = new System.Drawing.Point(423, 282);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(441, 22);
             this.label4.TabIndex = 7;
@@ -112,10 +112,10 @@ namespace projeto1
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(28, 129);
+            this.label6.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(40, 129);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(199, 22);
+            this.label6.Size = new System.Drawing.Size(254, 27);
             this.label6.TabIndex = 8;
             this.label6.Text = "Selecione uma liga :";
             // 
@@ -123,7 +123,7 @@ namespace projeto1
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(384, 129);
+            this.label7.Location = new System.Drawing.Point(423, 129);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(464, 22);
             this.label7.TabIndex = 9;
@@ -131,12 +131,13 @@ namespace projeto1
             // 
             // btnLimpar
             // 
-            this.btnLimpar.BackColor = System.Drawing.Color.Red;
+            this.btnLimpar.BackColor = System.Drawing.Color.Black;
             this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnLimpar.Location = new System.Drawing.Point(1102, 576);
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.White;
+            this.btnLimpar.Location = new System.Drawing.Point(1135, 715);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(157, 39);
+            this.btnLimpar.Size = new System.Drawing.Size(243, 48);
             this.btnLimpar.TabIndex = 10;
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.UseVisualStyleBackColor = false;
@@ -144,12 +145,13 @@ namespace projeto1
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.BackColor = System.Drawing.Color.Red;
+            this.btnFinalizar.BackColor = System.Drawing.Color.Black;
             this.btnFinalizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFinalizar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnFinalizar.Location = new System.Drawing.Point(1265, 576);
+            this.btnFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinalizar.ForeColor = System.Drawing.Color.White;
+            this.btnFinalizar.Location = new System.Drawing.Point(1410, 715);
             this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(157, 39);
+            this.btnFinalizar.Size = new System.Drawing.Size(253, 48);
             this.btnFinalizar.TabIndex = 11;
             this.btnFinalizar.Text = "FINALIZAR FORMULÁRIO";
             this.btnFinalizar.UseVisualStyleBackColor = false;
@@ -158,6 +160,7 @@ namespace projeto1
             // cbLigas
             // 
             this.cbLigas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbLigas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbLigas.FormattingEnabled = true;
             this.cbLigas.Items.AddRange(new object[] {
             "Liga Espanhola",
@@ -166,9 +169,9 @@ namespace projeto1
             "Liga Inglesa",
             "Liga Portuguesa",
             ""});
-            this.cbLigas.Location = new System.Drawing.Point(32, 169);
+            this.cbLigas.Location = new System.Drawing.Point(51, 169);
             this.cbLigas.Name = "cbLigas";
-            this.cbLigas.Size = new System.Drawing.Size(121, 21);
+            this.cbLigas.Size = new System.Drawing.Size(215, 28);
             this.cbLigas.TabIndex = 12;
             this.cbLigas.Text = "Ligas";
             this.cbLigas.SelectedIndexChanged += new System.EventHandler(this.cbLigas_SelectedIndexChanged);
@@ -177,7 +180,7 @@ namespace projeto1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(991, 129);
+            this.label2.Location = new System.Drawing.Point(1034, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(205, 22);
             this.label2.TabIndex = 13;
@@ -187,7 +190,7 @@ namespace projeto1
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(991, 440);
+            this.label5.Location = new System.Drawing.Point(991, 450);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(310, 22);
             this.label5.TabIndex = 14;
@@ -195,10 +198,10 @@ namespace projeto1
             // 
             // txtVoce
             // 
-            this.txtVoce.Location = new System.Drawing.Point(1308, 204);
+            this.txtVoce.Location = new System.Drawing.Point(1286, 232);
             this.txtVoce.Multiline = true;
             this.txtVoce.Name = "txtVoce";
-            this.txtVoce.Size = new System.Drawing.Size(379, 128);
+            this.txtVoce.Size = new System.Drawing.Size(439, 194);
             this.txtVoce.TabIndex = 26;
             // 
             // rb1
@@ -229,7 +232,7 @@ namespace projeto1
             // 
             this.gpBox1.Controls.Add(this.rb2);
             this.gpBox1.Controls.Add(this.rb1);
-            this.gpBox1.Location = new System.Drawing.Point(32, 323);
+            this.gpBox1.Location = new System.Drawing.Point(38, 323);
             this.gpBox1.Name = "gpBox1";
             this.gpBox1.Size = new System.Drawing.Size(228, 49);
             this.gpBox1.TabIndex = 32;
@@ -239,7 +242,7 @@ namespace projeto1
             // 
             this.gpBox3.Controls.Add(this.rb6);
             this.gpBox3.Controls.Add(this.rb5);
-            this.gpBox3.Location = new System.Drawing.Point(401, 169);
+            this.gpBox3.Location = new System.Drawing.Point(554, 169);
             this.gpBox3.Name = "gpBox3";
             this.gpBox3.Size = new System.Drawing.Size(228, 49);
             this.gpBox3.TabIndex = 34;
@@ -273,7 +276,7 @@ namespace projeto1
             // 
             this.gpBox2.Controls.Add(this.rb4);
             this.gpBox2.Controls.Add(this.rb3);
-            this.gpBox2.Location = new System.Drawing.Point(32, 465);
+            this.gpBox2.Location = new System.Drawing.Point(38, 462);
             this.gpBox2.Name = "gpBox2";
             this.gpBox2.Size = new System.Drawing.Size(228, 49);
             this.gpBox2.TabIndex = 35;
@@ -306,7 +309,7 @@ namespace projeto1
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(384, 416);
+            this.label8.Location = new System.Drawing.Point(423, 425);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(425, 46);
             this.label8.TabIndex = 36;
@@ -350,7 +353,7 @@ namespace projeto1
             this.gpBox4.Controls.Add(this.rb7);
             this.gpBox4.Controls.Add(this.rb9);
             this.gpBox4.Controls.Add(this.rb8);
-            this.gpBox4.Location = new System.Drawing.Point(395, 323);
+            this.gpBox4.Location = new System.Drawing.Point(478, 323);
             this.gpBox4.Name = "gpBox4";
             this.gpBox4.Size = new System.Drawing.Size(376, 54);
             this.gpBox4.TabIndex = 40;
@@ -360,7 +363,7 @@ namespace projeto1
             // 
             this.gbEmail.Controls.Add(this.rbTelefone);
             this.gbEmail.Controls.Add(this.rbEmail);
-            this.gbEmail.Location = new System.Drawing.Point(395, 465);
+            this.gbEmail.Location = new System.Drawing.Point(554, 474);
             this.gbEmail.Name = "gbEmail";
             this.gbEmail.Size = new System.Drawing.Size(228, 49);
             this.gbEmail.TabIndex = 41;
@@ -392,7 +395,7 @@ namespace projeto1
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(476, 540);
+            this.txtEmail.Location = new System.Drawing.Point(527, 557);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(327, 20);
             this.txtEmail.TabIndex = 42;
@@ -403,7 +406,7 @@ namespace projeto1
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(397, 541);
+            this.lblEmail.Location = new System.Drawing.Point(448, 558);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(72, 18);
             this.lblEmail.TabIndex = 43;
@@ -422,7 +425,7 @@ namespace projeto1
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(28, 404);
+            this.label10.Location = new System.Drawing.Point(34, 403);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(252, 44);
             this.label10.TabIndex = 45;
@@ -432,7 +435,7 @@ namespace projeto1
             // 
             this.groupBox1.Controls.Add(this.rbFinalN);
             this.groupBox1.Controls.Add(this.rbFinalS);
-            this.groupBox1.Location = new System.Drawing.Point(995, 475);
+            this.groupBox1.Location = new System.Drawing.Point(1073, 540);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(228, 49);
             this.groupBox1.TabIndex = 46;
@@ -466,7 +469,7 @@ namespace projeto1
             // 
             // mskNumero
             // 
-            this.mskNumero.Location = new System.Drawing.Point(475, 540);
+            this.mskNumero.Location = new System.Drawing.Point(526, 557);
             this.mskNumero.Mask = "(99) 0 0000-0000 ";
             this.mskNumero.Name = "mskNumero";
             this.mskNumero.Size = new System.Drawing.Size(95, 20);
@@ -478,7 +481,7 @@ namespace projeto1
             // 
             this.lblTel.AutoSize = true;
             this.lblTel.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTel.Location = new System.Drawing.Point(398, 541);
+            this.lblTel.Location = new System.Drawing.Point(449, 558);
             this.lblTel.Name = "lblTel";
             this.lblTel.Size = new System.Drawing.Size(47, 18);
             this.lblTel.TabIndex = 48;
@@ -496,12 +499,13 @@ namespace projeto1
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(32, 576);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(163, 715);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(157, 39);
+            this.button1.Size = new System.Drawing.Size(250, 48);
             this.button1.TabIndex = 51;
             this.button1.Text = "VOLTAR";
             this.button1.UseVisualStyleBackColor = false;
@@ -512,7 +516,7 @@ namespace projeto1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1924, 931);
+            this.ClientSize = new System.Drawing.Size(1924, 1034);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblTel);
             this.Controls.Add(this.mskNumero);
