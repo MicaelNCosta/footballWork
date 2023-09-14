@@ -33,10 +33,16 @@ namespace projeto1
             string txt = "";
             int contador = 0;
 
-            if(!(!this.pagamentos && (chInglesa.Checked ^ chFrancesa.Checked ^ chAlema.Checked ^ chEspanhola.Checked ^ chItaliana.Checked)))
+          /*  if(!(!this.pagamentos && (chInglesa.Checked ^ chFrancesa.Checked ^ chAlema.Checked ^ chEspanhola.Checked ^ chItaliana.Checked)))
             {
                 MessageBox.Show("Metodo gratuito só pode selecionar uma liga");
             }
+            else if (this.pagamentos && contador == 1)
+            {
+                Form form1 = new frmtimes(txt);
+                form1.Show();
+
+            }*/
 
             if (chInglesa.Checked)
             {
@@ -64,21 +70,32 @@ namespace projeto1
                 contador++;
             }
 
-            if (this.pagamentos && contador > 1)
+            if (!(!this.pagamentos && (chInglesa.Checked ^ chFrancesa.Checked ^ chAlema.Checked ^ chEspanhola.Checked ^ chItaliana.Checked)))
+            {
+                MessageBox.Show("Metodo gratuito só pode selecionar uma liga");
+
+            }
+
+            if (this.pagamentos && contador == 1)
             {
                 Form form1 = new frmtimes(txt);
                 form1.Show();
 
             }
-            else if(!this.pagamentos && contador == 1){
 
-                Form form1 = new frmtimes(txt);
-                form1.Show();
-            }
-            else
-            {
-                MessageBox.Show("quantidade de ligas incorreto");
-            }
+            /* if (this.pagamentos && contador == 1)
+             {
+                 Form form1 = new frmtimes(txt);
+                 form1.Show();
+
+             }
+
+             if(!this.pagamentos && contador == 1){
+
+                 Form form1 = new frmtimes(txt);
+                 form1.Show();
+             }*/
+
         }
            
        
