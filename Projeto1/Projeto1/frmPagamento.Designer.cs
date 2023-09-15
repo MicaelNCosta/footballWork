@@ -37,8 +37,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnProsseguir = new System.Windows.Forms.Button();
             this.gbSelecione = new System.Windows.Forms.GroupBox();
             this.rbCnpj = new System.Windows.Forms.RadioButton();
@@ -51,22 +49,19 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.pbOlho1 = new System.Windows.Forms.PictureBox();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.mySqlDataAdapter1 = new MySql.Data.MySqlClient.MySqlDataAdapter();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.gbSelecione.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbOlho1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // mskCnpj
             // 
-            this.mskCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskCnpj.Location = new System.Drawing.Point(570, 402);
+            this.mskCnpj.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.mskCnpj.Location = new System.Drawing.Point(592, 172);
             this.mskCnpj.Mask = "00.000.000/0000-00";
             this.mskCnpj.Name = "mskCnpj";
-            this.mskCnpj.Size = new System.Drawing.Size(104, 24);
+            this.mskCnpj.Size = new System.Drawing.Size(124, 20);
             this.mskCnpj.TabIndex = 0;
             this.mskCnpj.UseWaitCursor = true;
             this.mskCnpj.Visible = false;
@@ -74,8 +69,8 @@
             // 
             // txtTitular
             // 
-            this.txtTitular.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTitular.Location = new System.Drawing.Point(1420, 309);
+            this.txtTitular.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.txtTitular.Location = new System.Drawing.Point(592, 234);
             this.txtTitular.Name = "txtTitular";
             this.txtTitular.Size = new System.Drawing.Size(210, 29);
             this.txtTitular.TabIndex = 1;
@@ -85,7 +80,7 @@
             // mskCvc
             // 
             this.mskCvc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskCvc.Location = new System.Drawing.Point(606, 479);
+            this.mskCvc.Location = new System.Drawing.Point(592, 422);
             this.mskCvc.Mask = "0/0/0";
             this.mskCvc.Name = "mskCvc";
             this.mskCvc.Size = new System.Drawing.Size(51, 29);
@@ -95,22 +90,24 @@
             // 
             // dtpValidade
             // 
+            this.dtpValidade.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.dtpValidade.CustomFormat = "MM/yy";
             this.dtpValidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpValidade.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpValidade.Location = new System.Drawing.Point(689, 545);
+            this.dtpValidade.Location = new System.Drawing.Point(592, 345);
             this.dtpValidade.Name = "dtpValidade";
-            this.dtpValidade.Size = new System.Drawing.Size(83, 29);
+            this.dtpValidade.Size = new System.Drawing.Size(93, 29);
             this.dtpValidade.TabIndex = 3;
             this.dtpValidade.UseWaitCursor = true;
+            this.dtpValidade.ValueChanged += new System.EventHandler(this.dtpValidade_ValueChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1108, 313);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(331, 232);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(285, 25);
+            this.label1.Size = new System.Drawing.Size(251, 24);
             this.label1.TabIndex = 5;
             this.label1.Text = "Nome do  titular do cartão";
             this.label1.UseWaitCursor = true;
@@ -119,19 +116,21 @@
             // 
             this.lblCnpj.AutoSize = true;
             this.lblCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCnpj.Location = new System.Drawing.Point(490, 402);
+            this.lblCnpj.Location = new System.Drawing.Point(450, 166);
             this.lblCnpj.Name = "lblCnpj";
             this.lblCnpj.Size = new System.Drawing.Size(62, 24);
             this.lblCnpj.TabIndex = 6;
             this.lblCnpj.Text = "CNPJ";
             this.lblCnpj.UseWaitCursor = true;
+            this.lblCnpj.Visible = false;
             this.lblCnpj.Click += new System.EventHandler(this.lblCnpj_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(500, 549);
+            this.label3.Location = new System.Drawing.Point(331, 354);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(169, 24);
             this.label3.TabIndex = 7;
@@ -141,8 +140,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(500, 482);
+            this.label4.Location = new System.Drawing.Point(384, 425);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 24);
             this.label4.TabIndex = 8;
@@ -153,44 +153,23 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1133, 384);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(331, 283);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(203, 25);
+            this.label5.Size = new System.Drawing.Size(181, 24);
             this.label5.TabIndex = 9;
             this.label5.Text = "Numero do Cartão";
             this.label5.UseWaitCursor = true;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1180, 479);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 24);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Senha";
-            this.label6.UseWaitCursor = true;
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(1300, 479);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(124, 29);
-            this.txtSenha.TabIndex = 11;
-            this.txtSenha.UseWaitCursor = true;
-            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
-            // 
             // btnProsseguir
             // 
             this.btnProsseguir.BackColor = System.Drawing.Color.Red;
+            this.btnProsseguir.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnProsseguir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProsseguir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnProsseguir.Location = new System.Drawing.Point(1262, 647);
+            this.btnProsseguir.Location = new System.Drawing.Point(1036, 512);
             this.btnProsseguir.Name = "btnProsseguir";
-            this.btnProsseguir.Size = new System.Drawing.Size(341, 72);
+            this.btnProsseguir.Size = new System.Drawing.Size(237, 35);
             this.btnProsseguir.TabIndex = 12;
             this.btnProsseguir.Text = "Efetuar pagamento";
             this.btnProsseguir.UseVisualStyleBackColor = false;
@@ -201,9 +180,10 @@
             // 
             this.gbSelecione.Controls.Add(this.rbCnpj);
             this.gbSelecione.Controls.Add(this.rbCpf);
-            this.gbSelecione.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbSelecione.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.gbSelecione.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbSelecione.ForeColor = System.Drawing.Color.Red;
-            this.gbSelecione.Location = new System.Drawing.Point(456, 313);
+            this.gbSelecione.Location = new System.Drawing.Point(357, 79);
             this.gbSelecione.Name = "gbSelecione";
             this.gbSelecione.Size = new System.Drawing.Size(284, 48);
             this.gbSelecione.TabIndex = 13;
@@ -215,11 +195,12 @@
             // rbCnpj
             // 
             this.rbCnpj.AutoSize = true;
-            this.rbCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbCnpj.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.rbCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbCnpj.ForeColor = System.Drawing.Color.Black;
-            this.rbCnpj.Location = new System.Drawing.Point(150, 19);
+            this.rbCnpj.Location = new System.Drawing.Point(110, 23);
             this.rbCnpj.Name = "rbCnpj";
-            this.rbCnpj.Size = new System.Drawing.Size(80, 28);
+            this.rbCnpj.Size = new System.Drawing.Size(71, 24);
             this.rbCnpj.TabIndex = 1;
             this.rbCnpj.TabStop = true;
             this.rbCnpj.Text = "CNPJ";
@@ -230,11 +211,12 @@
             // rbCpf
             // 
             this.rbCpf.AutoSize = true;
-            this.rbCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbCpf.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.rbCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbCpf.ForeColor = System.Drawing.Color.Black;
             this.rbCpf.Location = new System.Drawing.Point(16, 20);
             this.rbCpf.Name = "rbCpf";
-            this.rbCpf.Size = new System.Drawing.Size(68, 28);
+            this.rbCpf.Size = new System.Drawing.Size(61, 24);
             this.rbCpf.TabIndex = 0;
             this.rbCpf.TabStop = true;
             this.rbCpf.Text = "CPF";
@@ -245,8 +227,9 @@
             // lblCpf
             // 
             this.lblCpf.AutoSize = true;
+            this.lblCpf.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.lblCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCpf.Location = new System.Drawing.Point(490, 402);
+            this.lblCpf.Location = new System.Drawing.Point(384, 166);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(50, 24);
             this.lblCpf.TabIndex = 14;
@@ -256,11 +239,11 @@
             // 
             // mskCpf
             // 
-            this.mskCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskCpf.Location = new System.Drawing.Point(580, 402);
+            this.mskCpf.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.mskCpf.Location = new System.Drawing.Point(592, 172);
             this.mskCpf.Mask = "000.000.000-00";
             this.mskCpf.Name = "mskCpf";
-            this.mskCpf.Size = new System.Drawing.Size(116, 24);
+            this.mskCpf.Size = new System.Drawing.Size(91, 20);
             this.mskCpf.TabIndex = 15;
             this.mskCpf.UseWaitCursor = true;
             this.mskCpf.Visible = false;
@@ -268,31 +251,34 @@
             // 
             // mskCartao
             // 
-            this.mskCartao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskCartao.Location = new System.Drawing.Point(1375, 380);
+            this.mskCartao.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.mskCartao.Location = new System.Drawing.Point(592, 285);
             this.mskCartao.Mask = "0000/0000/0000/0000";
             this.mskCartao.Name = "mskCartao";
             this.mskCartao.Size = new System.Drawing.Size(186, 29);
             this.mskCartao.TabIndex = 16;
             this.mskCartao.UseWaitCursor = true;
+            this.mskCartao.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskCartao_MaskInputRejected);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Red;
-            this.panel1.Location = new System.Drawing.Point(1036, 12);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.panel1.Location = new System.Drawing.Point(295, -4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 707);
+            this.panel1.Size = new System.Drawing.Size(22, 571);
             this.panel1.TabIndex = 17;
             this.panel1.UseWaitCursor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Swis721 BlkEx BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.label2.Font = new System.Drawing.Font("Swis721 BlkEx BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Brown;
-            this.label2.Location = new System.Drawing.Point(451, 260);
+            this.label2.Location = new System.Drawing.Point(352, 46);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(338, 25);
+            this.label2.Size = new System.Drawing.Size(301, 22);
             this.label2.TabIndex = 18;
             this.label2.Text = "Preencha seus dados";
             this.label2.UseWaitCursor = true;
@@ -300,10 +286,11 @@
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Swis721 BlkEx BT", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(425, 173);
+            this.label7.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.label7.Font = new System.Drawing.Font("Swis721 BlkEx BT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(340, 7);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(581, 73);
+            this.label7.Size = new System.Drawing.Size(705, 39);
             this.label7.TabIndex = 19;
             this.label7.Text = "Parabens você seleceionou nosso plano premiun";
             this.label7.UseWaitCursor = true;
@@ -319,36 +306,29 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1589, 791);
+            this.button1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(323, 514);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 55);
+            this.button1.Size = new System.Drawing.Size(237, 32);
             this.button1.TabIndex = 21;
             this.button1.Text = "Limpar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.UseWaitCursor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pbOlho1
-            // 
-            this.pbOlho1.Image = global::projeto1.Properties.Resources.olho__2__certo;
-            this.pbOlho1.Location = new System.Drawing.Point(1434, 482);
-            this.pbOlho1.Name = "pbOlho1";
-            this.pbOlho1.Size = new System.Drawing.Size(27, 31);
-            this.pbOlho1.TabIndex = 22;
-            this.pbOlho1.TabStop = false;
-            this.pbOlho1.UseWaitCursor = true;
-            this.pbOlho1.Click += new System.EventHandler(this.pbOlho1_Click);
-            // 
             // btnVoltar
             // 
-            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(1434, 791);
+            this.btnVoltar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnVoltar.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnVoltar.Location = new System.Drawing.Point(1, 514);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(127, 55);
+            this.btnVoltar.Size = new System.Drawing.Size(237, 33);
             this.btnVoltar.TabIndex = 23;
             this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.UseWaitCursor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
@@ -377,7 +357,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.pbOlho1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -387,8 +366,6 @@
             this.Controls.Add(this.lblCpf);
             this.Controls.Add(this.gbSelecione);
             this.Controls.Add(this.btnProsseguir);
-            this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -398,14 +375,13 @@
             this.Controls.Add(this.mskCvc);
             this.Controls.Add(this.txtTitular);
             this.Controls.Add(this.mskCnpj);
+            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.Name = "frmPagamento";
             this.Text = "Pagamento";
             this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.frmPagamento_Load);
             this.gbSelecione.ResumeLayout(false);
             this.gbSelecione.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbOlho1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -422,8 +398,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnProsseguir;
         private System.Windows.Forms.GroupBox gbSelecione;
         private System.Windows.Forms.RadioButton rbCnpj;
@@ -436,7 +410,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pbOlho1;
         private System.Windows.Forms.Button btnVoltar;
         private MySql.Data.MySqlClient.MySqlDataAdapter mySqlDataAdapter1;
         private System.Windows.Forms.PictureBox pictureBox2;

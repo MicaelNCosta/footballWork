@@ -13,9 +13,9 @@ namespace projeto1
     public partial class frmPlanos : Form
     {
         int usuario_id;
-        public frmPlanos()
+        public frmPlanos(int usuario_id)
         {
-            this.usuario_id = 1;
+            this.usuario_id = usuario_id;
             InitializeComponent();
         }
 

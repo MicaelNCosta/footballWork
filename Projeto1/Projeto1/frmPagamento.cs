@@ -37,7 +37,7 @@ namespace projeto1
                 if (pagamento != null)
                 {
                     MessageBox.Show("Você ja efetouo o pagamento ");
-                    Form frmPlanos = new frmPlanos();
+                    Form frmPlanos = new frmPlanos(this.usuario_id);
                     frmPlanos.Show();
                 }
             } 
@@ -45,8 +45,15 @@ namespace projeto1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-        }
+            if (txtTitular.Text == "")
+            {
+                txtTitular.Focus();
 
+
+                MessageBox.Show("digite o nome do titular do cartão");
+            }
+
+        }     
         private void rbCpf_CheckedChanged(object sender, EventArgs e)
         {
             lblCpf.Visible = true;
@@ -82,101 +89,102 @@ namespace projeto1
 
         private void frmPagamento_Load(object sender, EventArgs e)
         {
-            btnProsseguir.Enabled = false;
         }
 
         private void txtSenha_TextChanged(object sender, EventArgs e)
         {
-            if (txtSenha.Enabled)
-            {
-                btnProsseguir.Enabled = true;
-            }
+            
         }
 
         private void btnProsseguir_Click(object sender, EventArgs e)
         {
             char[] cleanchar = { '.', '/', '-', ' ' };
             string nome = txtTitular.Text;
-            string confrimar = btnProsseguir.Text;
-            string senha = txtSenha.Text;
-            string  CPF = mskCpf.Text.Trim(cleanchar);
+            string confrimar = btnProsseguir.Text;            
+            string CPF = mskCpf.Text.Trim(cleanchar);
             string CNPJ = mskCnpj.Text.Trim(cleanchar);
             string CVV = mskCvc.Text.Trim(cleanchar);
             string Cartao = mskCartao.Text.Trim();
             string VALIDADE = dtpValidade.Text.Trim();
             string USUARIO = label2.Text;
+
+
+
+
+            bool erro = false;
             if (txtTitular.Text == "")
             {
                 txtTitular.Focus();
 
-
+                erro = true;
                 MessageBox.Show("digite o nome do titular do cartão");
             }
-
-            if (txtSenha.Text != "jef123")                   
+            if (rbCpf.Checked && CPF.Length < 11)
             {
-                        txtSenha.Focus();
-                        MessageBox.Show("Senha incorreta");
+                mskCpf.Focus();
+                erro = true;
+                MessageBox.Show("preencha o CPF com 11 caracteres");
                 
             }
-            if (txtSenha.Text == "jef123")
-            {
-                MessageBox.Show("Parabens você concluiu o pagamento , agradecemos a preferencia,atenciosamente footballWork.");
-            }
-            if (rbCpf.Checked && CPF.Length<11)
-                {
-                    mskCpf.Focus();
-                    MessageBox.Show("preencha o CPF com 11 caracteres");
-                    mskCpf.BackColor = Color.Red;
-                }
-            
-            if (rbCnpj.Checked && CNPJ.Length<14)
+            if (rbCnpj.Checked && CNPJ.Length < 14)
             {
                 mskCnpj.Focus();
+                erro = true;
                 MessageBox.Show("preencha o CNPJ com 14 caracteres");
-                mskCnpj.BackColor = Color.Red;
+                
             }
-
-            if (CVV.Length<3)
-            { 
-                    mskCvc.Focus();
-                    MessageBox.Show("preencha CVC com 3 caracteres");
-                    mskCvc.BackColor = Color.Red;
-                    
+            if (CVV.Length < 3)
+            {
+                mskCvc.Focus();
+                erro = true;
+                MessageBox.Show("quantidade de numero insuficiente", "CVV", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             }
-            if (Cartao.Length<16)
+            if (Cartao.Length < 16)
             {
                 mskCartao.Focus();
+                erro = true;
                 MessageBox.Show("preencha o numero do cartãp com 16 caracteres");
-                mskCartao.BackColor = Color.Red;
             }
-            MessageBox.Show("CPF :" + mskCpf.Text + "\n" +
-                "CNPJ :" + mskCnpj.Text +"\n" +
-                "CVV :"+ mskCvc.Text +"\n" +
-                "Data de validade :" + dtpValidade.Text + "\n" +
-                "Titular do cartão:"+ txtTitular.Text + "\n" +
-                "Senha:"+txtSenha.Text + "\n" +
-                "Numero do cartão"+mskCartao.Text );
+            if (mskCartao.Text == " " || mskCnpj.Text == "" || mskCpf.Text == " " || mskCvc.Text == " " || txtTitular.Text == " " || dtpValidade.Text == " " || (!rbCnpj.Checked && !rbCpf.Checked))
+            {
+                erro = true;
+                MessageBox.Show("Obrigatorio preencher todos os campos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                MessageBox.Show("CPF :" + mskCpf.Text + "\n" +
+               "CNPJ :" + mskCnpj.Text + "\n" +
+               "CVV :" + mskCvc.Text + "\n" +
+               "Data de validade :" + dtpValidade.Text + "\n" +
+               "Titular do cartão:" + txtTitular.Text + "\n" +
+               "Numero do cartão" + mskCartao.Text);
+            }
 
+            if (erro)
+            {
+                return;
+            }
+
+                                    
             string hoje = DateTime.Now.ToString("yyyy-MM-dd");
+
             
-            using(MyDbContext db = new MyDbContext())
+            using (MyDbContext db = new MyDbContext())
             {
                 
                 
 
 
 
-               string query = @"INSERT INTO pagamentos(cpf_pagamento,cnpj_pagamento,numero_cartao,senha_cartao,data_validade,cvv,nome_titular,usuario_id,data_pagamento) 
-                                        VALUES (@pcpf_pagamento, @pcnpj_pagamento, @pnumero_cartao, @psenha_cartao, @pdata_validade, @pcvv,@pnome_titular,@pusuario_id,@pdata_pagamento );
+               string query = @"INSERT INTO pagamentos(cpf_pagamento,cnpj_pagamento,numero_cartao,data_validade,cvv,nome_titular,usuario_id,data_pagamento) 
+                                        VALUES (@pcpf_pagamento, @pcnpj_pagamento, @pnumero_cartao, @pdata_validade, @pcvv,@pnome_titular,@pusuario_id,@pdata_pagamento );
                                         SELECT LAST_INSERT_ID();";  
                 var paramenters = new[]
                 {
                     
                     new MySqlParameter("@pcpf_pagamento", CPF),
                     new MySqlParameter("@pcnpj_pagamento",CNPJ),
-                    new MySqlParameter("@Pnumero_cartao",Cartao),
-                    new MySqlParameter("@psenha_cartao",senha),
+                    new MySqlParameter("@Pnumero_cartao",Cartao),                    
                     new MySqlParameter("@pdata_validade",VALIDADE),
                     new MySqlParameter("@pcvv",CVV),
                     new MySqlParameter("@pnome_titular",nome),
@@ -185,34 +193,33 @@ namespace projeto1
                 };
 
                 int newUserId = db.Database.SqlQuery<int>(query, paramenters).Single();
-                
 
-                
 
+
+                Form ligas = new frmligas(true);
+                ligas.WindowState = FormWindowState.Maximized;
+                ligas.Show();
             }
+       
 
-            Form frmligas = new frmligas(true);
-            frmligas.WindowState = FormWindowState.Maximized;
-            frmligas.Show();
             this.Hide();
         }
 
         private void mskCvc_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-            string email = mskCvc.Text;
-            if ("" != mskCvc.Text) 
+            //string email = mskCvc.Text;
+            string CVV = mskCvc.Text;
+            if (CVV.Length < 3)
             {
                 mskCvc.Focus();
-                MessageBox.Show("quantidade de numero insuficiente");
-                mskCvc.BackColor = Color.Red;
-                return;
+                MessageBox.Show("quantidade de numero insuficiente", "CVV", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             }
         }
 
         private void mskCpf_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
             string CPF = mskCpf.Text;  
-            if(""== mskCpf.Text)
+            if(CPF.Length < 11)
             {
                 mskCpf.Focus();
                 MessageBox.Show("digite a quantidade certa de caracteres");
@@ -223,8 +230,8 @@ namespace projeto1
 
         private void mskCnpj_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-            string CPF = mskCnpj.Text;
-            if (mskCnpj.Text == "") 
+            string cnpj = mskCnpj.Text;
+            if (cnpj.Length <14) 
 
             {
                 mskCnpj.Focus();
@@ -243,32 +250,19 @@ namespace projeto1
         {
             rbCnpj.Checked= false;  
             rbCpf.Checked= false;
-            mskCvc.Text = "";
-            txtSenha.Text = "";
+            mskCvc.Text = "";            
             txtTitular.Text = "";
             mskCartao.Text = "";
             mskCpf.Text = "";
             mskCnpj.Text = "";
             dtpValidade.Text = "";
-            }
-
-        private void pbOlho1_Click(object sender, EventArgs e)
-        {
-            if (txtSenha.PasswordChar == '*')
-            {
-                txtSenha.PasswordChar = '\0'; // Mostrar a senha
-                pbOlho1.Image = Image.FromFile(@"..\..\Imagem\olho (2) certo.png");
-            }
-            else
-            {
-                txtSenha.PasswordChar = '*'; // Ocultar a senha
-                pbOlho1.Image = Image.FromFile(@"..\..\Imagem\olho (3) certo.png");
-            }
         }
+
+        
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            Form planos = new frmPlanos();
+            Form planos = new frmPlanos(this.usuario_id);
             planos.WindowState = FormWindowState.Maximized;
             planos.Show();            
             this.Close();
@@ -277,6 +271,29 @@ namespace projeto1
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gbSelecione_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mskCartao_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            string Cartao = mskCartao.Text;
+            if (Cartao.Length < 16)
+            {
+                mskCartao.Focus();
+                MessageBox.Show("preencha o numero do cartão com 16 caracteres");
+               
+
+
+            }
+        }
+
+        private void dtpValidade_ValueChanged(object sender, EventArgs e)
+        {
+            string hoje = DateTime.Now.ToString("yyyy-MM-dd");
         }
 
         private void gbSelecione_Enter(object sender, EventArgs e)
