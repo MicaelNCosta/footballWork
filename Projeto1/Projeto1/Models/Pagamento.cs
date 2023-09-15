@@ -37,9 +37,7 @@ namespace projeto1.Models
 
         public int numero_cartao { get; set; }
 
-        [Column("senha_cartao")]
-
-        public int senha_cartao { get; set; }
+       
 
         [Column("data_valide")]
 
