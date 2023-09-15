@@ -82,14 +82,15 @@ namespace projeto1
                 if (txtSenha.PasswordChar == '*')
                 {
                     txtSenha.PasswordChar = '\0'; // Mostrar a senha
-                    pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (3) certo.png");
+                    pbSenhas.Image = Image.FromFile(@"..\..\Resources\Design sem nome-PhotoRoom.png-PhotoRoom.png");
                 }
                 else
                 {
                     txtSenha.PasswordChar = '*'; // Ocultar a senha
-                    pbSenhas.Image = Image.FromFile(@"..\..\Imagem\olho (2) certo.png");
-                }
+                    pbSenhas.Image = Image.FromFile(@"..\..\Resources\Design sem nome (1)-PhotoRoom.png-PhotoRoom1.png");
+                //Design sem nome(1) - PhotoRoom.png - PhotoRoom.png   Design_sem_nome_PhotoRoom.png_PhotoRoom
             }
+        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -133,7 +134,22 @@ namespace projeto1
 
         }
 
-        private void txtEmail_TextChanged(object sender, EventArgs e)
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

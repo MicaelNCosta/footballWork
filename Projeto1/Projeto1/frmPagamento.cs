@@ -278,5 +278,10 @@ namespace projeto1
         {
 
         }
+
+        private void gbSelecione_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
