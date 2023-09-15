@@ -37,7 +37,7 @@ namespace projeto1
                 if (pagamento != null)
                 {
                     MessageBox.Show("Você ja efetouo o pagamento ");
-                    Form frmPlanos = new frmPlanos();
+                    Form frmPlanos = new frmPlanos(this.usuario_id);
                     frmPlanos.Show();
                 }
             } 
@@ -111,38 +111,43 @@ namespace projeto1
 
 
 
-
+            bool erro = false;
             if (txtTitular.Text == "")
             {
                 txtTitular.Focus();
 
-
+                erro = true;
                 MessageBox.Show("digite o nome do titular do cartão");
             }
-            else if (rbCpf.Checked && CPF.Length < 11)
+            if (rbCpf.Checked && CPF.Length < 11)
             {
                 mskCpf.Focus();
+                erro = true;
                 MessageBox.Show("preencha o CPF com 11 caracteres");
                 
             }
-            else if (rbCnpj.Checked && CNPJ.Length < 14)
+            if (rbCnpj.Checked && CNPJ.Length < 14)
             {
                 mskCnpj.Focus();
+                erro = true;
                 MessageBox.Show("preencha o CNPJ com 14 caracteres");
                 
             }
-            else if (CVV.Length < 3)
+            if (CVV.Length < 3)
             {
                 mskCvc.Focus();
+                erro = true;
                 MessageBox.Show("quantidade de numero insuficiente", "CVV", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             }
-            else if (Cartao.Length < 16)
+            if (Cartao.Length < 16)
             {
                 mskCartao.Focus();
+                erro = true;
                 MessageBox.Show("preencha o numero do cartãp com 16 caracteres");
             }
-            else if (mskCartao.Text == " " || mskCnpj.Text == "" || mskCpf.Text == " " || mskCvc.Text == " " || txtTitular.Text == " " || dtpValidade.Text == " " || (!rbCnpj.Checked && !rbCpf.Checked))
+            if (mskCartao.Text == " " || mskCnpj.Text == "" || mskCpf.Text == " " || mskCvc.Text == " " || txtTitular.Text == " " || dtpValidade.Text == " " || (!rbCnpj.Checked && !rbCpf.Checked))
             {
+                erro = true;
                 MessageBox.Show("Obrigatorio preencher todos os campos", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
@@ -153,11 +158,11 @@ namespace projeto1
                "Data de validade :" + dtpValidade.Text + "\n" +
                "Titular do cartão:" + txtTitular.Text + "\n" +
                "Numero do cartão" + mskCartao.Text);
+            }
 
-
-                Form ligas = new frmligas(true);
-                ligas.WindowState = FormWindowState.Maximized;
-                ligas.Show();
+            if (erro)
+            {
+                return;
             }
 
                                     
@@ -188,10 +193,12 @@ namespace projeto1
                 };
 
                 int newUserId = db.Database.SqlQuery<int>(query, paramenters).Single();
-                
 
-                
 
+
+                Form ligas = new frmligas(true);
+                ligas.WindowState = FormWindowState.Maximized;
+                ligas.Show();
             }
        
 
@@ -255,7 +262,7 @@ namespace projeto1
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            Form planos = new frmPlanos();
+            Form planos = new frmPlanos(this.usuario_id);
             planos.WindowState = FormWindowState.Maximized;
             planos.Show();            
             this.Close();

@@ -133,15 +133,15 @@ namespace projeto1
 
                 int nRowAfetted = db.Database.ExecuteSqlCommand(query, parameters);
 
+                Form frmPlanos = new frmPlanos(batatinha);
+                frmPlanos.WindowState = FormWindowState.Maximized;
+                frmPlanos.Show();
+                this.Hide();
 
             }
 
 
 
-            Form frmPlanos = new frmPlanos();
-            frmPlanos.WindowState = FormWindowState.Maximized;
-            frmPlanos.Show();
-            this.Hide();
 
         }
 

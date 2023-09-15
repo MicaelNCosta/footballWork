@@ -135,19 +135,11 @@ namespace projeto1
 
                 int rowsAffected = db.Database.ExecuteSqlCommand(query, parameters);
 
+                Form frmPlanos = new frmPlanos(batatinha);
+                frmPlanos.WindowState = FormWindowState.Maximized;
+                frmPlanos.Show();
+                this.Hide();
             }
-
-
-
-
-
-
-
-
-            Form frmPlanos = new frmPlanos();
-            frmPlanos.WindowState = FormWindowState.Maximized;
-            frmPlanos.Show();
-            this.Hide();
         }
 
         private void txtCep_TextChanged(object sender, EventArgs e)

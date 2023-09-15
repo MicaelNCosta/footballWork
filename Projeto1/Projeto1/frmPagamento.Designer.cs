@@ -168,7 +168,7 @@
             this.btnProsseguir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnProsseguir.Location = new System.Drawing.Point(1036, 512);
             this.btnProsseguir.Name = "btnProsseguir";
-            this.btnProsseguir.Size = new System.Drawing.Size(237, 32);
+            this.btnProsseguir.Size = new System.Drawing.Size(237, 35);
             this.btnProsseguir.TabIndex = 12;
             this.btnProsseguir.Text = "Efetuar pagamento";
             this.btnProsseguir.UseVisualStyleBackColor = false;
