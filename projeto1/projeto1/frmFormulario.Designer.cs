@@ -198,7 +198,7 @@ namespace projeto1
             // 
             // txtVoce
             // 
-            this.txtVoce.Location = new System.Drawing.Point(1286, 232);
+            this.txtVoce.Location = new System.Drawing.Point(995, 215);
             this.txtVoce.Multiline = true;
             this.txtVoce.Name = "txtVoce";
             this.txtVoce.Size = new System.Drawing.Size(439, 194);

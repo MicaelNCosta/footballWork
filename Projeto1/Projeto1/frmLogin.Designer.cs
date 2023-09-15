@@ -77,8 +77,7 @@ namespace projeto1
             this.txtEmail.Location = new System.Drawing.Point(69, 147);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(599, 40);
-            this.txtEmail.TabIndex = 7;
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
+            this.txtEmail.TabIndex = 7;            
             this.txtEmail.Validated += new System.EventHandler(this.txtEmail_Validated);
             // 
             // btnLogin

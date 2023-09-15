@@ -76,6 +76,7 @@ namespace projeto1
 
             }
 
+
             if (this.pagamentos && contador == 1)
             {
                 Form form1 = new frmtimes(txt);

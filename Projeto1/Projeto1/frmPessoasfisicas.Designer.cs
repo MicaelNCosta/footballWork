@@ -44,14 +44,12 @@ namespace projeto1
             this.dtp_data_de_nacimento = new System.Windows.Forms.DateTimePicker();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.lbltelefone = new System.Windows.Forms.Label();
-            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pbSenha = new System.Windows.Forms.PictureBox();
             this.mskCpf = new System.Windows.Forms.MaskedTextBox();
             this.mskCep = new System.Windows.Forms.MaskedTextBox();
             this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSenha)).BeginInit();
             this.SuspendLayout();
             // 
@@ -219,6 +217,15 @@ namespace projeto1
             this.lbltelefone.TabIndex = 20;
             this.lbltelefone.Text = "Telefone";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::projeto1.Properties.Resources.FUT_PhotoRoom_png_PhotoRoom;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(483, 151);
+            this.pictureBox1.TabIndex = 51;
+            this.pictureBox1.TabStop = false;
+            // 
             // pbSenha
             // 
             this.pbSenha.Image = global::projeto1.Properties.Resources.olho__2__certo;
@@ -256,23 +263,12 @@ namespace projeto1
             this.mskTelefone.Size = new System.Drawing.Size(270, 31);
             this.mskTelefone.TabIndex = 25;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::projeto1.Properties.Resources.FUT_PhotoRoom_png_PhotoRoom;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(483, 151);
-            this.pictureBox1.TabIndex = 51;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmPessoasfisicas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1615, 837);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txtTelefone);            
+            this.ClientSize = new System.Drawing.Size(1767, 837);
             this.Controls.Add(this.mskTelefone);
             this.Controls.Add(this.mskCep);
             this.Controls.Add(this.mskCpf);
@@ -292,10 +288,11 @@ namespace projeto1
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "frmPessoasfisicas";
             this.Text = "Pessoas fisicas";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSenha)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -319,7 +316,6 @@ namespace projeto1
         private System.Windows.Forms.DateTimePicker dtp_data_de_nacimento;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label lbltelefone;
-        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pbSenha;
         private System.Windows.Forms.MaskedTextBox mskCpf;

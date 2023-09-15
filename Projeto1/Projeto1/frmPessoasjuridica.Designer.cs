@@ -46,11 +46,10 @@ namespace projeto1
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.mskCnpj = new System.Windows.Forms.MaskedTextBox();
             this.mskCep = new System.Windows.Forms.MaskedTextBox();
             this.pbSenha = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSenha)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +67,7 @@ namespace projeto1
             // 
             this.lblRazãosocial.AutoSize = true;
             this.lblRazãosocial.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRazãosocial.Location = new System.Drawing.Point(597, 584);
+            this.lblRazãosocial.Location = new System.Drawing.Point(573, 584);
             this.lblRazãosocial.Name = "lblRazãosocial";
             this.lblRazãosocial.Size = new System.Drawing.Size(160, 29);
             this.lblRazãosocial.TabIndex = 1;
@@ -89,7 +88,7 @@ namespace projeto1
             // 
             this.lblCidade.AutoSize = true;
             this.lblCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCidade.Location = new System.Drawing.Point(916, 656);
+            this.lblCidade.Location = new System.Drawing.Point(651, 657);
             this.lblCidade.Name = "lblCidade";
             this.lblCidade.Size = new System.Drawing.Size(82, 24);
             this.lblCidade.TabIndex = 5;
@@ -99,24 +98,16 @@ namespace projeto1
             // 
             this.lblUf.AutoSize = true;
             this.lblUf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUf.Location = new System.Drawing.Point(696, 656);
+            this.lblUf.Location = new System.Drawing.Point(987, 658);
             this.lblUf.Name = "lblUf";
             this.lblUf.Size = new System.Drawing.Size(43, 24);
             this.lblUf.TabIndex = 7;
             this.lblUf.Text = "UF:";
             // 
-            // txtCnpj
-            // 
-            this.txtCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCnpj.Location = new System.Drawing.Point(745, 401);
-            this.txtCnpj.Name = "txtCnpj";
-            this.txtCnpj.Size = new System.Drawing.Size(324, 24);
-            this.txtCnpj.TabIndex = 8;
-            // 
             // txtCidade
             // 
             this.txtCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCidade.Location = new System.Drawing.Point(1004, 657);
+            this.txtCidade.Location = new System.Drawing.Point(748, 657);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(176, 24);
             this.txtCidade.TabIndex = 10;
@@ -126,14 +117,14 @@ namespace projeto1
             this.txtRazão.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRazão.Location = new System.Drawing.Point(745, 516);
             this.txtRazão.Name = "txtRazão";
-            this.txtRazão.Size = new System.Drawing.Size(324, 24);
+            this.txtRazão.Size = new System.Drawing.Size(368, 24);
             this.txtRazão.TabIndex = 11;
             this.txtRazão.TextChanged += new System.EventHandler(this.txtRazão_TextChanged);
             // 
             // txtUf
             // 
             this.txtUf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUf.Location = new System.Drawing.Point(745, 656);
+            this.txtUf.Location = new System.Drawing.Point(1062, 658);
             this.txtUf.Name = "txtUf";
             this.txtUf.Size = new System.Drawing.Size(51, 24);
             this.txtUf.TabIndex = 12;
@@ -141,7 +132,7 @@ namespace projeto1
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(763, 589);
+            this.txtNome.Location = new System.Drawing.Point(745, 589);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(368, 24);
             this.txtNome.TabIndex = 16;
@@ -173,16 +164,6 @@ namespace projeto1
             this.btnVoltar1.UseVisualStyleBackColor = false;
             this.btnVoltar1.Click += new System.EventHandler(this.btnVoltar1_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::projeto1.Properties.Resources.Chart_Talk_logo_template_Financial_growth_talk_logo__removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(521, -61);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(507, 654);
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
             // lblCep
             // 
             this.lblCep.AutoSize = true;
@@ -193,15 +174,6 @@ namespace projeto1
             this.lblCep.TabIndex = 20;
             this.lblCep.Text = "CEP:";
             this.lblCep.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txtCep
-            // 
-            this.txtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCep.Location = new System.Drawing.Point(745, 458);
-            this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(324, 24);
-            this.txtCep.TabIndex = 21;
-            this.txtCep.TextChanged += new System.EventHandler(this.txtCep_TextChanged);
             // 
             // lblEmail
             // 
@@ -228,7 +200,7 @@ namespace projeto1
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(745, 345);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(324, 24);
+            this.txtSenha.Size = new System.Drawing.Size(229, 24);
             this.txtSenha.TabIndex = 24;
             // 
             // txtEmail
@@ -236,14 +208,23 @@ namespace projeto1
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(745, 288);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(324, 24);
+            this.txtEmail.Size = new System.Drawing.Size(229, 24);
             this.txtEmail.TabIndex = 25;
             this.txtEmail.Validated += new System.EventHandler(this.txtEmail_Validated);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::projeto1.Properties.Resources.FUT_PhotoRoom_png_PhotoRoom;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(441, 127);
+            this.pictureBox1.TabIndex = 51;
+            this.pictureBox1.TabStop = false;
             // 
             // mskCnpj
             // 
             this.mskCnpj.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskCnpj.Location = new System.Drawing.Point(243, 235);
+            this.mskCnpj.Location = new System.Drawing.Point(745, 400);
             this.mskCnpj.Mask = "00.000.000/0000-00";
             this.mskCnpj.Name = "mskCnpj";
             this.mskCnpj.Size = new System.Drawing.Size(167, 26);
@@ -252,7 +233,7 @@ namespace projeto1
             // mskCep
             // 
             this.mskCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskCep.Location = new System.Drawing.Point(243, 291);
+            this.mskCep.Location = new System.Drawing.Point(745, 458);
             this.mskCep.Mask = "00000-000";
             this.mskCep.Name = "mskCep";
             this.mskCep.Size = new System.Drawing.Size(167, 26);
@@ -261,28 +242,19 @@ namespace projeto1
             // pbSenha
             // 
             this.pbSenha.Image = global::projeto1.Properties.Resources.olho__2__certo;
-            this.pbSenha.Location = new System.Drawing.Point(428, 80);
+            this.pbSenha.Location = new System.Drawing.Point(991, 345);
             this.pbSenha.Name = "pbSenha";
             this.pbSenha.Size = new System.Drawing.Size(30, 30);
             this.pbSenha.TabIndex = 28;
             this.pbSenha.TabStop = false;
             this.pbSenha.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::projeto1.Properties.Resources.FUT_PhotoRoom_png_PhotoRoom;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(441, 127);
-            this.pictureBox1.TabIndex = 51;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmPessoasjuridica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1061);
-            this.Controls.Add(this.pictureBox1);            
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pbSenha);
             this.Controls.Add(this.mskCep);
             this.Controls.Add(this.mskCnpj);
@@ -306,7 +278,6 @@ namespace projeto1
             this.Name = "frmPessoasjuridica";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSenha)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
