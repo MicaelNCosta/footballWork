@@ -112,12 +112,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmLigapaga.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLigapaga.Designer.cs">
-      <DependentUpon>frmLigapaga.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmligas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,9 +193,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFormulario.resx">
       <DependentUpon>frmFormulario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLigapaga.resx">
-      <DependentUpon>frmLigapaga.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmligas.resx">
       <DependentUpon>frmligas.cs</DependentUpon>

@@ -21,7 +21,7 @@ namespace projeto1
         int usuario_id;
         public frmPagamento(int usuario_id)
         {
-            this.usuario_id = usuario_id;
+            this.usuario_id = usuario_id;            
             InitializeComponent();
             using (MyDbContext db = new MyDbContext())
             {
@@ -192,7 +192,13 @@ namespace projeto1
                     new MySqlParameter("@pdata_pagamento",hoje)
                 };
 
-                int newUserId = db.Database.SqlQuery<int>(query, paramenters).Single();
+                int newUserId = db.Database.SqlQuery<int>(query, paramenters).SingleOrDefault();
+
+                if(newUserId == null)
+                {
+                    MessageBox.Show("Pagamento não realizado");
+                    return;
+                }
 
 
 
@@ -296,9 +302,6 @@ namespace projeto1
             string hoje = DateTime.Now.ToString("yyyy-MM-dd");
         }
 
-        private void gbSelecione_Enter(object sender, EventArgs e)
-        {
-
-        }
+     
     }
 }

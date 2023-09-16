@@ -31,18 +31,9 @@ namespace projeto1
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             string txt = "";
+
+
             int contador = 0;
-
-          /*  if(!(!this.pagamentos && (chInglesa.Checked ^ chFrancesa.Checked ^ chAlema.Checked ^ chEspanhola.Checked ^ chItaliana.Checked)))
-            {
-                MessageBox.Show("Metodo gratuito só pode selecionar uma liga");
-            }
-            else if (this.pagamentos && contador == 1)
-            {
-                Form form1 = new frmtimes(txt);
-                form1.Show();
-
-            }*/
 
             if (chInglesa.Checked)
             {
@@ -70,38 +61,28 @@ namespace projeto1
                 contador++;
             }
 
-            if (!(!this.pagamentos && (chInglesa.Checked ^ chFrancesa.Checked ^ chAlema.Checked ^ chEspanhola.Checked ^ chItaliana.Checked)))
+            if ((!this.pagamentos && !(chInglesa.Checked ^ chFrancesa.Checked ^ chAlema.Checked ^ chEspanhola.Checked ^ chItaliana.Checked)))
             {
                 MessageBox.Show("Metodo gratuito só pode selecionar uma liga");
-
+                return;
             }
 
 
-            if (this.pagamentos && contador == 1)
+            if (contador > 0)
             {
-                Form form1 = new frmtimes(txt);
-                form1.Show();
-
+                Form telaPri1 = new frmTelaInicial1(1);
+                telaPri1.WindowState = FormWindowState.Maximized;
+                telaPri1.Show();
             }
-
-            /* if (this.pagamentos && contador == 1)
-             {
-                 Form form1 = new frmtimes(txt);
-                 form1.Show();
-
-             }
-
-             if(!this.pagamentos && contador == 1){
-
-                 Form form1 = new frmtimes(txt);
-                 form1.Show();
-             }*/
-
+            else
+            {
+                MessageBox.Show("Selecione pelo menos uma liga");
+            }
         }
            
        
             
-        
+       
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
@@ -114,7 +95,9 @@ namespace projeto1
 
         private void button1_Click(object sender, EventArgs e)
         {
-        
+            Form planos = new frmPlanos(1);
+            planos.WindowState = FormWindowState.Maximized;
+            planos.Show();
             this.Hide();
         }
 

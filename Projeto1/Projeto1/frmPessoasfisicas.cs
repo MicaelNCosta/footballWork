@@ -107,7 +107,12 @@ namespace projeto1
 
                 };
 
-                int batatinha = db.Database.SqlQuery<int>(query, parameters).Single();
+                int batatinha = db.Database.SqlQuery<int>(query, parameters).SingleOrDefault();
+
+                if (batatinha==null) 
+                {
+                    MessageBox.Show("Um dos campos com erro ou dados duplicados");
+                }
 
 
 

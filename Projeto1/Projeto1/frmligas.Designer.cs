@@ -59,13 +59,13 @@ namespace projeto1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Red;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(645, 74);
+            this.label1.Location = new System.Drawing.Point(584, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(635, 31);
+            this.label1.Size = new System.Drawing.Size(678, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Selecione 3 Ligas que voce deseja Acompanhar";
+            this.label1.Text = "Selecione a(s) liga(s) que voce deseja acompanhar";
             // 
             // label2
             // 
@@ -101,7 +101,7 @@ namespace projeto1
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 24);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Liga Alema";
+            this.label4.Text = "Liga Alemã";
             // 
             // label5
             // 
@@ -109,7 +109,7 @@ namespace projeto1
             this.label5.BackColor = System.Drawing.Color.Red;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Location = new System.Drawing.Point(1122, 460);
+            this.label5.Location = new System.Drawing.Point(1131, 460);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(154, 24);
             this.label5.TabIndex = 4;
@@ -143,7 +143,7 @@ namespace projeto1
             // btnLimpar
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.White;
-            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ForeColor = System.Drawing.Color.Black;
             this.btnLimpar.Location = new System.Drawing.Point(1334, 700);
             this.btnLimpar.Name = "btnLimpar";
@@ -196,7 +196,7 @@ namespace projeto1
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(350, 700);
             this.button1.Name = "button1";

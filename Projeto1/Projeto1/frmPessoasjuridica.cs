@@ -149,7 +149,9 @@ namespace projeto1
         }
         private void btnVoltar1_Click(object sender, EventArgs e)
         {
-            Form frmVoltar = new frmLogin();
+            Form voltar = new frmLogin();
+            voltar.WindowState = FormWindowState.Maximized;
+            voltar.Show();
             this.Close();
 
         }

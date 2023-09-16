@@ -43,7 +43,7 @@ namespace projeto1
                 
                 MessageBox.Show("Parabens você selecionou o nosso plano gratuito");
 
-                Form frmligas = new frmligas(true);
+                Form frmligas = new frmligas(false);
                 frmligas.WindowState = FormWindowState.Maximized;
                 frmligas.Show();
             }
@@ -81,6 +81,24 @@ namespace projeto1
         private void rbPremiun_CheckedChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form telaini = new frmLogin();
+            telaini.WindowState = FormWindowState.Maximized;
+            telaini.Show();
+            this.Hide();
         }
     }
 }
