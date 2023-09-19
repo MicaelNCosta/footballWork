@@ -30,34 +30,34 @@ namespace projeto1
         }
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            string txt = "";
+            string txt = null;
 
 
             int contador = 0;
 
             if (chInglesa.Checked)
             {
-                txt += chInglesa.Text + " 'Liga inglesa',";
+                txt = "LigaInglesa";
                 contador++;
             }
             if (chFrancesa.Checked)
             {
-                txt += chFrancesa.Text + " 'Liga Francesa',";
+                txt = "LigaFrancesa";
                 contador++;
             }
             if (chAlema.Checked)
             {
-                txt += chAlema.Text + " 'Liga Alema',";
+                txt = "LigaAlema";
                 contador++;
             }
             if (chEspanhola.Checked)
             {
-                txt += chEspanhola.Text + "'Liga Espanhola',";
+                txt = "LigaEspanhola";
                 contador++;
             }
             if (chItaliana.Checked)
             {
-                txt += chItaliana.Text + "'Liga Italiana',";
+                txt = "LigaItaliana";
                 contador++;
             }
 
@@ -70,7 +70,7 @@ namespace projeto1
 
             if (contador > 0)
             {
-                Form telaPri1 = new frmTelaInicial1(1);
+                Form telaPri1 = new frmTelaInicial1(txt);
                 telaPri1.WindowState = FormWindowState.Maximized;
                 telaPri1.Show();
             }

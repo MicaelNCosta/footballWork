@@ -111,7 +111,7 @@ namespace projeto1
 
                 if (resul > 0)
                 {
-                    Form frmTelaInicial1 = new frmTelaInicial1(resul);
+                    Form frmTelaInicial1 = new frmTelaInicial1();
                     frmTelaInicial1.WindowState = FormWindowState.Maximized;
                     frmTelaInicial1.Show();
                     this.Hide();

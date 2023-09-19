@@ -37,8 +37,10 @@ namespace projeto1
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataGVtimes = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGVtimes)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -74,6 +76,7 @@ namespace projeto1
             this.btnJogos.TabIndex = 4;
             this.btnJogos.Text = "JOGOS";
             this.btnJogos.UseVisualStyleBackColor = true;
+            this.btnJogos.Click += new System.EventHandler(this.btnJogos_Click);
             // 
             // btnEstatistica
             // 
@@ -126,11 +129,20 @@ namespace projeto1
             this.pictureBox1.TabIndex = 51;
             this.pictureBox1.TabStop = false;
             // 
+            // dataGVtimes
+            // 
+            this.dataGVtimes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGVtimes.Location = new System.Drawing.Point(284, 114);
+            this.dataGVtimes.Name = "dataGVtimes";
+            this.dataGVtimes.Size = new System.Drawing.Size(875, 391);
+            this.dataGVtimes.TabIndex = 6;
+            // 
             // frmTelaInicial1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1557, 1047);
+            this.Controls.Add(this.dataGVtimes);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "frmTelaInicial1";
@@ -138,6 +150,7 @@ namespace projeto1
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGVtimes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -152,5 +165,6 @@ namespace projeto1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridView dataGVtimes;
     }
 }

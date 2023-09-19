@@ -131,11 +131,11 @@ namespace projeto1
             // 
             // btnLimpar
             // 
-            this.btnLimpar.BackColor = System.Drawing.Color.Black;
+            this.btnLimpar.BackColor = System.Drawing.Color.White;
             this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpar.Location = new System.Drawing.Point(1135, 715);
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.Black;
+            this.btnLimpar.Location = new System.Drawing.Point(1263, 777);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(243, 48);
             this.btnLimpar.TabIndex = 10;
@@ -145,11 +145,11 @@ namespace projeto1
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.BackColor = System.Drawing.Color.Black;
+            this.btnFinalizar.BackColor = System.Drawing.Color.Red;
             this.btnFinalizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinalizar.ForeColor = System.Drawing.Color.White;
-            this.btnFinalizar.Location = new System.Drawing.Point(1410, 715);
+            this.btnFinalizar.Location = new System.Drawing.Point(1546, 777);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(253, 48);
             this.btnFinalizar.TabIndex = 11;
@@ -503,7 +503,7 @@ namespace projeto1
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(163, 715);
+            this.button1.Location = new System.Drawing.Point(16, 777);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(250, 48);
             this.button1.TabIndex = 51;
