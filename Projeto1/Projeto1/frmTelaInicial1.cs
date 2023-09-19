@@ -29,10 +29,7 @@ namespace projeto1
             {
                 carregar_liga_inglesa();
             }
-            else
-            {
-                MessageBox.Show("Selecione uma liga");
-            }
+            
         }
 
         private void btnJogos_Click(object sender, EventArgs e)
@@ -91,6 +88,42 @@ namespace projeto1
                     MessageBox.Show("Erro ao fazer a requisição à API.");
                 }
             }
+        }
+
+        private void btnEstatistica_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLiga_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMais_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form login = new frmLogin();
+            login.WindowState = FormWindowState.Maximized;
+            login.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form planos = new frmPlanos(1);
+            planos.WindowState = FormWindowState.Maximized;
+            planos.Show();
+            this.Hide();
+        }
+
+        private void frmTelaInicial1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

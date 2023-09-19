@@ -30,14 +30,13 @@ namespace projeto1
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnMais = new System.Windows.Forms.Button();
             this.btnJogos = new System.Windows.Forms.Button();
-            this.btnEstatistica = new System.Windows.Forms.Button();
-            this.btnLiga = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGVtimes = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVtimes)).BeginInit();
@@ -45,11 +44,10 @@ namespace projeto1
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Controls.Add(this.btnMais);
+            this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnJogos);
-            this.panel1.Controls.Add(this.btnEstatistica);
-            this.panel1.Controls.Add(this.btnLiga);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-15, -13);
@@ -57,53 +55,24 @@ namespace projeto1
             this.panel1.Size = new System.Drawing.Size(283, 1071);
             this.panel1.TabIndex = 0;
             // 
-            // btnMais
-            // 
-            this.btnMais.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMais.Location = new System.Drawing.Point(46, 545);
-            this.btnMais.Name = "btnMais";
-            this.btnMais.Size = new System.Drawing.Size(212, 62);
-            this.btnMais.TabIndex = 5;
-            this.btnMais.Text = "MAIS";
-            this.btnMais.UseVisualStyleBackColor = true;
-            // 
             // btnJogos
             // 
-            this.btnJogos.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnJogos.Location = new System.Drawing.Point(43, 435);
+            this.btnJogos.BackColor = System.Drawing.Color.White;
+            this.btnJogos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJogos.Location = new System.Drawing.Point(40, 310);
             this.btnJogos.Name = "btnJogos";
-            this.btnJogos.Size = new System.Drawing.Size(212, 61);
+            this.btnJogos.Size = new System.Drawing.Size(212, 79);
             this.btnJogos.TabIndex = 4;
-            this.btnJogos.Text = "JOGOS";
-            this.btnJogos.UseVisualStyleBackColor = true;
+            this.btnJogos.Text = "LIGAS";
+            this.btnJogos.UseVisualStyleBackColor = false;
             this.btnJogos.Click += new System.EventHandler(this.btnJogos_Click);
-            // 
-            // btnEstatistica
-            // 
-            this.btnEstatistica.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstatistica.Location = new System.Drawing.Point(46, 317);
-            this.btnEstatistica.Name = "btnEstatistica";
-            this.btnEstatistica.Size = new System.Drawing.Size(209, 61);
-            this.btnEstatistica.TabIndex = 3;
-            this.btnEstatistica.Text = "ESTATISTICAS";
-            this.btnEstatistica.UseVisualStyleBackColor = true;
-            // 
-            // btnLiga
-            // 
-            this.btnLiga.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLiga.Location = new System.Drawing.Point(46, 209);
-            this.btnLiga.Name = "btnLiga";
-            this.btnLiga.Size = new System.Drawing.Size(209, 62);
-            this.btnLiga.TabIndex = 2;
-            this.btnLiga.Text = "LIGA";
-            this.btnLiga.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(41, 127);
+            this.label2.Location = new System.Drawing.Point(53, 128);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 25);
             this.label2.TabIndex = 1;
@@ -114,7 +83,7 @@ namespace projeto1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Monospac821 BT", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(39, 49);
+            this.label1.Location = new System.Drawing.Point(33, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(188, 39);
             this.label1.TabIndex = 0;
@@ -123,7 +92,7 @@ namespace projeto1
             // pictureBox1
             // 
             this.pictureBox1.Image = global::projeto1.Properties.Resources.FUT_PhotoRoom_png_PhotoRoom;
-            this.pictureBox1.Location = new System.Drawing.Point(1165, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1456, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(483, 151);
             this.pictureBox1.TabIndex = 51;
@@ -132,21 +101,46 @@ namespace projeto1
             // dataGVtimes
             // 
             this.dataGVtimes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGVtimes.Location = new System.Drawing.Point(284, 114);
+            this.dataGVtimes.Location = new System.Drawing.Point(482, 183);
             this.dataGVtimes.Name = "dataGVtimes";
-            this.dataGVtimes.Size = new System.Drawing.Size(875, 391);
+            this.dataGVtimes.Size = new System.Drawing.Size(1261, 819);
             this.dataGVtimes.TabIndex = 6;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(40, 735);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(212, 79);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "SAIR";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(40, 518);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(212, 79);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "PLANOS";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // frmTelaInicial1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1557, 1047);
+            this.ClientSize = new System.Drawing.Size(1924, 1061);
             this.Controls.Add(this.dataGVtimes);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "frmTelaInicial1";
             this.Text = "frmTelaInicial1";
+            this.Load += new System.EventHandler(this.frmTelaInicial1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -158,13 +152,12 @@ namespace projeto1
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnMais;
         private System.Windows.Forms.Button btnJogos;
-        private System.Windows.Forms.Button btnEstatistica;
-        private System.Windows.Forms.Button btnLiga;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGVtimes;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
