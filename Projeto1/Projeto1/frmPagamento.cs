@@ -143,7 +143,7 @@ namespace projeto1
             {
                 mskCartao.Focus();
                 erro = true;
-                MessageBox.Show("preencha o numero do cartãp com 16 caracteres");
+                MessageBox.Show("preencha o numero do cartão com 16 caracteres");
             }
             if (mskCartao.Text == " " || mskCnpj.Text == "" || mskCpf.Text == " " || mskCvc.Text == " " || txtTitular.Text == " " || dtpValidade.Text == " " || (!rbCnpj.Checked && !rbCpf.Checked))
             {

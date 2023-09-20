@@ -60,7 +60,6 @@ namespace projeto1
             this.rbEmail = new System.Windows.Forms.RadioButton();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.lblTimeeee = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rbFinalN = new System.Windows.Forms.RadioButton();
@@ -69,6 +68,10 @@ namespace projeto1
             this.lblTel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.gpBox1.SuspendLayout();
             this.gpBox3.SuspendLayout();
             this.gpBox2.SuspendLayout();
@@ -81,11 +84,12 @@ namespace projeto1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(25, 20);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Lucida Fax", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(497, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 37);
+            this.label1.Size = new System.Drawing.Size(216, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Formulário ";
             // 
@@ -93,7 +97,7 @@ namespace projeto1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(34, 282);
+            this.label3.Location = new System.Drawing.Point(514, 323);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(232, 22);
             this.label3.TabIndex = 6;
@@ -103,7 +107,7 @@ namespace projeto1
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(423, 282);
+            this.label4.Location = new System.Drawing.Point(968, 323);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(441, 22);
             this.label4.TabIndex = 7;
@@ -112,10 +116,10 @@ namespace projeto1
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(40, 129);
+            this.label6.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(514, 170);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(254, 27);
+            this.label6.Size = new System.Drawing.Size(199, 22);
             this.label6.TabIndex = 8;
             this.label6.Text = "Selecione uma liga :";
             // 
@@ -123,7 +127,7 @@ namespace projeto1
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(423, 129);
+            this.label7.Location = new System.Drawing.Point(968, 170);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(464, 22);
             this.label7.TabIndex = 9;
@@ -135,7 +139,7 @@ namespace projeto1
             this.btnLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ForeColor = System.Drawing.Color.Black;
-            this.btnLimpar.Location = new System.Drawing.Point(1263, 777);
+            this.btnLimpar.Location = new System.Drawing.Point(1253, 946);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(243, 48);
             this.btnLimpar.TabIndex = 10;
@@ -149,7 +153,7 @@ namespace projeto1
             this.btnFinalizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFinalizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFinalizar.ForeColor = System.Drawing.Color.White;
-            this.btnFinalizar.Location = new System.Drawing.Point(1546, 777);
+            this.btnFinalizar.Location = new System.Drawing.Point(1546, 946);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(253, 48);
             this.btnFinalizar.TabIndex = 11;
@@ -169,18 +173,17 @@ namespace projeto1
             "Liga Inglesa",
             "Liga Portuguesa",
             ""});
-            this.cbLigas.Location = new System.Drawing.Point(51, 169);
+            this.cbLigas.Location = new System.Drawing.Point(518, 221);
             this.cbLigas.Name = "cbLigas";
             this.cbLigas.Size = new System.Drawing.Size(215, 28);
             this.cbLigas.TabIndex = 12;
-            this.cbLigas.Text = "Ligas";
-            this.cbLigas.SelectedIndexChanged += new System.EventHandler(this.cbLigas_SelectedIndexChanged);
+            this.cbLigas.Text = "Ligas";            
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(1034, 165);
+            this.label2.Location = new System.Drawing.Point(974, 677);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(205, 22);
             this.label2.TabIndex = 13;
@@ -190,7 +193,7 @@ namespace projeto1
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(991, 450);
+            this.label5.Location = new System.Drawing.Point(520, 611);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(310, 22);
             this.label5.TabIndex = 14;
@@ -198,7 +201,7 @@ namespace projeto1
             // 
             // txtVoce
             // 
-            this.txtVoce.Location = new System.Drawing.Point(995, 215);
+            this.txtVoce.Location = new System.Drawing.Point(972, 713);
             this.txtVoce.Multiline = true;
             this.txtVoce.Name = "txtVoce";
             this.txtVoce.Size = new System.Drawing.Size(439, 194);
@@ -232,7 +235,7 @@ namespace projeto1
             // 
             this.gpBox1.Controls.Add(this.rb2);
             this.gpBox1.Controls.Add(this.rb1);
-            this.gpBox1.Location = new System.Drawing.Point(38, 323);
+            this.gpBox1.Location = new System.Drawing.Point(518, 381);
             this.gpBox1.Name = "gpBox1";
             this.gpBox1.Size = new System.Drawing.Size(228, 49);
             this.gpBox1.TabIndex = 32;
@@ -242,7 +245,7 @@ namespace projeto1
             // 
             this.gpBox3.Controls.Add(this.rb6);
             this.gpBox3.Controls.Add(this.rb5);
-            this.gpBox3.Location = new System.Drawing.Point(554, 169);
+            this.gpBox3.Location = new System.Drawing.Point(972, 221);
             this.gpBox3.Name = "gpBox3";
             this.gpBox3.Size = new System.Drawing.Size(228, 49);
             this.gpBox3.TabIndex = 34;
@@ -276,7 +279,7 @@ namespace projeto1
             // 
             this.gpBox2.Controls.Add(this.rb4);
             this.gpBox2.Controls.Add(this.rb3);
-            this.gpBox2.Location = new System.Drawing.Point(38, 462);
+            this.gpBox2.Location = new System.Drawing.Point(524, 527);
             this.gpBox2.Name = "gpBox2";
             this.gpBox2.Size = new System.Drawing.Size(228, 49);
             this.gpBox2.TabIndex = 35;
@@ -309,7 +312,7 @@ namespace projeto1
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(423, 425);
+            this.label8.Location = new System.Drawing.Point(974, 465);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(425, 46);
             this.label8.TabIndex = 36;
@@ -353,7 +356,7 @@ namespace projeto1
             this.gpBox4.Controls.Add(this.rb7);
             this.gpBox4.Controls.Add(this.rb9);
             this.gpBox4.Controls.Add(this.rb8);
-            this.gpBox4.Location = new System.Drawing.Point(478, 323);
+            this.gpBox4.Location = new System.Drawing.Point(972, 376);
             this.gpBox4.Name = "gpBox4";
             this.gpBox4.Size = new System.Drawing.Size(376, 54);
             this.gpBox4.TabIndex = 40;
@@ -363,7 +366,7 @@ namespace projeto1
             // 
             this.gbEmail.Controls.Add(this.rbTelefone);
             this.gbEmail.Controls.Add(this.rbEmail);
-            this.gbEmail.Location = new System.Drawing.Point(554, 474);
+            this.gbEmail.Location = new System.Drawing.Point(978, 527);
             this.gbEmail.Name = "gbEmail";
             this.gbEmail.Size = new System.Drawing.Size(228, 49);
             this.gbEmail.TabIndex = 41;
@@ -395,7 +398,7 @@ namespace projeto1
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(527, 557);
+            this.txtEmail.Location = new System.Drawing.Point(1072, 615);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(327, 20);
             this.txtEmail.TabIndex = 42;
@@ -406,26 +409,17 @@ namespace projeto1
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(448, 558);
+            this.lblEmail.Location = new System.Drawing.Point(978, 614);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(72, 18);
             this.lblEmail.TabIndex = 43;
             this.lblEmail.Text = "E MAIL :";
             this.lblEmail.Visible = false;
             // 
-            // lblTimeeee
-            // 
-            this.lblTimeeee.AutoSize = true;
-            this.lblTimeeee.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimeeee.Location = new System.Drawing.Point(28, 211);
-            this.lblTimeeee.Name = "lblTimeeee";
-            this.lblTimeeee.Size = new System.Drawing.Size(0, 22);
-            this.lblTimeeee.TabIndex = 44;
-            // 
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Lucida Fax", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(34, 403);
+            this.label10.Location = new System.Drawing.Point(520, 465);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(252, 44);
             this.label10.TabIndex = 45;
@@ -435,7 +429,7 @@ namespace projeto1
             // 
             this.groupBox1.Controls.Add(this.rbFinalN);
             this.groupBox1.Controls.Add(this.rbFinalS);
-            this.groupBox1.Location = new System.Drawing.Point(1073, 540);
+            this.groupBox1.Location = new System.Drawing.Point(530, 650);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(228, 49);
             this.groupBox1.TabIndex = 46;
@@ -469,7 +463,7 @@ namespace projeto1
             // 
             // mskNumero
             // 
-            this.mskNumero.Location = new System.Drawing.Point(526, 557);
+            this.mskNumero.Location = new System.Drawing.Point(1072, 614);
             this.mskNumero.Mask = "(99) 0 0000-0000 ";
             this.mskNumero.Name = "mskNumero";
             this.mskNumero.Size = new System.Drawing.Size(95, 20);
@@ -481,7 +475,7 @@ namespace projeto1
             // 
             this.lblTel.AutoSize = true;
             this.lblTel.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTel.Location = new System.Drawing.Point(449, 558);
+            this.lblTel.Location = new System.Drawing.Point(975, 614);
             this.lblTel.Name = "lblTel";
             this.lblTel.Size = new System.Drawing.Size(47, 18);
             this.lblTel.TabIndex = 48;
@@ -503,7 +497,7 @@ namespace projeto1
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(16, 777);
+            this.button1.Location = new System.Drawing.Point(577, 956);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(250, 48);
             this.button1.TabIndex = 51;
@@ -511,18 +505,52 @@ namespace projeto1
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Red;
+            this.panel3.Location = new System.Drawing.Point(269, -4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(59, 1057);
+            this.panel3.TabIndex = 54;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(390, -4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(59, 1057);
+            this.panel1.TabIndex = 55;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(143, -4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(59, 1057);
+            this.panel2.TabIndex = 55;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Red;
+            this.panel4.Location = new System.Drawing.Point(34, -4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(59, 1057);
+            this.panel4.TabIndex = 56;
+            // 
             // frmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(1924, 1034);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblTel);
             this.Controls.Add(this.mskNumero);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.lblTimeeee);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.gbEmail);
@@ -543,6 +571,7 @@ namespace projeto1
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel3);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmCadastro";
@@ -598,7 +627,6 @@ namespace projeto1
         private System.Windows.Forms.RadioButton rbEmail;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.Label lblTimeeee;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton rbFinalN;
@@ -607,5 +635,9 @@ namespace projeto1
         private System.Windows.Forms.Label lblTel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel4;
     }
 }

@@ -254,6 +254,8 @@
     <Content Include="imagem\italia %281%29.png" />
     <Content Include="imagem\olho %282%29 certo.png" />
     <Content Include="imagem\olho %283%29 certo.png" />
+    <None Include="Resources\Meios-de-pagamento-analise-financeira-fintechs__1_-removebg-preview.png" />
+    <None Include="Resources\Meios-de-pagamento-analise-financeira-fintechs.png" />
     <None Include="Resources\ligue-1-4096 %281%29.png" />
     <None Include="Resources\ligue-1 %281%29.png" />
     <None Include="Resources\ligue-1-4096.png" />

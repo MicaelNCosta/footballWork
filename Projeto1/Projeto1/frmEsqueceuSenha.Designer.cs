@@ -53,7 +53,7 @@ namespace projeto1
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(645, 266);
+            this.label1.Location = new System.Drawing.Point(424, 275);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(493, 37);
             this.label1.TabIndex = 0;
@@ -63,11 +63,11 @@ namespace projeto1
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(639, 177);
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(507, 171);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(630, 73);
+            this.label2.Size = new System.Drawing.Size(631, 75);
             this.label2.TabIndex = 1;
             this.label2.Text = "REDEFINIR SENHA";
             // 
@@ -77,7 +77,7 @@ namespace projeto1
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(635, 303);
+            this.label3.Location = new System.Drawing.Point(909, 275);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(264, 37);
             this.label3.TabIndex = 2;
@@ -105,10 +105,10 @@ namespace projeto1
             // 
             // btnRedefinir
             // 
-            this.btnRedefinir.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRedefinir.BackColor = System.Drawing.Color.Red;
             this.btnRedefinir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRedefinir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRedefinir.ForeColor = System.Drawing.Color.Black;
+            this.btnRedefinir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRedefinir.ForeColor = System.Drawing.Color.White;
             this.btnRedefinir.Location = new System.Drawing.Point(688, 865);
             this.btnRedefinir.Name = "btnRedefinir";
             this.btnRedefinir.Size = new System.Drawing.Size(450, 48);

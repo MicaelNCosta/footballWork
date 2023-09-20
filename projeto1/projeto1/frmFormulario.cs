@@ -191,8 +191,15 @@ namespace projeto1
 
 
 
-                int formulario_id = db.Database.SqlQuery<int>(query, parameters).Single();
-               if (acesso == "juridico")
+                int formulario_id = db.Database.SqlQuery<int>(query, parameters).SingleOrDefault();                
+                if (formulario_id == null)
+                {
+                    MessageBox.Show("Todos os campos devem ser preenchidos.");
+                    return;
+                }
+
+
+                if (acesso == "juridico")
                 {
                         Form juridico = new frmPessoasjuridica(formulario_id);                
                         juridico.WindowState = FormWindowState.Maximized;
@@ -246,14 +253,8 @@ namespace projeto1
             
                 txtEmail.Visible = true;
             
-        }
-                
-        private void cbLigas_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            string TIME = cbLigas.SelectedItem.ToString();
-            lblTimeeee.Text = TIME;
-        }
-
+        }             
+       
         private void rbFinalN_CheckedChanged(object sender, EventArgs e)
         {
             

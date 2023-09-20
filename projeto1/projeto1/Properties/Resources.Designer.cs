@@ -514,6 +514,26 @@ namespace projeto1.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Meios_de_pagamento_analise_financeira_fintechs {
+            get {
+                object obj = ResourceManager.GetObject("Meios-de-pagamento-analise-financeira-fintechs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Meios_de_pagamento_analise_financeira_fintechs__1__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Meios-de-pagamento-analise-financeira-fintechs__1_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap olho__2__certo {
             get {
                 object obj = ResourceManager.GetObject("olho (2) certo", resourceCulture);

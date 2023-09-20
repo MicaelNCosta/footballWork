@@ -115,7 +115,6 @@ namespace projeto1
                 }
 
 
-
                 query = @"INSERT INTO Pessoas_fisicas (cpf, data_de_nascimento, cep, endereco, usuario_id) VALUES (@pCpf, @pdata_de_nascimento, @pcep, @pendereco, @pUsuario_id);";
 
                 parameters = new[]
@@ -134,8 +133,6 @@ namespace projeto1
 
                 };
 
-
-
                 int nRowAfetted = db.Database.ExecuteSqlCommand(query, parameters);
 
                 Form frmPlanos = new frmPlanos(batatinha);
@@ -144,9 +141,6 @@ namespace projeto1
                 this.Hide();
 
             }
-
-
-
 
         }
 
@@ -184,11 +178,12 @@ namespace projeto1
                 txtSenha.PasswordChar = '*'; // Ocultar a senha
                 pbSenha.Image = Image.FromFile(@"..\..\Imagem\olho (3) certo.png");
             }
-        }
+        }      
 
-        private void txtEmail_TextChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            mskCep.Text = txtEndereco.Text = mskCpf.Text = txtSenha.Text = txtNome.Text = txtEmail.Text = mskTelefone.Text = "";
+            
         }
     }
 }
